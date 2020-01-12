@@ -1,0 +1,32 @@
+{{ define "main" }}
+
+    {{ range .Paginator.Pages }}
+    <article class="post-list">
+        <header> 
+            <h1>
+                <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+            </h1>
+        </header>
+
+        <div class="article-info">
+            {{ if .Params.date }}
+            <div class="article-date">{{ .Params.date.Format "2006-01-02" }}</div>
+            {{ end }}
+            {{ if .Params.tags }}
+            <ul class="article-tags">
+                {{ range .Params.tags }}
+                    <li><a href="/tags/{{ . }}">{{ . }}</a></li>
+                {{ end }}
+            </ul>
+            {{ end }}
+        </div>
+        {{ .Summary }}
+        <div class="read-more">
+            <a href="{{ .RelPermalink }}">Читать дальше</a>
+        </div>
+
+    </article>
+    {{ end }}
+    {{ partial "pagination.html" . }}
+
+{{ end }}

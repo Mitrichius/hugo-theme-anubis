@@ -1,0 +1,28 @@
+{{ define "main" }}
+
+    <h1>Tag: {{ .Title }}</h1>
+    <div class="article-info">
+        <a href="/tags/">Ко списку всех тегов</a>
+    </div>
+    {{ range .Data.Pages }}
+    <article class="post-list">
+        <header> 
+            <h1>
+                <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+            </h1>
+        </header>
+
+        <div class="article-info">
+            {{ if .Params.date }}
+            <div class="article-date">{{ .Params.date.Format "2006-01-02" }}</div>
+            {{ end }}
+        </div>
+        {{ .Summary }}
+        <div class="read-more">
+            <a href="{{ .RelPermalink }}">Читать дальше</a>
+        </div>
+
+    </article>
+    {{ end }}
+
+{{ end }}

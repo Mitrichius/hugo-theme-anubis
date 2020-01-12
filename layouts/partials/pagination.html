@@ -1,0 +1,22 @@
+{{ if or ( .Paginator.HasPrev ) ( .Paginator.HasNext ) }}
+    <div class="pagination">
+        <div class="left">
+            {{ if .Paginator.HasPrev }}
+                {{ if eq .Paginator.PageNumber 2 }}
+                <a class="pagination-item" href="{{ .Site.BaseURL }}{{ .Site.LanguagePrefix }}">К новым постам</a>
+                {{ else }}
+                <a class="pagination-item" href="{{ .Paginator.Prev.URL }}">К новым постам</a>
+                {{ end }}
+            {{ else }}
+            <span class="pagination-item disabled">К новым постам</span>
+            {{ end }}
+            </div>
+        <div class="right">
+            {{ if .Paginator.HasNext }}
+            <a class="pagination-item" href="{{ .Paginator.Next.URL }}">К старым постам</a>
+            {{ else }}
+            <span class="pagination-item disabled">К старым постам</span>
+            {{ end }}
+        </div>
+    </div>
+{{ end }}

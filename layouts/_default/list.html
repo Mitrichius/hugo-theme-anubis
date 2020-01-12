@@ -1,0 +1,29 @@
+{{ define "main" }}
+
+    <h1>{{ .Title }}</h1>
+    {{ range (.Site.RegularPages.GroupByPublishDate "2006") }}
+        {{ range .Pages  }}
+        <div class="post-short-list">
+            <header> 
+                <h2>
+                    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+                </h2>
+            </header>
+
+            <div class="article-info">
+                {{ if .Params.date }}
+                <div class="article-date">{{ .Params.date.Format "2006-01-02" }}</div>
+                {{ end }}
+                {{ if .Params.tags }}
+                <ul class="article-tags">
+                    {{ range .Params.tags }}
+                        <li><a href="/tags/{{ . }}">{{ . }}</a></li>
+                    {{ end }}
+                </ul>
+                {{ end }}
+            </div>
+        </div>
+        {{ end }}
+    {{ end }}
+
+{{ end }}

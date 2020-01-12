@@ -1,0 +1,15 @@
+name: "Anubis"
+license: "MIT"
+description: "A minimal Hugo theme"
+homepage: "http://dmitrykolosov.ru"
+tags: 
+  - blog
+  - minimal
+  - simple
+  - clean
+features: 
+  - blog
+
+author:
+  name: "Dmitry Kolosov"
+  homepage: "http://dmitrykolosov.ru"
