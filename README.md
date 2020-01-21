@@ -31,6 +31,7 @@ title: "Anubis"
 author: ""
 theme: "anubis"
 paginate: 10
+disqusShortname: yourdiscussshortname
 
 menu:
   main:
