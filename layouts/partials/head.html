@@ -39,3 +39,6 @@
 <!-- <meta name="twitter:url" content=""> -->
 <!-- <meta name="twitter:image" content=""> -->
 <meta name="twitter:site" content="@XXX">
+{{ if eq (getenv "HUGO_ENV") "production" | or (eq .Site.Params.env "production")  }}
+    {{ template "_internal/google_analytics_async.html" . }}
+{{ end }}

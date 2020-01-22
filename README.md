@@ -32,6 +32,7 @@ author: ""
 theme: "anubis"
 paginate: 10
 disqusShortname: yourdiscussshortname
+googleAnalytics: UA-123-45
 
 menu:
   main:
