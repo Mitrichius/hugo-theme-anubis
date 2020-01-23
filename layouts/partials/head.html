@@ -15,20 +15,14 @@
 <link rel="stylesheet" href="{{ "/css/style.css" | relURL }}" />
 
 {{ template "_internal/opengraph.html" . }}
+{{ template "_internal/twitter_cards.html" . }}
 
 <!-- Article tags -->
 <!-- <meta property="article:published_time" content="">
 <meta property="article:modified_time" content="">
 <meta property="article:tag" content="">
-
 <meta property="article:publisher" content="https://www.facebook.com/XXX"> -->
-<!-- Twitter Cards -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="{{ .Title }}">
-<!-- <meta name="twitter:description" content=""> -->
-<!-- <meta name="twitter:url" content=""> -->
-<!-- <meta name="twitter:image" content=""> -->
-<meta name="twitter:site" content="@XXX">
+
 {{ if eq (getenv "HUGO_ENV") "production" | or (eq .Site.Params.env "production")  }}
     {{ template "_internal/google_analytics_async.html" . }}
 {{ end }}
