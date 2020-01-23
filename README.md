@@ -44,6 +44,8 @@ menu:
 
 params:
   description: ""
+  images:
+    - images/og-featured.png
 ```
 
 ### Check your site

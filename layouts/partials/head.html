@@ -14,17 +14,7 @@
 
 <link rel="stylesheet" href="{{ "/css/style.css" | relURL }}" />
 
-
-<!-- OG Tags: -->
-<meta property="og:site_name" content="{{ .Site.Title }}">
-
-<!-- <meta property="og:type" content="article"> -->
-<meta property="og:title" content="{{ .Title }}">
-<!-- <meta property="og:description" content=""> -->
-<!-- <meta property="og:url" content=""> -->
-<!-- <meta property="og:image" content=""> -->
-<!-- <meta property="og:image:width" content=""> -->
-<!-- <meta property="og:image:height" content=""> -->
+{{ template "_internal/opengraph.html" . }}
 
 <!-- Article tags -->
 <!-- <meta property="article:published_time" content="">
