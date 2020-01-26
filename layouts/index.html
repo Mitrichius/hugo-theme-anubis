@@ -22,7 +22,7 @@
         </div>
         {{ .Summary }}
         <div class="read-more">
-            <a href="{{ .RelPermalink }}">Читать дальше</a>
+            <a href="{{ .RelPermalink }}">{{ i18n "readMore" | humanize }}</a>
         </div>
 
     </article>

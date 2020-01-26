@@ -28,7 +28,6 @@ Example:
 languageCode: "en-us"
 baseUrl = ""
 title: "Anubis"
-author: ""
 theme: "anubis"
 paginate: 10
 disqusShortname: yourdiscussshortname
@@ -43,6 +42,7 @@ menu:
     weight: 0
 
 params:
+  author: ""
   description: ""
   images:
     - images/og-featured.png

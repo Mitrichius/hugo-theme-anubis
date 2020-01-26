@@ -1,6 +1,6 @@
 {{ define "main" }}
 
-    <h1>{{ .Title }}</h1>
+    <h1>{{ i18n .Title }}</h1>
     {{ range (.Site.RegularPages.GroupByPublishDate "2006") }}
         {{ range .Pages  }}
         <div class="post-short-list">

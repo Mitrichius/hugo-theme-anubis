@@ -1,0 +1,29 @@
+powered:
+  other: "движок"
+
+theme:
+  other: "тема"
+
+readMore:
+  other: "читать дальше"
+
+toNewPosts:
+  other: "к новым записям"
+
+toOldPosts:
+  other: "к старым записям"
+
+tag:
+  other: "Тег"
+
+Tags:
+  other: "Теги"
+
+Posts:
+  other: "Записи"
+
+Categories:
+  other: "Категории"
+
+toAllTags:
+  other: "Ко списку всех тегов"

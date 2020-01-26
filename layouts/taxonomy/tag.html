@@ -1,6 +1,6 @@
 {{ define "main" }}
 
-    <h1>Tag: {{ .Title }}</h1>
+    <h1>{{ i18n "tag" | humanize }}: {{ .Title }}</h1>
     <div class="article-info">
         <a href="/tags/">Ко списку всех тегов</a>
     </div>
@@ -19,7 +19,7 @@
         </div>
         {{ .Summary }}
         <div class="read-more">
-            <a href="{{ .RelPermalink }}">Читать дальше</a>
+            <a href="{{ .RelPermalink }}">{{ i18n "readMore" | humanize }}</a>
         </div>
 
     </article>
