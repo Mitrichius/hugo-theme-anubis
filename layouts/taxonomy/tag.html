@@ -2,7 +2,7 @@
 
     <h1>{{ i18n "tag" | humanize }}: {{ .Title }}</h1>
     <div class="article-info">
-        <a href="/tags/">Ко списку всех тегов</a>
+        <a href="/tags/">{{ i18n "toAllTags" | humanize}}</a>
     </div>
     {{ range .Data.Pages }}
     <article class="post-list">
