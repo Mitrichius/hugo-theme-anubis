@@ -14,7 +14,7 @@ toOldPosts:
   other: "к старым записям"
 
 tag:
-  other: "Тег"
+  other: "тег"
 
 Tags:
   other: "Теги"
@@ -22,8 +22,14 @@ Tags:
 Posts:
   other: "Записи"
 
+category:
+  other: "Категория"
+
 Categories:
   other: "Категории"
 
 toAllTags:
-  other: "Ко списку всех тегов"
+  other: "ко списку всех тегов"
+
+toAllCategories:
+  other: "ко списку всех категорий"

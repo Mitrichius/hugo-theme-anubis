@@ -17,13 +17,19 @@ tag:
   other: "tag"
 
 Tags:
-  other: "tags"
+  other: "Tags"
 
 Posts:
   other: "Posts"
+
+category:
+  other: "category"
 
 Categories:
   other: "Categories"
 
 toAllTags:
-  other: "To all tags"
+  other: "to all tags"
+
+toAllCategories:
+  other: "to all categories"

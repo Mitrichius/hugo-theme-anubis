@@ -159,6 +159,18 @@ article header h1 a {
     display: inline;
 }
 
+.article-categories {
+    display: inline;
+    list-style-type: none;
+    padding: 0;
+    margin-right: 1em;
+}
+
+.article-categories li {
+    display: inline;
+    margin-left: 1em;
+}
+
 .article-tags {
     display: inline;
     list-style-type: none;

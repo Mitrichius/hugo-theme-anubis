@@ -1,0 +1,28 @@
+{{ define "main" }}
+
+    <h1>{{ i18n "category" | humanize }}: {{ .Title }}</h1>
+    <div class="article-info">
+        <a href="/categories/">{{ i18n "toAllCategories" | humanize }}</a>
+    </div>
+    {{ range .Data.Pages }}
+    <article class="post-list">
+        <header> 
+            <h1>
+                <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+            </h1>
+        </header>
+
+        <div class="article-info">
+            {{ if .Params.date }}
+            <div class="article-date">{{ .Params.date.Format "2006-01-02" }}</div>
+            {{ end }}
+        </div>
+        {{ .Summary }}
+        <div class="read-more">
+            <a href="{{ .RelPermalink }}">{{ i18n "readMore" | humanize }}</a>
+        </div>
+
+    </article>
+    {{ end }}
+
+{{ end }}
