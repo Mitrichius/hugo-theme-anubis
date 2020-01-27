@@ -30,10 +30,14 @@
             </ul>
             {{ end }}
         </div>
-        {{ .Summary }}
-        <div class="read-more">
-            <a href="{{ .RelPermalink }}">{{ i18n "readMore" | humanize }}</a>
+        <div class="content">
+            {{ .Summary | safeHTML }}
         </div>
+        {{ if .Truncated }}
+            <div class="read-more">
+                <a href="{{ .RelPermalink }}">{{ i18n "readMore" | humanize }}</a>
+            </div>
+        {{ end }}
 
     </article>
     {{ end }}

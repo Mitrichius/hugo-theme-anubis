@@ -17,10 +17,14 @@
             <div class="article-date">{{ .Params.date.Format "2006-01-02" }}</div>
             {{ end }}
         </div>
-        {{ .Summary }}
-        <div class="read-more">
-            <a href="{{ .RelPermalink }}">{{ i18n "readMore" | humanize }}</a>
+        <div class="content">
+            {{ .Summary }}
         </div>
+        {{ if .Truncated }}
+            <div class="read-more">
+                <a href="{{ .RelPermalink }}">{{ i18n "readMore" | humanize }}</a>
+            </div>
+        {{ end }}
 
     </article>
     {{ end }}
