@@ -1,3 +1,3 @@
-<p>© {{ if isset .Site.Params "author"}}{{ .Site.Params.author }}, {{end}}2020<br>
+<p>© {{ if isset .Site.Params "author"}}{{ .Site.Params.author }}, {{end}}{{ now.Year }}<br>
 {{ i18n "powered" | humanize }} <a target="_blank" href="https://gohugo.io/">Hugo</a>, {{ i18n "theme" }} <a target="_blank" href="https://github.com/mitrichius/hugo-theme-anubis">Anubis</a>.
 </p>
