@@ -8,6 +8,14 @@
             </h1>
         </header>
 
+        <div class="content">
+            {{ .Summary | safeHTML }}
+        </div>
+<!--         {{ if .Truncated }}
+            <div class="read-more">
+                <a href="{{ .RelPermalink }}">{{ i18n "readMore" | humanize }}</a>
+            </div>
+        {{ end }} -->
         <div class="article-info">
             {{ if .Params.date }}
             <div class="article-date">{{ .Params.date.Format "2006-01-02" }}</div>
@@ -30,15 +38,6 @@
             </ul>
             {{ end }}
         </div>
-        <div class="content">
-            {{ .Summary | safeHTML }}
-        </div>
-        {{ if .Truncated }}
-            <div class="read-more">
-                <a href="{{ .RelPermalink }}">{{ i18n "readMore" | humanize }}</a>
-            </div>
-        {{ end }}
-
     </article>
     {{ end }}
     {{ partial "pagination.html" . }}

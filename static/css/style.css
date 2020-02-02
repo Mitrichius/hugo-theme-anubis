@@ -112,15 +112,21 @@ header nav a {
     margin-left: 2em;
 }
 
-
 header a {
     color: #333;
+}
+
+.site-header {
+    white-space: nowrap;
 }
 
 /* Pages */
 main h1 {
     margin-top: 1em;
-    margin-bottom: 0    ;
+    font-weight: normal;
+    font-size: 1.7em;
+    line-height: 1.1em;
+    margin-bottom: 0.5em;
 }
 
 .post-short-list:first-of-type {
@@ -136,10 +142,9 @@ article:not(:last-of-type) {
 }
 
 article header h1 {
-    font-size: 2.1em;
-    line-height: 1.3em;
-    margin-bottom: 0;
-    font-weight: bold;
+    font-size: 1.7em;
+    line-height: 1.1em;
+    margin-bottom: 0.5em;
 }
 
 article header h1 a {
@@ -149,14 +154,18 @@ article header h1 a {
 }
 
 .article-info {
-    display: inline-block;
     font-size: 0.75em;
     color: grey;
-    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+.post-short-list .article-info {
+    margin-top: 0;
+    margin-bottom: 1.5em;
 }
 
 .article-date {
-    display: inline;
+    white-space: nowrap;
 }
 
 .article-categories {
@@ -172,10 +181,13 @@ article header h1 a {
 }
 
 .article-tags {
-    display: inline;
     list-style-type: none;
     padding: 0;
     margin: 0;
+}
+
+.article-tags li:first-of-type {
+    margin-left: 0;
 }
 
 .article-tags li {
@@ -222,19 +234,22 @@ article img {
     text-align: center;   
 }
 
-.pagination a, .pagination .disabled {
+.pagination-item {
     background: #fafafa;
-    border: thin solid #f3f3f3;
-    color: #333333;
     padding: 0.75em 0.75em;
 }
 
-.pagination .disabled {
+.disabled {
     visibility: hidden;
 }
 
-.pagination a:hover, .pagination a:focus {
+.pagination-item a {
+    color: #333333;
+}
+
+.pagination-item a:hover, .pagination-item   a:focus {
     color: #a31d1d;
+    border-bottom: 0;
 }
 
 /* Footer */
@@ -260,5 +275,33 @@ footer {
         max-width: 90%;
         margin: 0 auto;
     }
-}
+
+    .pagination-item {
+        padding: 0.5em 0.5em;
+        font-size: 14px;
+    }
+
+    header {
+        display: block;
+    }
+
+    .site-header {
+        text-align: center;
+    }
+
+    header nav {
+        margin-top: 1em;
+        max-width: 100%;
+        text-align: center;
+        background: #fafafa;
+        padding: 0.5em 0;
+    }
+
+    header nav a:first-of-type {
+        margin-left: 0;
+    }
+
+    header nav a {
+        margin-left: 5%;
+    }
 }

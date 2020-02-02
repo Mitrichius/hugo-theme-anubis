@@ -2,22 +2,18 @@
     {{ $toNewPostsMessage := i18n "toNewPosts" | humanize }}
     {{ $toOldPostsMessage := i18n "toOldPosts" | humanize }}
     <div class="pagination">
-        <div class="left">
+        <div class="left pagination-item {{ if not .Paginator.HasPrev }}disabled{{ end }}">
             {{ if .Paginator.HasPrev }}
                 {{ if eq .Paginator.PageNumber 2 }}
-                <a class="pagination-item" href="{{ .Site.BaseURL }}{{ .Site.LanguagePrefix }}">{{ $toNewPostsMessage }}</a>
+                <a href="{{ .Site.BaseURL }}{{ .Site.LanguagePrefix }}">{{ $toNewPostsMessage }}</a>
                 {{ else }}
-                <a class="pagination-item" href="{{ .Paginator.Prev.URL }}">{{ $toNewPostsMessage }}</a>
+                <a href="{{ .Paginator.Prev.URL }}">{{ $toNewPostsMessage }}</a>
                 {{ end }}
-            {{ else }}
-            <span class="pagination-item disabled">{{ $toNewPostsMessage }}</span>
             {{ end }}
-            </div>
-        <div class="right">
+        </div>
+        <div class="right pagination-item {{ if not .Paginator.HasNext }}disabled{{ end }}">
             {{ if .Paginator.HasNext }}
-            <a class="pagination-item" href="{{ .Paginator.Next.URL }}">{{ $toOldPostsMessage }}</a>
-            {{ else }}
-            <span class="pagination-item disabled">{{ $toOldPostsMessage }}</span>
+            <a href="{{ .Paginator.Next.URL }}">{{ $toOldPostsMessage }}</a>
             {{ end }}
         </div>
     </div>

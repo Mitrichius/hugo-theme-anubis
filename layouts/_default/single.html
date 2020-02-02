@@ -4,7 +4,9 @@
         <header>
             <h1>{{ .Title }}</h1>
         </header>
-
+        <div class="content">
+            {{ .Content }}
+        </div>
         <div class="article-info">
             {{ if .Params.date }}
             <div class="article-date">{{ .Params.date.Format "2006-01-02" }}</div>
@@ -27,8 +29,6 @@
             </ul>
             {{ end }}
         </div>
-
-        {{ .Content }}
     </article>
     {{ if .Site.DisqusShortname }}
         {{ template "_internal/disqus.html" . }}

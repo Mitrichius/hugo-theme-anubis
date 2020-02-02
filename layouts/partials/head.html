@@ -12,7 +12,7 @@
 <link rel="icon" type="image/x-icon" href="/favicon.ico">
 <link rel="apple-touch-icon-precomposed" href="/favicon.png">
 
-<link rel="stylesheet" href="{{ "/css/style.css" | relURL }}" />
+<link rel="stylesheet" href="{{ "/css/style.css" | relURL }}?rnd={{ now.Unix }}" />
 
 {{ template "_internal/opengraph.html" . }}
 {{ template "_internal/twitter_cards.html" . }}
