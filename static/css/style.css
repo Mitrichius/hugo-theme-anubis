@@ -39,6 +39,19 @@ summary {
     margin: 0 auto;
 }
 
+/* Headers */
+h1 {
+    font-size: 1.35em;
+}
+
+h2 {
+    font-size: 1.2em;
+}
+
+h3 {
+    font-size: 1.1em;
+}
+
 /* Links */
 
 a {
@@ -63,6 +76,41 @@ a:active {
     border-bottom: 1px solid rgba(163, 29, 29, .5);
 }
 
+/* Table */
+.table-wrapper {
+    overflow-x: auto;
+}
+
+table {
+    max-width: 100%;
+    border-spacing: 0;
+}
+
+thead {
+    background: lightgrey;
+}
+
+th, td {
+    padding: 0.5em 1em;
+    border: 1px double lightgrey;
+}
+
+/* Code */
+pre {
+    padding: 1em;
+    background-color: #f1f1f1;
+    max-width: 100%;
+    overflow: scroll;
+}
+
+code,
+pre,
+kbd {
+    font-family: monospace;
+    font-size: 0.90em;
+    line-height: 154%;
+}
+
 /* Styles */
 
 blockquote {
@@ -80,6 +128,10 @@ hr {
     height: 1px;
     border: 0;
     border-top: 1px solid #cccccc;
+}
+
+ul ol, ol ol, ul ul {
+    margin: 0em 2em;
 }
 
 /* Header */
@@ -125,7 +177,6 @@ header a {
 main h1 {
     margin-top: 1em;
     font-weight: normal;
-    font-size: 1.35em;
     line-height: 1.1em;
     margin-bottom: 0.5em;
     font-weight: 600;
