@@ -20,23 +20,22 @@
             {{ if .Params.date }}
             <div class="article-date">{{ .Params.date.Format "2006-01-02" }}</div>
             {{ end }}
-            {{ if .Params.categories }}
-            <ul class="article-categories">
-                {{ range .Params.categories }}
-                    <li><a href="/categories/{{ . }}">{{ . }}</a></li>
+            <div class="article-taxonomies">
+                {{ if .Params.categories }}
+                <ul class="article-categories">
+                    {{ range .Params.categories }}
+                        <li><a href="/categories/{{ . }}">{{ . }}</a></li>
+                    {{ end }}
+                </ul>
                 {{ end }}
-            </ul>
-            {{ end }}
-            {{ if and (.Params.categories) (.Params.tags) }} 
-                |
-            {{ end }}
-            {{ if .Params.tags }}
-            <ul class="article-tags">
-                {{ range .Params.tags }}
-                    <li><a href="/tags/{{ . }}">{{ . }}</a></li>
+                {{ if .Params.tags }}
+                <ul class="article-tags">
+                    {{ range .Params.tags }}
+                        <li><a href="/tags/{{ . }}">#{{ . }}</a></li>
+                    {{ end }}
+                </ul>
                 {{ end }}
-            </ul>
-            {{ end }}
+            </div>
         </div>
     </article>
     {{ end }}

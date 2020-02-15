@@ -175,6 +175,10 @@ article header h1 a {
     margin-bottom: 1.5em;
 }
 
+.article-taxonomies {
+    display: inline;
+}
+
 .article-date {
     white-space: nowrap;
 }
@@ -183,27 +187,23 @@ article header h1 a {
     display: inline;
     list-style-type: none;
     padding: 0;
-    margin-right: 1em;
 }
 
 .article-categories li {
     display: inline;
-    margin-left: 1em;
+    margin-right: 1em;
 }
 
 .article-tags {
+    display: inline;
     list-style-type: none;
     padding: 0;
     margin: 0;
 }
 
-.article-tags li:first-of-type {
-    margin-left: 0;
-}
-
 .article-tags li {
     display: inline;
-    margin-left: 1em;
+    margin-right: 1em;
 }
 
 article img {
