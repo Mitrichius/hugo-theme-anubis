@@ -7,12 +7,12 @@
 <title>{{ if .Title }}{{ .Title }}  - {{ end }}{{ .Site.Title }}</title>
 <meta name="description" content="{{ .Site.Params.Description }}">
 
-<link rel="alternate" type="application/rss+xml" title="RSS" href="{{ "/rss/" | absURL }}">
+<link rel="alternate" type="application/rss+xml" title="RSS" href="{{ "rss/" | absURL }}">
 
-<link rel="icon" type="image/x-icon" href="{{ "/favicon.ico" | absURL }}">
-<link rel="apple-touch-icon-precomposed" href="{{ "/favicon.png" | absURL }}">
+<link rel="icon" type="image/x-icon" href="{{ "favicon.ico" | absURL }}">
+<link rel="apple-touch-icon-precomposed" href="{{ "favicon.png" | absURL }}">
 
-<link rel="stylesheet" href="{{ "/css/style.css" | absURL }}?rnd={{ now.Unix }}" />
+<link rel="stylesheet" href="{{ "css/style.css" | absURL }}?rnd={{ now.Unix }}" />
 
 {{ template "_internal/opengraph.html" . }}
 {{ template "_internal/twitter_cards.html" . }}

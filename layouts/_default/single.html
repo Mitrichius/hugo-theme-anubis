@@ -15,14 +15,14 @@
                 {{ if .Params.categories }}
                 <ul class="article-categories">
                     {{ range .Params.categories }}
-                        <li><a href="/categories/{{ . }}">{{ . }}</a></li>
+                        <li><a href="categories/{{ . }}">{{ . }}</a></li>
                     {{ end }}
                 </ul>
                 {{ end }}
                 {{ if .Params.tags }}
                 <ul class="article-tags">
                     {{ range .Params.tags }}
-                        <li><a href="/tags/{{ . }}">#{{ . }}</a></li>
+                        <li><a href="tags/{{ . }}">#{{ . }}</a></li>
                     {{ end }}
                 </ul>
                 {{ end }}
