@@ -106,6 +106,7 @@ header nav {
     margin-top: 1em;
     max-width: 100%;
     text-align: right;
+    margin-bottom: 1em;
 }
 
 header nav a {
@@ -124,9 +125,10 @@ header a {
 main h1 {
     margin-top: 1em;
     font-weight: normal;
-    font-size: 1.7em;
+    font-size: 1.35em;
     line-height: 1.1em;
     margin-bottom: 0.5em;
+    font-weight: 600;
 }
 
 .post-short-list:first-of-type {
@@ -137,14 +139,15 @@ main h1 {
 
 
 article:not(:last-of-type) {
-    border-bottom: thin solid #f3f3f3;
+    border-bottom: thin solid #f1f1f1;
     padding-bottom: 2em;
 }
 
 article header h1 {
-    font-size: 1.7em;
+    font-size: 1.35em;
     line-height: 1.1em;
     margin-bottom: 0.5em;
+    font-weight: 600;
 }
 
 article header h1 a {
@@ -157,6 +160,14 @@ article header h1 a {
     font-size: 0.75em;
     color: grey;
     margin-top: 1em;
+}
+
+.article-info a {
+    color: grey;
+}
+
+.article-info a:hover {
+    color: #a31d1d;
 }
 
 .post-short-list .article-info {
@@ -210,7 +221,7 @@ article img {
     display: block;
     height: 1px;
     border: 0;
-    border-top: thin solid #f3f3f3;;
+    border-top: thin solid #f1f1f1;
     width: 25%;
     margin: 1em auto;
 }
@@ -255,7 +266,7 @@ article img {
 /* Footer */
 
 footer {
-    border-top: thin solid #f3f3f3;;
+    border-top: thin solid #f1f1f1;
     margin-top: 3em;
     font-size: 16px;
 }
