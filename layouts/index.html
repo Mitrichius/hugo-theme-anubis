@@ -1,6 +1,6 @@
 {{ define "main" }}
-
-    {{ range .Paginator.Pages }}
+    {{ $pages := where site.RegularPages "Type" "in" site.Params.mainSections }}
+    {{ range (.Paginate $pages).Pages }}
     <article class="post-list">
         <header> 
             <h1>
