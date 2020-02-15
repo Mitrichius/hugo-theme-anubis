@@ -1,7 +1,7 @@
 name: "Anubis"
 license: "MIT"
 description: "A minimal Hugo theme"
-homepage: "http://dmitrykolosov.ru"
+homepage: "https://github.com/mitrichius/hugo-theme-anubis"
 tags: 
   - blog
   - minimal
