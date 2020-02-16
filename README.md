@@ -2,7 +2,7 @@
 
 Anubis is a simple minimalist theme for [Hugo blog engine](https://gohugo.io/).
 
-![Anubis Screenshot](https://raw.githubusercontent.com/mitrichius/hugo-theme-anubis/master/static/images/screenshot.png)
+![Anubis Screenshot](https://raw.githubusercontent.com/mitrichius/hugo-theme-anubis/master/images/screenshot.png)
 
 ## Features
 
