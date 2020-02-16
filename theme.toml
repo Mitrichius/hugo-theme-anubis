@@ -1,0 +1,10 @@
+name = "Anubis"
+license = "MIT"
+description = "A minimal Hugo theme"
+homepage = "https://github.com/mitrichius/hugo-theme-anubis"
+tags = ["blog", "minimal", "simple", "clean"]
+features = ["blog"]
+
+[author]
+    name = "Dmitry Kolosov"
+    homepage = "http://dmitrykolosov.ru"
