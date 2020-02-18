@@ -1,38 +1,16 @@
 {{ define "main" }}
 
     <h1>{{ i18n .Title }}</h1>
-    {{ range (.Site.RegularPages.GroupByPublishDate "2006") }}
-        {{ range .Pages  }}
+    {{ $pages := where site.RegularPages "Type" "in" site.Params.mainSections }}
+    {{ range $pages }}
         <div class="post-short-list">
             <header> 
                 <h2>
                     <a href="{{ .RelPermalink }}">{{ .Title }}</a>
                 </h2>
             </header>
-
-            <div class="article-info">
-                {{ if .Params.date }}
-                <div class="article-date">{{ .Params.date.Format "2006-01-02" }}</div>
-                {{ end }}
-                <div class="article-taxonomies">
-                    {{ if .Params.categories }}
-                    <ul class="article-categories">
-                        {{ range .Params.categories }}
-                            <li><a href="categories/{{ . }}">{{ . }}</a></li>
-                        {{ end }}
-                    </ul>
-                    {{ end }}
-                    {{ if .Params.tags }}
-                    <ul class="article-tags">
-                        {{ range .Params.tags }}
-                            <li><a href="tags/{{ . }}">#{{ . }}</a></li>
-                        {{ end }}
-                    </ul>
-                    {{ end }}
-                </div>
-            </div>
+            {{ partial "articleInfoFull.html" . }}
         </div>
-        {{ end }}
     {{ end }}
 
 {{ end }}

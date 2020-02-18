@@ -16,27 +16,8 @@
                 <a href="{{ .RelPermalink }}">{{ i18n "readMore" | humanize }}</a>
             </div>
         {{ end }} -->
-        <div class="article-info">
-            {{ if .Params.date }}
-            <div class="article-date">{{ .Params.date.Format "2006-01-02" }}</div>
-            {{ end }}
-            <div class="article-taxonomies">
-                {{ if .Params.categories }}
-                <ul class="article-categories">
-                    {{ range .Params.categories }}
-                        <li><a href="categories/{{ . }}">{{ . }}</a></li>
-                    {{ end }}
-                </ul>
-                {{ end }}
-                {{ if .Params.tags }}
-                <ul class="article-tags">
-                    {{ range .Params.tags }}
-                        <li><a href="tags/{{ . }}">#{{ . }}</a></li>
-                    {{ end }}
-                </ul>
-                {{ end }}
-            </div>
-        </div>
+        
+        {{ partial "articleInfoFull.html" . }}
     </article>
     {{ end }}
     {{ partial "pagination.html" . }}

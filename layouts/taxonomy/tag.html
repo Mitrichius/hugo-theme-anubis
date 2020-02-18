@@ -2,7 +2,7 @@
 
     <h1>{{ i18n "tag" | humanize }}: {{ .Title }}</h1>
     <div class="article-info">
-        <a href="tags/">{{ i18n "toAllTags" | humanize}}</a>
+        <a href="{{ "tags/" | absURL }}">{{ i18n "toAllTags" | humanize}}</a>
     </div>
     {{ range .Data.Pages }}
     <article class="post-list">
@@ -14,11 +14,7 @@
         <div class="content">
             {{ .Summary }}
         </div>
-        <div class="article-info">
-            {{ if .Params.date }}
-            <div class="article-date">{{ .Params.date.Format "2006-01-02" }}</div>
-            {{ end }}
-        </div>
+        {{ partial "articleInfoDate.html" . }}
 <!--         {{ if .Truncated }}
             <div class="read-more">
                 <a href="{{ .RelPermalink }}">{{ i18n "readMore" | humanize }}</a>
