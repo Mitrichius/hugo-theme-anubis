@@ -33,3 +33,6 @@ toAllTags:
 
 toAllCategories:
   other: "to all categories"
+
+skipToContent:
+  other: "skip to main content"

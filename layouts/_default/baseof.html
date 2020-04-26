@@ -1,18 +1,19 @@
 <!DOCTYPE html>
-<html>
+<html lang="{{ .Site.LanguageCode }}">
 <head>
     {{ block "head" . }}
         {{ partial "head.html" . }}
     {{ end }}
 </head>
 <body>
+    <a class="skip-main" href="#main">{{ i18n "skipToContent" | humanize }}</a>
     <div class="container">
         <header> 
             {{ block "header" . }}
                 {{ partial "header.html" . }}
             {{ end }}
         </header>
-        <main>
+        <main id="main" tabindex="-1"> 
             {{ block "main" . }}{{ end }}
         </main>
         <footer>

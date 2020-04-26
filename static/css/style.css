@@ -39,6 +39,10 @@ summary {
     margin: 0 auto;
 }
 
+main {
+    outline:none;
+}
+
 /* Headers */
 h1 {
     font-size: 1.35em;
@@ -74,6 +78,29 @@ a:active {
     color: #a31d1d;
     opacity: 0.9;
     border-bottom: 1px solid rgba(163, 29, 29, .5);
+}
+
+a.skip-main {
+    left:-999px;
+    position:absolute;
+    top:auto;
+    width:1px;
+    height:1px;
+    overflow:hidden;
+    z-index:-999;
+}
+
+a.skip-main:focus, 
+a.skip-main:active {
+    left: auto;
+    top: 0px;
+    width: auto;
+    height: auto;
+    overflow:auto;
+    z-index:999;
+    padding: 4px 6px 4px 6px;
+    text-decoration: underline;
+    border: none;
 }
 
 /* Table */
