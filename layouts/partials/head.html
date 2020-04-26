@@ -14,6 +14,10 @@
 
 <link rel="stylesheet" href="{{ "css/style.css" | absURL }}?rnd={{ now.Unix }}" />
 
+{{ range .Site.Params.customCSS -}}
+<link rel="stylesheet" href="{{ . | absURL }}?rnd={{ now.Unix }}">
+{{- end }}
+
 {{ template "_internal/opengraph.html" . }}
 {{ template "_internal/twitter_cards.html" . }}
 
