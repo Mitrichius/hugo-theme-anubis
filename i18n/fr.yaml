@@ -1,0 +1,35 @@
+powered:
+  other: "propulsé par"
+
+theme:
+  other: "thème"
+
+readMore:
+  other: "lire la suite"
+
+toNewPosts:
+  other: "articles + récents"
+
+toOldPosts:
+  other: "articles + anciens"
+
+tag:
+  other: "étiquette"
+
+Tags:
+  other: "Étiquettes"
+
+Posts:
+  other: "Articles"
+
+category:
+  other: "catégorie"
+
+Categories:
+  other: "Catégories"
+
+toAllTags:
+  other: "vers toutes les étiquettes"
+
+toAllCategories:
+  other: "vers toutes les catégories"
