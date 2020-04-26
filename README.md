@@ -13,6 +13,7 @@ Anubis is a simple minimalist theme for [Hugo blog engine](https://gohugo.io/).
 - Google Analytics
 - Disqus
 - RSS feeds
+- Translations (en, ru, fr) 
 
 ## Installation
 
@@ -30,7 +31,7 @@ After installing the theme successfully it requires a just a few more steps to g
 Example:
 ```yaml
 languageCode: "en-us"
-baseUrl = ""
+baseUrl: ""
 title: "Anubis"
 theme: "anubis"
 paginate: 10
@@ -50,6 +51,8 @@ params:
   description: ""
   images:
     - images/og-featured.png
+  customCSS:
+    - css/my.css
 ```
 
 ### Check your site
