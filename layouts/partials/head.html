@@ -7,7 +7,9 @@
 <title>{{ if .Title }}{{ .Title }}  - {{ end }}{{ .Site.Title }}</title>
 <meta name="description" content="{{ .Site.Params.Description }}">
 
-<link rel="alternate" type="application/rss+xml" title="RSS" href="{{ "rss/" | absURL }}">
+{{ with .OutputFormats.Get "rss" -}}
+    {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+{{ end -}}
 
 <link rel="icon" type="image/x-icon" href="{{ "favicon.ico" | absURL }}">
 <link rel="apple-touch-icon-precomposed" href="{{ "favicon.png" | absURL }}">
