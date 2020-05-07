@@ -1,4 +1,7 @@
 {{ define "main" }}
+    <div class="index-content">
+        {{ .Content }}
+    </div>
 
     <h1>{{ i18n .Title }}</h1>
     {{ $pages := where site.RegularPages "Type" "in" site.Params.mainSections }}
