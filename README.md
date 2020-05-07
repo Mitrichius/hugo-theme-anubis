@@ -63,6 +63,13 @@ In order to see your site in action, run Hugo's built-in local server.
 
 Now enter [`localhost:1313`](http://localhost:1313/) in the address bar of your browser.
 
+## Feature Settings
+
+### Google Analytics
+Only works for production environment. You either build your site with variable like
+`HUGO_ENV=production hugo --minify`
+or just put `env: production` to `params` section of config.
+
 ## Contributing
 
 If you find a bug or have an idea for a feature, feel free to write an [issue](https://github.com/mitrichius/hugo-theme-anubis/issues).
