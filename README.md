@@ -27,8 +27,9 @@ For more information read the official [setup guide](//gohugo.io/overview/instal
 After installing the theme successfully it requires a just a few more steps to get your site running.
 
 ### Update config file
+If you have toml config (which is by default), you should rename it to config.yaml or adapt this config for toml syntax.
 
-Example:
+Example of config.yaml:
 ```yaml
 languageCode: "en-us"
 baseUrl: ""
