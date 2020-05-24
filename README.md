@@ -54,6 +54,7 @@ params:
     - images/og-featured.png
   customCSS:
     - css/my.css
+  dateFormat: "2006-01-02"
 ```
 
 ### Check your site
