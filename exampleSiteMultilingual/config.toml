@@ -16,6 +16,7 @@ googleAnalytics = ""
    description = "Anubis is a simple minimalist theme for Hugo blog engine."
 
 [languages.en]
+  languageName = "English"
 
 [[menu.main]]
   identifier = "about"
@@ -34,6 +35,9 @@ googleAnalytics = ""
   identifier = "archive"
   url = "/posts/"
   weight = 3
+
+[languages.pl]
+  languageName = "Polski"
 
 [[languages.pl.menu.main]]
   identifier = "about"

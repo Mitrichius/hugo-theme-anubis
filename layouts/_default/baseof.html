@@ -18,6 +18,11 @@
         </main>
         <footer>
             {{ block "footer" . }}
+                {{ $languagesCount := $.Site.Home.AllTranslations }}
+                {{ if gt $languagesCount 1 }}
+                    {{ partial "languageSelect.html" . }}
+                {{ end }}
+
                 {{ partial "footer.html" . }}
             {{ end }}
         </footer>
