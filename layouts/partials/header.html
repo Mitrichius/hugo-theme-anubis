@@ -1,9 +1,9 @@
 <h1 class="site-header">
-    <a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
+    <a href="{{ .Site.BaseURL | relLangURL }}">{{ .Site.Title }}</a>
 </h1>
 <nav>
     {{ $currentPage := . }}
     {{ range .Site.Menus.main }}
-    <a class="{{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} active{{end}}" href="{{ .URL }}" title="{{ .Title }}">{{ .Name }}</a>
+    <a class="{{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} active{{end}}" href="{{ .URL | absLangURL }}" title="{{ .Title }}">{{ .Name }}</a>
     {{ end }}
 </nav>
