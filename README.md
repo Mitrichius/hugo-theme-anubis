@@ -13,7 +13,8 @@ Anubis is a simple minimalist theme for [Hugo blog engine](https://gohugo.io/).
 - Google Analytics
 - Disqus
 - RSS feeds
-- Translations (en, ru, fr) 
+- Translations (en, ru, fr, pl)
+- Multilingual mode 
 
 ## Installation
 
@@ -71,6 +72,9 @@ Now enter [`localhost:1313`](http://localhost:1313/) in the address bar of your 
 Only works for production environment. You either build your site with variable like
 `HUGO_ENV=production hugo --minify`
 or just put `env: production` to `params` section of config.
+
+### Multilingual mode 
+Check config/example usage in [exampleSiteMultilingual](https://github.com/Mitrichius/hugo-theme-anubis/tree/master/exampleSiteMultilingual) directory and documentation on [Hugo site](https://gohugo.io/content-management/multilingual/).
 
 ## Contributing
 
