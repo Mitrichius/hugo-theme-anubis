@@ -7,13 +7,13 @@
                 {{ if eq .Paginator.PageNumber 2 }}
                 <a href="{{ .Site.BaseURL }}{{ .Site.LanguagePrefix }}">{{ $toNewPostsMessage }}</a>
                 {{ else }}
-                <a href="{{ .Paginator.Prev.URL | absURL }}">{{ $toNewPostsMessage }}</a>
+                <a href="{{ .Paginator.Prev.URL | absLangURL }}">{{ $toNewPostsMessage }}</a>
                 {{ end }}
             {{ end }}
         </div>
         <div class="right pagination-item {{ if not .Paginator.HasNext }}disabled{{ end }}">
             {{ if .Paginator.HasNext }}
-            <a href="{{ .Paginator.Next.URL | absURL }}">{{ $toOldPostsMessage }}</a>
+            <a href="{{ .Paginator.Next.URL | absLangURL }}">{{ $toOldPostsMessage }}</a>
             {{ end }}
         </div>
     </div>

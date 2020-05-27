@@ -2,7 +2,7 @@
 
     <h1>{{ i18n "category" | humanize }}: {{ .Title }}</h1>
     <div class="article-info">
-        <a href="{{ "categories/" | absURL }}">{{ i18n "toAllCategories" | humanize }}</a>
+        <a href="{{ "categories/" | absLangURL }}">{{ i18n "toAllCategories" | humanize }}</a>
     </div>
     {{ range .Data.Pages }}
     <article class="post-list">
