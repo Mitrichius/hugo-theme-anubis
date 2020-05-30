@@ -52,9 +52,9 @@ params:
   author: ""
   description: ""
   images:
-    - images/og-featured.png
+    - images/og-featured.png # relative path to "static" directory
   customCSS:
-    - css/my.css
+    - css/my.css # relative path to "static" directory
   dateFormat: "2006-01-02"
 ```
 
