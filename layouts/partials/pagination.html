@@ -5,15 +5,15 @@
         <div class="left pagination-item {{ if not .Paginator.HasPrev }}disabled{{ end }}">
             {{ if .Paginator.HasPrev }}
                 {{ if eq .Paginator.PageNumber 2 }}
-                <a href="{{ .Site.BaseURL }}{{ .Site.LanguagePrefix }}">{{ $toNewPostsMessage }}</a>
+                <a href="{{ .Site.BaseURL }}{{ .Site.LanguagePrefix}}">{{ $toNewPostsMessage }}</a>
                 {{ else }}
-                <a href="{{ .Paginator.Prev.URL | absLangURL }}">{{ $toNewPostsMessage }}</a>
+                <a href="{{ .Paginator.Prev.URL | relLangURL }}">{{ $toNewPostsMessage }}</a>
                 {{ end }}
             {{ end }}
         </div>
         <div class="right pagination-item {{ if not .Paginator.HasNext }}disabled{{ end }}">
             {{ if .Paginator.HasNext }}
-            <a href="{{ .Paginator.Next.URL | absLangURL }}">{{ $toOldPostsMessage }}</a>
+            <a href="{{ .Paginator.Next.URL | relLangURL }}">{{ $toOldPostsMessage }}</a>
             {{ end }}
         </div>
     </div>
