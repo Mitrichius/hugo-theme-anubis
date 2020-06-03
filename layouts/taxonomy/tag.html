@@ -11,8 +11,9 @@
                 <a href="{{ .RelPermalink }}">{{ .Title }}</a>
             </h1>
         </header>
-        <div class="content">
-            {{ .Summary }}
+
+        <div class="content post-summary">
+            {{ .Summary | safeHTML }}
         </div>
         {{ partial "articleInfoDate.html" . }}
 <!--         {{ if .Truncated }}

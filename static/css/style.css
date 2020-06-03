@@ -304,6 +304,15 @@ article img {
     margin: 1em auto;
 }
 
+.post-summary {
+    margin-top: 0.5em;
+    display: block;
+}
+
+.post-summary > p {
+    display: block;
+}
+
 /* Other pages */
 .terms {
     list-style-type: none;
