@@ -80,7 +80,7 @@ Check config/example usage in [exampleSiteMultilingual](https://github.com/Mitri
 
 ### Robots.txt
 Based on environment.
-For production — allow all, for other — disallow all
+For production — allow all, for other — disallow all.
 
 ## Contributing
 
