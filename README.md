@@ -15,6 +15,7 @@ Anubis is a simple minimalist theme for [Hugo blog engine](https://gohugo.io/).
 - RSS feeds
 - Translations (en, ru, fr, pl)
 - Multilingual mode 
+- Robots.txt 
 
 ## Installation
 
@@ -39,6 +40,7 @@ theme: "anubis"
 paginate: 10
 disqusShortname: yourdiscussshortname
 googleAnalytics: UA-123-45
+enableRobotsTXT: true
 
 menu:
   main:
@@ -75,6 +77,10 @@ or just put `env: production` to `params` section of config.
 
 ### Multilingual mode 
 Check config/example usage in [exampleSiteMultilingual](https://github.com/Mitrichius/hugo-theme-anubis/tree/master/exampleSiteMultilingual) directory and documentation on [Hugo site](https://gohugo.io/content-management/multilingual/).
+
+### Robots.txt
+Based on environment.
+For production — allow all, for other — disallow all
 
 ## Contributing
 
