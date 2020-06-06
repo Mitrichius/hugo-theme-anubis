@@ -215,6 +215,12 @@ main h1 {
 
 /* Articles */
 
+.post-title.favorite::after {
+    content: "★";
+    display: inline-block;
+    margin-left: 0.2em;
+}
+
 
 article:not(:last-of-type) {
     border-bottom: thin solid #f1f1f1;
@@ -234,52 +240,52 @@ article header h1 a {
     color: #333;
 }
 
-.article-info {
+.post-info {
     font-size: 0.75em;
     color: grey;
     margin-top: 1em;
 }
 
-.article-info a {
+.post-info a {
     color: grey;
 }
 
-.article-info a:hover {
+.post-info a:hover {
     color: #a31d1d;
 }
 
-.post-short-list .article-info {
+.post-short-list .post-info {
     margin-top: 0;
     margin-bottom: 1.5em;
 }
 
-.article-taxonomies {
+.post-taxonomies {
     display: inline;
 }
 
-.article-date {
+.post-date {
     white-space: nowrap;
 }
 
-.article-categories {
+.post-categories {
     display: inline;
     list-style-type: none;
     padding: 0;
 }
 
-.article-categories li {
+.post-categories li {
     display: inline;
     margin-right: 1em;
 }
 
-.article-tags {
+.post-tags {
     display: inline;
     list-style-type: none;
     padding: 0;
     margin: 0;
 }
 
-.article-tags li {
+.post-tags li {
     display: inline;
     margin-right: 1em;
 }

@@ -3,16 +3,14 @@
         {{ .Content }}
     </div>
 
-    <h1>{{ i18n .Title }}</h1>
+    <h1 class="post-title{{ if .Params.favorite }} favorite{{end}}">{{ i18n .Title }}</h1>
     {{ $pages := where site.RegularPages "Type" "in" site.Params.mainSections }}
     {{ range $pages }}
         <div class="post-short-list">
             <header> 
-                <h2>
-                    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-                </h2>
+                <h2 class="post-title{{ if .Params.favorite }} favorite{{end}}"><a href="{{ .RelPermalink }}">{{ trim .Title " " }}</a></h2>
             </header>
-            {{ partial "articleInfoFull.html" . }}
+            {{ partial "postInfoFull.html" . }}
         </div>
     {{ end }}
 

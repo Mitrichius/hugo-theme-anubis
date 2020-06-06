@@ -16,6 +16,7 @@ Anubis is a simple minimalist theme for [Hugo blog engine](https://gohugo.io/).
 - Translations (en, ru, fr, pl)
 - Multilingual mode 
 - Robots.txt 
+- Favorite posts
 
 ## Installation
 
@@ -79,8 +80,11 @@ or just put `env: production` to `params` section of config.
 Check config/example usage in [exampleSiteMultilingual](https://github.com/Mitrichius/hugo-theme-anubis/tree/master/exampleSiteMultilingual) directory and documentation on [Hugo site](https://gohugo.io/content-management/multilingual/).
 
 ### Robots.txt
-Based on environment.
+Based on environment.  
 For production — allow all, for other — disallow all.
+
+### Favorite posts
+To mark posts as favorite just add `favorite: true` in post's front matter. It adds a "★" icon nearby post's title. 
 
 ## Contributing
 

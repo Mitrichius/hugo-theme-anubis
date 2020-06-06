@@ -3,20 +3,20 @@
     {{ $dateFormat = .Site.Params.dateFormat }}
 {{ end }}
 
-<div class="article-info">
+<div class="post-info">
     {{ if .Params.date }}
-        <div class="article-date">{{ .Params.date.Format $dateFormat }}</div>
+        <div class="post-date">{{ .Params.date.Format $dateFormat }}</div>
     {{ end }}
-    <div class="article-taxonomies">
+    <div class="post-taxonomies">
         {{ if .Params.categories }}
-            <ul class="article-categories">
+            <ul class="post-categories">
                 {{ range .Params.categories }}
                     <li><a href="{{ "categories/" | absLangURL }}{{ . }}">{{ . }}</a></li>
                 {{ end }}
             </ul>
             {{ end }}
             {{ if .Params.tags }}
-                <ul class="article-tags">
+                <ul class="post-tags">
                     {{ range .Params.tags }}
                         <li><a href="{{ "tags/" | absLangURL }}{{ . | urlize }}">#{{ . }}</a></li>
                     {{ end }}
