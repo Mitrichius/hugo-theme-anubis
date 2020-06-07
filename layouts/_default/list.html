@@ -10,7 +10,7 @@
             <header> 
                 <h2 class="post-title{{ if .Params.favorite }} favorite{{end}}"><a href="{{ .RelPermalink }}">{{ trim .Title " " }}</a></h2>
             </header>
-            {{ partial "postInfoFull.html" . }}
+            {{ partial "postInfo.html" . }}
         </div>
     {{ end }}
 

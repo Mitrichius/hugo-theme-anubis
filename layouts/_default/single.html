@@ -7,7 +7,7 @@
         <div class="content">
             {{ .Content }}
         </div>
-        {{ partial "postInfoFull.html" . }}
+        {{ partial "postInfo.html" . }}
     </article>
     {{ if .Site.DisqusShortname }}
         {{ template "_internal/disqus.html" . }}

@@ -1,0 +1,11 @@
+{{ define "main" }}
+    <h1>{{ i18n .Data.Singular | humanize }}: {{ .Title }}</h1>
+    <div class="post-info">
+        <a href="{{ (printf "%s/%s" .Site.LanguagePrefix .Data.Plural) | absLangURL }}">{{ i18n (printf "toAll%s" (.Data.Plural | humanize )) | humanize }}</a>
+    </div>
+    {{ range .Paginator.Pages }}
+        {{ partial "postSummary.html" . }}
+    {{ end }}
+    {{ partial "pagination.html" . }}
+
+{{ end }}
