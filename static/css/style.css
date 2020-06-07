@@ -351,9 +351,16 @@ article img {
     color: #333333;
 }
 
-.pagination-item a:hover, .pagination-item   a:focus {
+.pagination-item a:hover, .pagination-item a:focus {
     color: #a31d1d;
     border-bottom: 0;
+}
+
+.post-pagination .pagination-item {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 16em;
 }
 
 /* Footer */
@@ -417,5 +424,9 @@ ul.language-select > li {
 
     header nav a {
         margin-left: 5%;
+    }
+
+    .post-pagination .pagination-item {
+        max-width: 10em;
     }
 }

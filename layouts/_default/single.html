@@ -9,6 +9,11 @@
         </div>
         {{ partial "postInfo.html" . }}
     </article>
+
+    {{ if .Site.Params.paginationSinglePost}}
+        {{ partial "paginationPost.html" . }}
+    {{ end }}
+
     {{ if .Site.DisqusShortname }}
         {{ template "_internal/disqus.html" . }}
     {{ end }}

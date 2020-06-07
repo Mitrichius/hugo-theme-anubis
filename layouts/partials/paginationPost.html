@@ -1,0 +1,14 @@
+{{ if or ( .PrevInSection ) ( .NextInSection ) }}
+    <div class="pagination post-pagination">
+        <div class="left pagination-item {{ if not .PrevInSection }}disabled{{ end }}">
+            {{ if .PrevInSection }}
+                <a href="{{ .PrevInSection.Permalink | relLangURL }}">{{ .PrevInSection.Title }}</a>
+            {{ end }}
+        </div>
+        <div class="right pagination-item {{ if not .NextInSection }}disabled{{ end }}">
+            {{ if .NextInSection }}
+                <a href="{{ .NextInSection.Permalink | relLangURL }}">{{ .NextInSection.Title }}</a>
+            {{ end }}
+        </div>
+    </div>
+{{ end }}
