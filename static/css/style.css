@@ -297,6 +297,13 @@ article img {
     margin: 0 auto .5em;
 }
 
+article figcaption {
+    text-align: center;
+    font-size: 0.85em;
+    color: grey;
+    margin-bottom: 2em;
+}
+
 .read-more {
     font-size: 0.85em;
 }
