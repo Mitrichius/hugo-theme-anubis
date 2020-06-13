@@ -61,6 +61,11 @@ params:
     - css/my.css # relative path to "static" directory
   dateFormat: "2006-01-02"
   paginationSinglePost: true
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true # enable raw HTML in Markdown
 ```
 
 ### Check your site
