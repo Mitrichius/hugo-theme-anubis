@@ -34,6 +34,19 @@ googleAnalytics = ""
     url = "/posts/"
     weight = 3
 
+  [[menu.homepage]]
+    name = "About us"
+    identifier = "about"
+    url = "/homepage/about/"
+    weight = 1
+
+  [[menu.homepage]]
+    name = "Our Work"
+    identifier = "work"
+    url = "/homepage/work/"
+    weight = 2
+
+
 [taxonomies]
 category = "categories"
 tag = "tags"

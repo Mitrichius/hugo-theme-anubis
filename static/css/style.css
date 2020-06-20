@@ -200,6 +200,22 @@ header a {
     white-space: nowrap;
 }
 
+.sub-header {
+    margin-top: 1em;
+    font-size: 0.95em;
+    max-width: 100%;
+    text-align: left;
+}
+
+.sub-header a:first-of-type {
+    margin-left: 0;
+}
+
+.sub-header a {
+    color: #696969;
+    margin-left: 2em;
+}
+
 /* Pages */
 main h1 {
     margin-top: 1em;
@@ -415,6 +431,14 @@ ul.language-select > li {
 
     .site-header {
         text-align: center;
+    }
+
+    .sub-header {
+        text-align: center;
+        background: #fafafa;
+    }
+    .sub-header a {
+        margin-left: 5%;
     }
 
     header nav {

@@ -13,7 +13,8 @@
                 {{ partial "header.html" . }}
             {{ end }}
         </header>
-        <main id="main" tabindex="-1"> 
+        <main id="main" tabindex="-1">
+            {{ partial "subheader.html" . }}
             {{ block "main" . }}{{ end }}
         </main>
         <footer>

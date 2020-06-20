@@ -1,0 +1,12 @@
+<nav class="sub-header">
+    {{ $cur := trim .RelPermalink "/" }}
+    {{ range (index $.Site.Menus $cur) }}
+    <a href="{{ .URL }}" title="{{ .Title }}">{{ .Name }}</a>
+    {{ end }}
+    {{ if .Parent }}
+    {{ $parent := trim .Parent.RelPermalink "/" }}
+    {{ range (index $.Site.Menus $parent) }}
+    <a href="{{ .URL }}" title="{{ .Title }}">{{ .Name }}</a>
+    {{ end }}
+    {{ end }}
+</nav>
