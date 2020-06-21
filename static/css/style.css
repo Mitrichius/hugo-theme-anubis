@@ -11,8 +11,6 @@ html {
 
 body {
     margin: 0;
-    background: #ffffff;
-    color: #333;
     font-size: 18px;
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
@@ -59,20 +57,12 @@ h3 {
 /* Links */
 
 a {
-    color: #1d60a3;
     text-decoration: none;
 }
 
 a:active,
 a:hover {
     outline: 0;
-}
-
-a:hover,
-a:focus, 
-a:active {
-    color: #a31d1d;
-    border-bottom: 1px solid rgba(163, 29, 29, .5);
 }
 
 a:active {
@@ -112,19 +102,14 @@ table {
     border-spacing: 0;
 }
 
-thead {
-    background: lightgrey;
-}
 
 th, td {
     padding: 0.5em 1em;
-    border: 1px double lightgrey;
 }
 
 /* Code */
 pre {
     padding: 1em;
-    background-color: #f1f1f1;
     max-width: 100%;
     overflow: auto;
 }
@@ -140,7 +125,6 @@ kbd {
 /* Styles */
 
 blockquote {
-    border-left: 2px solid #cccccc;
     padding: 0.1em 1em;
     margin-left: 0.75em;
 }
@@ -153,7 +137,6 @@ p {
 hr {
     height: 1px;
     border: 0;
-    border-top: 1px solid #cccccc;
 }
 
 ul ol, ol ol, ul ul {
@@ -184,19 +167,18 @@ header nav {
     margin-top: 1em;
     max-width: 100%;
     text-align: right;
-    margin-bottom: 1em;
 }
 
 header nav a {
     margin-left: 2em;
 }
 
-header a {
-    color: #333;
+.site-title {
+    white-space: nowrap;
 }
 
-.site-header {
-    white-space: nowrap;
+.common-header {
+    padding-bottom: 2em;
 }
 
 /* Pages */
@@ -218,7 +200,6 @@ main h1 {
     text-align: center;
     margin-top: 1em;
     max-width: 100%;
-    background: #fafafa;
     padding: 0.5em 0;
 }
 
@@ -227,18 +208,11 @@ main h1 {
 }
 
 .post-navigation a {
-    color: #696969;
     margin-left: 2em;
 }
 
-.post-navigation a:hover, 
-.post-navigation a:focus,
-.post-navigation a:active {
-    color: #a31d1d;
-}
-
 .post-title.favorite::after {
-    content: "★";
+    content: "☆";
     display: inline-block;
     margin-left: 0.2em;
 }
@@ -250,13 +224,12 @@ main h1 {
 }
 
 .post-title.favorite.draft::after {
-    content: "★ ✎";
+    content: "☆ ✎";
     display: inline-block;
     margin-left: 0.2em;
 }
 
 article:not(:last-of-type) {
-    border-bottom: thin solid #f1f1f1;
     padding-bottom: 2em;
 }
 
@@ -270,21 +243,11 @@ article header h1 {
 article header h1 a {
     border: none;
     text-decoration: none;
-    color: #333;
 }
 
 .post-info {
     font-size: 0.75em;
-    color: grey;
     margin-top: 1em;
-}
-
-.post-info a {
-    color: grey;
-}
-
-.post-info a:hover {
-    color: #a31d1d;
 }
 
 .post-short-list .post-info {
@@ -333,7 +296,6 @@ article img {
 article figcaption {
     text-align: center;
     font-size: 0.85em;
-    color: grey;
     margin-bottom: 2em;
 }
 
@@ -345,7 +307,6 @@ article figcaption {
     display: block;
     height: 1px;
     border: 0;
-    border-top: thin solid #f1f1f1;
     width: 25%;
     margin: 1em auto;
 }
@@ -379,7 +340,6 @@ article figcaption {
 }
 
 .pagination-item {
-    background: #fafafa;
     padding: 0.75em 0.75em;
 }
 
@@ -387,12 +347,7 @@ article figcaption {
     visibility: hidden;
 }
 
-.pagination-item a {
-    color: #333333;
-}
-
 .pagination-item a:hover, .pagination-item a:focus {
-    color: #a31d1d;
     border-bottom: 0;
 }
 
@@ -406,7 +361,6 @@ article figcaption {
 /* Footer */
 
 footer {
-    border-top: thin solid #f1f1f1;
     margin-top: 3em;
     font-size: 16px;
 }
@@ -454,7 +408,6 @@ ul.language-select > li {
         margin-top: 1em;
         max-width: 100%;
         text-align: center;
-        background: #fafafa;
         padding: 0.5em 0;
     }
 
@@ -468,7 +421,6 @@ ul.language-select > li {
 
     .post-navigation {
         text-align: center;
-        background: #fafafa;
         padding: 0.5em 0;
     }
 

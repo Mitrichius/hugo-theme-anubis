@@ -8,7 +8,7 @@
 <body>
     <a class="skip-main" href="#main">{{ i18n "skipToContent" | humanize }}</a>
     <div class="container">
-        <header> 
+        <header class="common-header"> 
             {{ block "header" . }}
                 {{ partial "header.html" . }}
             {{ end }}
