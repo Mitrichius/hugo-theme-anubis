@@ -18,6 +18,7 @@ Anubis is a simple minimalist theme for [Hugo blog engine](https://gohugo.io/).
 - Robots.txt 
 - Favorite posts
 - Pagination on post single page
+- Head customization
 
 ## Installation
 
@@ -90,6 +91,9 @@ To mark posts as favorite just add `favorite: true` in post's front matter. It a
 
 ### Pagination on post single page
 Enabled by `paginationSinglePost` param in `params` section of config.
+
+### Head customization 
+Create a partial template in `layout/partial/headCustom.html` with the extra markup you want to add in the `<head>` section of your pages (for example custom tracking scripts).
 
 ## Contributing
 
