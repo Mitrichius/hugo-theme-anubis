@@ -221,6 +221,17 @@ main h1 {
     margin-left: 0.2em;
 }
 
+.post-title.draft::after {
+    content: "✎";
+    display: inline-block;
+    margin-left: 0.2em;
+}
+
+.post-title.favorite.draft::after {
+    content: "★ ✎";
+    display: inline-block;
+    margin-left: 0.2em;
+}
 
 article:not(:last-of-type) {
     border-bottom: thin solid #f1f1f1;
