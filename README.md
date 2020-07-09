@@ -83,12 +83,12 @@ Now enter [`localhost:1313`](http://localhost:1313/) in the address bar of your 
 ### Dark Mode
 Customize via `style` param in `params` section of config.
 Options:
-- light-without-switcher - light theme, without switcher, JS-free (by default)
-- dark-without-switcher - dark theme, without switcher, JS-free
-- auto-without-switcher - theme based on user system settings, without switcher, JS-free
-- light - light theme by default, can be switched by user to dark theme and back. Theme settings are saved for user 
-- dark - dark theme by default, can be switched by user to light theme and back. Theme settings are saved for user 
-- auto - theme based on user system settings by default, can be switched by user to dark/light theme. Theme settings are saved for user 
+- `light-without-switcher` - light theme, without switcher, JS-free (by default)
+- `dark-without-switcher` - dark theme, without switcher, JS-free
+- `auto-without-switcher` - theme based on user system settings, without switcher, JS-free
+- `light` - light theme by default, can be switched by user to dark theme and back. Theme settings are saved for user 
+- `dark` - dark theme by default, can be switched by user to light theme and back. Theme settings are saved for user 
+- `auto` - theme based on user system settings by default, can be switched by user to dark/light theme. Theme settings are saved for user 
 
 ### Google Analytics
 Only works for production environment. You either build your site with variable like
