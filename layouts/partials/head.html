@@ -14,18 +14,9 @@
 <link rel="icon" type="image/x-icon" href="{{ "favicon.ico" | absURL }}">
 <link rel="apple-touch-icon-precomposed" href="{{ "favicon.png" | absURL }}">
 
+<link rel="stylesheet" href="{{ "css/light.css" | absURL }}?rnd={{ now.Unix }}" />
+{{ partial "cssColors.html" }}
 <link rel="stylesheet" href="{{ "css/style.css" | absURL }}?rnd={{ now.Unix }}" />
-
-{{- $style := "light" -}}
-{{- if and (isset site.Params "style") (ne site.Params.style "") -}}
-{{- $style = site.Params.style | lower -}}
-{{- end -}}
-
-{{- if eq $style "dark" -}} 
-<link rel="stylesheet" href="{{ "css/dark.css" | absURL }}?rnd={{ now.Unix }}" />
-{{- else -}}
-    <link rel="stylesheet" href="{{ "css/light.css" | absURL }}?rnd={{ now.Unix }}" />
-{{- end -}}
 
 {{ range .Site.Params.customCSS -}}
 <link rel="stylesheet" href="{{ . | absURL }}?rnd={{ now.Unix }}">

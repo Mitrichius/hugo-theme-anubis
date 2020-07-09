@@ -1,5 +1,6 @@
 /* Basic */
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
 html {
     font-family: -apple-system, BlinkMacSystemFont, 'Montserrat', 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     /* 1 */
@@ -14,6 +15,8 @@ body {
     font-size: 18px;
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
+    color: var(--font-color);
+    background: var(--bg-color);
 }
 
 article,
@@ -57,7 +60,15 @@ h3 {
 /* Links */
 
 a {
+    color: var(--link-color);
     text-decoration: none;
+}
+
+a:hover,
+a:focus,
+a:active {
+    color: var(--link-state-color);
+    border-bottom: 1px solid var(--link-state-border-color);
 }
 
 a:active,
@@ -93,6 +104,10 @@ a.skip-main:active {
 }
 
 /* Table */
+thead {
+    background: var(--thead-bg-color);
+}
+
 .table-wrapper {
     overflow-x: auto;
 }
@@ -105,10 +120,13 @@ table {
 
 th, td {
     padding: 0.5em 1em;
+    border: 1px double var(--table-border-color);
 }
 
 /* Code */
 pre {
+    color: var(--pre-color)
+    background-color: var(--pre-bg-color);
     padding: 1em;
     max-width: 100%;
     overflow: auto;
@@ -125,6 +143,7 @@ kbd {
 /* Styles */
 
 blockquote {
+    border-left: 2px solid var(--bq-color);
     padding: 0.1em 1em;
     margin-left: 0.75em;
 }
@@ -135,6 +154,7 @@ p {
 }
 
 hr {
+    border-top: 1px solid var(--hr-color);
     height: 1px;
     border: 0;
 }
@@ -148,6 +168,10 @@ ul ol, ol ol, ul ul {
 header {
     display: flex;
     justify-content: space-between;
+}
+
+header a {
+    color: var(--font-color);
 }
 
 header h1 {
@@ -178,7 +202,8 @@ header nav a {
 }
 
 .common-header {
-    padding-bottom: 2em;
+    padding-bottom: 1.5em;
+    border-bottom: thin solid var(--hr-color);
 }
 
 /* Pages */
@@ -197,6 +222,7 @@ main h1 {
 /* Articles */
 
 .post-navigation {
+    background: var(--pagination-bg-color);
     text-align: center;
     margin-top: 1em;
     max-width: 100%;
@@ -208,7 +234,14 @@ main h1 {
 }
 
 .post-navigation a {
+    color: var(--pagination-link-color);
     margin-left: 2em;
+}
+
+.post-navigation a:hover, 
+.post-navigation a:focus,
+.post-navigation a:active {
+    color: var(--link-state-color);
 }
 
 .post-title.favorite::after {
@@ -230,6 +263,7 @@ main h1 {
 }
 
 article:not(:last-of-type) {
+    border-bottom: thin solid var(--hr-color);
     padding-bottom: 2em;
 }
 
@@ -241,13 +275,23 @@ article header h1 {
 }
 
 article header h1 a {
+    color: var(--font-color);
     border: none;
     text-decoration: none;
 }
 
 .post-info {
+    color: var(--post-info-color);
     font-size: 0.75em;
     margin-top: 1em;
+}
+
+.post-info a {
+    color: var(--post-info-color);
+}
+
+.post-info a:hover {
+    color: var(--link-state-color);
 }
 
 .post-short-list .post-info {
@@ -294,6 +338,7 @@ article img {
 }
 
 article figcaption {
+    color: grey;
     text-align: center;
     font-size: 0.85em;
     margin-bottom: 2em;
@@ -304,6 +349,7 @@ article figcaption {
 }
 
 .divider {
+    border-top: thin solid var(--hr-color);
     display: block;
     height: 1px;
     border: 0;
@@ -333,14 +379,21 @@ article figcaption {
     display: flex;
     justify-content: space-between;
     margin-top: 3em;
-}
-
-.pagination {
     text-align: center;   
 }
 
 .pagination-item {
+    background: var(--pagination-bg-color);
     padding: 0.75em 0.75em;
+}
+
+.pagination-item a {
+    color: var(--pagination-link-color);
+}
+
+.pagination-item a:hover, 
+.pagination-item a:focus {
+    color: var(--link-state-color);
 }
 
 .disabled {
@@ -360,9 +413,15 @@ article figcaption {
 
 /* Footer */
 
-footer {
+.common-footer {
+    border-top: thin solid var(--hr-color);
+    padding-top: 1.5em;
     margin-top: 3em;
     font-size: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
 }
 
 ul.language-select {
@@ -372,6 +431,15 @@ ul.language-select {
 }
 
 ul.language-select > li {
+    margin-right: 1em;
+}
+
+.theme-switcher {
+    color: var(--switcher-color);
+    background: var(--switcher-bg-color);
+    padding: 0.5em 1em;
+    font-size: 16px;
+    border: none;
     margin-right: 1em;
 }
 
@@ -405,6 +473,7 @@ ul.language-select > li {
     }
 
     header nav {
+        background: var(--pagination-bg-color);
         margin-top: 1em;
         max-width: 100%;
         text-align: center;
@@ -420,6 +489,7 @@ ul.language-select > li {
     }
 
     .post-navigation {
+        background: var(--pagination-bg-color);
         text-align: center;
         padding: 0.5em 0;
     }

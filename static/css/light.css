@@ -1,128 +1,25 @@
-body {
-    background: #fff;
-    color: #333;
-}
+:root {
+    --font-color: #333;
+    --bg-color: #fff;
 
-/* Links */
+    --link-color:#1d60a3;
+    --link-state-color:#a31d1d;
+    --link-state-border-color: rgba(163, 29, 29, .5);
 
-a {
-    color: #1d60a3;
-}
+    --thead-bg-color: lightgrey;
+    --table-border-color: lightgrey;
 
-a:hover,
-a:focus,
-a:active {
-    color: #a31d1d;
-    border-bottom: 1px solid rgba(163, 29, 29, .5);
-}
+    --pre-color: #333;
+    --pre-bg-color: #f1f1f1;
+    
+    --bq-color: #ccc;
+    --hr-color: #ccc;
 
-/* Table */
-thead {
-    background: lightgrey;
-}
+    --pagination-bg-color: #fafafa;
+    --pagination-link-color: #696969;
 
-th, td {
-    border: 1px double lightgrey;
-}
+    --post-info-color: grey;
 
-/* Code */
-pre {
-    background-color: #f1f1f1;
-}
-
-/* Styles */
-
-blockquote {
-    border-left: 2px solid #ccc;
-}
-
-hr {
-    border-top: 1px solid #ccc;
-}
-
-/* Header */
-
-header a {
-    color: #333;
-}
-
-.common-header {
-    border-bottom: thin solid #f1f1f1;
-}
-
-/* Articles */
-
-.post-navigation {
-    background: #fafafa;
-}
-
-.post-navigation a {
-    color: #696969;
-}
-
-.post-navigation a:hover, 
-.post-navigation a:focus,
-.post-navigation a:active {
-    color: #a31d1d;
-}
-
-article:not(:last-of-type) {
-    border-bottom: thin solid #f1f1f1;
-}
-
-article header h1 a {
-    color: #333;
-}
-
-.post-info {
-    color: grey;
-}
-
-.post-info a {
-    color: grey;
-}
-
-.post-info a:hover {
-    color: #a31d1d;
-}
-
-article figcaption {
-    color: grey;
-}
-
-
-.divider {
-    border-top: thin solid #f1f1f1;
-}
-
-/* Pagination */
-
-.pagination-item {
-    background: #fafafa;
-}
-
-.pagination-item a {
-    color: #333;
-}
-
-.pagination-item a:hover, .pagination-item a:focus {
-    color: #a31d1d;
-}
-
-/* Footer */
-
-footer {
-    border-top: thin solid #f1f1f1;
-}
-
-/* Media Queries */
-
-@media (max-width: 840px) {
-    header nav {
-        background: #fafafa;
-    }
-
-    .post-navigation {
-        background: #fafafa;
-    }
+    --switcher-color: #fff;
+    --switcher-bg-color: #333; 
 }
