@@ -1,0 +1,18 @@
+<style>
+{{ if eq site.Params.style "dark-without-switcher" }}
+    :root {
+        {{ partial "dark.css" . | safeCSS }}
+    }
+{{ else if eq site.Params.style "auto-without-switcher" }}
+    @media (prefers-color-scheme: dark) {
+        :root {
+            {{ partial "dark.css" . | safeCSS }}
+        }
+        
+    }
+{{else }}
+    [data-theme="dark"] {   
+        {{ partial "dark.css" . | safeCSS }}
+    }
+{{ end }}
+</style>

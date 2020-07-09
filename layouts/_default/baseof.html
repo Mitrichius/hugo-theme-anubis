@@ -1,5 +1,9 @@
 <!DOCTYPE html>
-<html lang="{{ .Site.LanguageCode }}">
+{{ $dataTheme := "" }}
+{{ if eq site.Params.style "dark-without-switcher" }}
+    {{ $dataTheme = "dark" }}
+{{ end }}
+<html lang="{{ .Site.LanguageCode }}" data-theme="{{ $dataTheme }}">
 <head>
     {{ block "head" . }}
         {{ partial "head.html" . }}
@@ -8,7 +12,7 @@
 <body>
     <a class="skip-main" href="#main">{{ i18n "skipToContent" | humanize }}</a>
     <div class="container">
-        <header> 
+        <header class="common-header"> 
             {{ block "header" . }}
                 {{ partial "header.html" . }}
             {{ end }}
@@ -16,16 +20,9 @@
         <main id="main" tabindex="-1"> 
             {{ block "main" . }}{{ end }}
         </main>
-        <footer>
-            {{ block "footer" . }}
-                {{ $languagesCount := $.Site.Home.AllTranslations }}
-                {{ if gt $languagesCount 1 }}
-                    {{ partial "languageSelect.html" . }}
-                {{ end }}
-
-                {{ partial "footer.html" . }}
-            {{ end }}
-        </footer>
+        {{ block "footer" . }}
+            {{ partial "footer.html" . }}
+        {{ end }}
     </div>
 </body>
 </html>

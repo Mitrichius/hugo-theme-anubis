@@ -14,6 +14,8 @@
 <link rel="icon" type="image/x-icon" href="{{ "favicon.ico" | absURL }}">
 <link rel="apple-touch-icon-precomposed" href="{{ "favicon.png" | absURL }}">
 
+<link rel="stylesheet" href="{{ "css/light.css" | absURL }}?rnd={{ now.Unix }}" />
+{{ partial "cssColors.html" }}
 <link rel="stylesheet" href="{{ "css/style.css" | absURL }}?rnd={{ now.Unix }}" />
 
 {{ range .Site.Params.customCSS -}}

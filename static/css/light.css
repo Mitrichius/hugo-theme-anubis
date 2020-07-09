@@ -1,0 +1,25 @@
+:root {
+    --font-color: #333;
+    --bg-color: #fff;
+
+    --link-color:#1d60a3;
+    --link-state-color:#a31d1d;
+    --link-state-border-color: rgba(163, 29, 29, .5);
+
+    --thead-bg-color: lightgrey;
+    --table-border-color: lightgrey;
+
+    --pre-color: #333;
+    --pre-bg-color: #f1f1f1;
+    
+    --bq-color: #ccc;
+    --hr-color: #ccc;
+
+    --pagination-bg-color: #fafafa;
+    --pagination-link-color: #696969;
+
+    --post-info-color: grey;
+
+    --switcher-color: #fff;
+    --switcher-bg-color: #333; 
+}

@@ -1,5 +1,6 @@
 /* Basic */
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
 html {
     font-family: -apple-system, BlinkMacSystemFont, 'Montserrat', 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     /* 1 */
@@ -11,11 +12,11 @@ html {
 
 body {
     margin: 0;
-    background: #ffffff;
-    color: #333;
     font-size: 18px;
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
+    color: var(--font-color);
+    background: var(--bg-color);
 }
 
 article,
@@ -59,20 +60,20 @@ h3 {
 /* Links */
 
 a {
-    color: #1d60a3;
+    color: var(--link-color);
     text-decoration: none;
+}
+
+a:hover,
+a:focus,
+a:active {
+    color: var(--link-state-color);
+    border-bottom: 1px solid var(--link-state-border-color);
 }
 
 a:active,
 a:hover {
     outline: 0;
-}
-
-a:hover,
-a:focus, 
-a:active {
-    color: #a31d1d;
-    border-bottom: 1px solid rgba(163, 29, 29, .5);
 }
 
 a:active {
@@ -103,6 +104,10 @@ a.skip-main:active {
 }
 
 /* Table */
+thead {
+    background: var(--thead-bg-color);
+}
+
 .table-wrapper {
     overflow-x: auto;
 }
@@ -112,19 +117,17 @@ table {
     border-spacing: 0;
 }
 
-thead {
-    background: lightgrey;
-}
 
 th, td {
     padding: 0.5em 1em;
-    border: 1px double lightgrey;
+    border: 1px double var(--table-border-color);
 }
 
 /* Code */
 pre {
+    color: var(--pre-color)
+    background-color: var(--pre-bg-color);
     padding: 1em;
-    background-color: #f1f1f1;
     max-width: 100%;
     overflow: auto;
 }
@@ -140,7 +143,7 @@ kbd {
 /* Styles */
 
 blockquote {
-    border-left: 2px solid #cccccc;
+    border-left: 2px solid var(--bq-color);
     padding: 0.1em 1em;
     margin-left: 0.75em;
 }
@@ -151,9 +154,9 @@ p {
 }
 
 hr {
+    border-top: 1px solid var(--hr-color);
     height: 1px;
     border: 0;
-    border-top: 1px solid #cccccc;
 }
 
 ul ol, ol ol, ul ul {
@@ -165,6 +168,10 @@ ul ol, ol ol, ul ul {
 header {
     display: flex;
     justify-content: space-between;
+}
+
+header a {
+    color: var(--font-color);
 }
 
 header h1 {
@@ -184,19 +191,19 @@ header nav {
     margin-top: 1em;
     max-width: 100%;
     text-align: right;
-    margin-bottom: 1em;
 }
 
 header nav a {
     margin-left: 2em;
 }
 
-header a {
-    color: #333;
+.site-title {
+    white-space: nowrap;
 }
 
-.site-header {
-    white-space: nowrap;
+.common-header {
+    padding-bottom: 1.5em;
+    border-bottom: thin solid var(--hr-color);
 }
 
 /* Pages */
@@ -215,10 +222,10 @@ main h1 {
 /* Articles */
 
 .post-navigation {
+    background: var(--pagination-bg-color);
     text-align: center;
     margin-top: 1em;
     max-width: 100%;
-    background: #fafafa;
     padding: 0.5em 0;
 }
 
@@ -227,18 +234,18 @@ main h1 {
 }
 
 .post-navigation a {
-    color: #696969;
+    color: var(--pagination-link-color);
     margin-left: 2em;
 }
 
 .post-navigation a:hover, 
 .post-navigation a:focus,
 .post-navigation a:active {
-    color: #a31d1d;
+    color: var(--link-state-color);
 }
 
 .post-title.favorite::after {
-    content: "★";
+    content: "☆";
     display: inline-block;
     margin-left: 0.2em;
 }
@@ -250,13 +257,13 @@ main h1 {
 }
 
 .post-title.favorite.draft::after {
-    content: "★ ✎";
+    content: "☆ ✎";
     display: inline-block;
     margin-left: 0.2em;
 }
 
 article:not(:last-of-type) {
-    border-bottom: thin solid #f1f1f1;
+    border-bottom: thin solid var(--hr-color);
     padding-bottom: 2em;
 }
 
@@ -268,23 +275,23 @@ article header h1 {
 }
 
 article header h1 a {
+    color: var(--font-color);
     border: none;
     text-decoration: none;
-    color: #333;
 }
 
 .post-info {
+    color: var(--post-info-color);
     font-size: 0.75em;
-    color: grey;
     margin-top: 1em;
 }
 
 .post-info a {
-    color: grey;
+    color: var(--post-info-color);
 }
 
 .post-info a:hover {
-    color: #a31d1d;
+    color: var(--link-state-color);
 }
 
 .post-short-list .post-info {
@@ -331,9 +338,9 @@ article img {
 }
 
 article figcaption {
+    color: grey;
     text-align: center;
     font-size: 0.85em;
-    color: grey;
     margin-bottom: 2em;
 }
 
@@ -342,10 +349,10 @@ article figcaption {
 }
 
 .divider {
+    border-top: thin solid var(--hr-color);
     display: block;
     height: 1px;
     border: 0;
-    border-top: thin solid #f1f1f1;
     width: 25%;
     margin: 1em auto;
 }
@@ -372,27 +379,28 @@ article figcaption {
     display: flex;
     justify-content: space-between;
     margin-top: 3em;
-}
-
-.pagination {
     text-align: center;   
 }
 
 .pagination-item {
-    background: #fafafa;
+    background: var(--pagination-bg-color);
     padding: 0.75em 0.75em;
+}
+
+.pagination-item a {
+    color: var(--pagination-link-color);
+}
+
+.pagination-item a:hover, 
+.pagination-item a:focus {
+    color: var(--link-state-color);
 }
 
 .disabled {
     visibility: hidden;
 }
 
-.pagination-item a {
-    color: #333333;
-}
-
 .pagination-item a:hover, .pagination-item a:focus {
-    color: #a31d1d;
     border-bottom: 0;
 }
 
@@ -405,10 +413,15 @@ article figcaption {
 
 /* Footer */
 
-footer {
-    border-top: thin solid #f1f1f1;
+.common-footer {
+    border-top: thin solid var(--hr-color);
+    padding-top: 1.5em;
     margin-top: 3em;
     font-size: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
 }
 
 ul.language-select {
@@ -418,6 +431,15 @@ ul.language-select {
 }
 
 ul.language-select > li {
+    margin-right: 1em;
+}
+
+.theme-switcher {
+    color: var(--switcher-color);
+    background: var(--switcher-bg-color);
+    padding: 0.5em 1em;
+    font-size: 16px;
+    border: none;
     margin-right: 1em;
 }
 
@@ -451,10 +473,10 @@ ul.language-select > li {
     }
 
     header nav {
+        background: var(--pagination-bg-color);
         margin-top: 1em;
         max-width: 100%;
         text-align: center;
-        background: #fafafa;
         padding: 0.5em 0;
     }
 
@@ -467,8 +489,8 @@ ul.language-select > li {
     }
 
     .post-navigation {
+        background: var(--pagination-bg-color);
         text-align: center;
-        background: #fafafa;
         padding: 0.5em 0;
     }
 
