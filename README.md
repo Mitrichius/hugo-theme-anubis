@@ -15,6 +15,7 @@ Anubis is a simple minimalist theme for [Hugo blog engine](https://gohugo.io/).
 - Disqus
 - RSS feeds
 - Translations (en, ru, fr, pl)
+- Custom CSS/JS
 - Multilingual mode 
 - Robots.txt 
 - Favorite posts
@@ -60,6 +61,8 @@ params:
     - images/og-featured.png # relative path to "static" directory
   customCSS:
     - css/my.css # relative path to "static" directory
+  customJS:
+    - js/main.js # relative path to "static" directory
   dateFormat: "2006-01-02"
   paginationSinglePost: true
   style: light-without-switcher

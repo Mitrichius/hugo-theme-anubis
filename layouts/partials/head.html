@@ -22,6 +22,10 @@
 <link rel="stylesheet" href="{{ . | absURL }}?rnd={{ now.Unix }}">
 {{- end }}
 
+{{ range .Site.Params.customJS -}}
+<script src="{{ . | absURL }}?rnd={{ now.Unix }}" type="text/javascript" charset="utf-8"></script>
+{{- end }}
+
 {{ template "_internal/opengraph.html" . }}
 {{ template "_internal/twitter_cards.html" . }}
 
