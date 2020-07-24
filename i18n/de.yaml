@@ -1,0 +1,38 @@
+powered:
+  other: "powered by"
+
+theme:
+  other: "theme"
+
+readMore:
+  other: "Weiterlesen"
+
+toNewPosts:
+  other: "zu neueren Beiträgen"
+
+toOldPosts:
+  other: "zu älteren Beiträgen"
+
+tag:
+  other: "tag"
+
+Tags:
+  other: "Tags"
+
+Posts:
+  other: "Beiträge"
+
+category:
+  other: "Kategorie"
+
+Categories:
+  other: "Kategorien"
+
+toAllTags:
+  other: "zu allen tags"
+
+toAllCategories:
+  other: "zu allen Kategorien"
+
+skipToContent:
+  other: "zum Hauptinhalt springen"
