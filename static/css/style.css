@@ -422,13 +422,13 @@ article figcaption {
     justify-content: space-between;
 }
 
-ul.language-select {
+ul.language-select, ul.footer-menu {
     padding-left: 0;
     list-style: none;
     display: flex;
 }
 
-ul.language-select > li {
+ul.language-select, ul.footer-menu > li {
     margin-right: 1em;
 }
 
