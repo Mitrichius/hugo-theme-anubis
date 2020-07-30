@@ -428,7 +428,7 @@ ul.language-select, ul.footer-menu {
     display: flex;
 }
 
-ul.language-select, ul.footer-menu > li {
+ul.language-select > li, ul.footer-menu > li {
     margin-right: 1em;
 }
 
