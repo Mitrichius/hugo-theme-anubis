@@ -416,6 +416,9 @@ article figcaption {
     padding-top: 1.5em;
     margin-top: 3em;
     font-size: 16px;
+}
+
+.common-footer-bottom {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
