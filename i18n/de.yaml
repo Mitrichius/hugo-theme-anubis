@@ -1,23 +1,23 @@
 powered:
-  other: "powered by"
+  other: "Erstellt mit"
 
 theme:
-  other: "theme"
+  other: "Theme"
 
 readMore:
   other: "Weiterlesen"
 
 toNewPosts:
-  other: "zu neueren Beiträgen"
+  other: "Zu neueren Beiträgen"
 
 toOldPosts:
-  other: "zu älteren Beiträgen"
+  other: "Uu älteren Beiträgen"
 
 tag:
-  other: "tag"
+  other: "Schlagwort"
 
 Tags:
-  other: "Tags"
+  other: "Schlagwörter"
 
 Posts:
   other: "Beiträge"
@@ -29,10 +29,10 @@ Categories:
   other: "Kategorien"
 
 toAllTags:
-  other: "zu allen tags"
+  other: "Zu allen Schlagwörtern"
 
 toAllCategories:
-  other: "zu allen Kategorien"
+  other: "Zu allen Kategorien"
 
 skipToContent:
-  other: "zum Hauptinhalt springen"
+  other: "Uum Hauptinhalt springen"
