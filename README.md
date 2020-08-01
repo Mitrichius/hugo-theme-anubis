@@ -1,4 +1,4 @@
-# Anubis Theme for Hugo
+# Anubis Theme for Hugo [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT) [![Donate](https://img.shields.io/badge/Donate-PayPal-blue.svg)](https://www.paypal.com/paypalme/mitrichius/1)
 
 Anubis is a simple minimalist theme for [Hugo blog engine](https://gohugo.io/).
 
