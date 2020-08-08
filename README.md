@@ -113,7 +113,7 @@ Enabled by `paginationSinglePost` param in `params` section of config.
 
 ## Contributing
 
-If you find a bug or have an idea for a feature, feel free to write an [issue](https://github.com/mitrichius/hugo-theme-anubis/issues).
+If you find a bug or have an idea for a feature, feel free to write an [issue](https://github.com/mitrichius/hugo-theme-anubis/issues) or make a PR.
 
 ## TODO
 See [issues](https://github.com/mitrichius/hugo-theme-anubis/issues).
@@ -121,5 +121,5 @@ See [issues](https://github.com/mitrichius/hugo-theme-anubis/issues).
 ## License
 MIT
 
-(c) Dmitry Kolosov
+© Dmitry Kolosov
 2020
