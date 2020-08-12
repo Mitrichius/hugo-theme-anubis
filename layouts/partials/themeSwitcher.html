@@ -5,7 +5,7 @@
 
 {{ if not (in (slice "light-without-switcher" "dark-without-switcher" "auto-without-switcher") $style) }}
     <button class="theme-switcher">
-        Dark theme
+        {{ i18n "darkTheme" | humanize }}
     </button>
 
     <script>
@@ -36,8 +36,6 @@
         switchButton.addEventListener('click', switchTheme, false)
     })
 
-
-
     function detectCurrentScheme() {
         if (localStorage.getItem(STORAGE_KEY)) {
             return localStorage.getItem(STORAGE_KEY)
@@ -55,9 +53,8 @@
     }
 
     function changeButtonText()
-    {
-        console.log(currentTheme)
-        switchButton.textContent = currentTheme == 'dark' ? 'Light theme' : 'Dark theme'
+    {   
+        switchButton.textContent = currentTheme == 'dark' ?  {{ i18n "lightTheme" | humanize }} : {{ i18n "darkTheme" | humanize }}
     }
 
     function switchTheme(e) {

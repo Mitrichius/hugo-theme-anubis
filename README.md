@@ -20,6 +20,7 @@ Anubis is a simple minimalist theme for [Hugo blog engine](https://gohugo.io/).
 - Robots.txt 
 - Favorite posts
 - Pagination on post single page
+- Optional "Read more" link
 
 ## Installation
 
@@ -66,6 +67,7 @@ params:
   dateFormat: "2006-01-02"
   paginationSinglePost: true
   style: light-without-switcher
+  readMore: false
 
 markup:
   goldmark:

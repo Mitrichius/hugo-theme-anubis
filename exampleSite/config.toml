@@ -16,6 +16,7 @@ googleAnalytics = ""
    dateFormat = "2006-01-02"
    paginationSinglePost = true
    style = "light-without-switcher"
+   readMore = false
 
 [menu]
 
