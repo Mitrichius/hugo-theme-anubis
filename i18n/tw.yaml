@@ -1,0 +1,44 @@
+powered:
+  other: "提供"
+
+theme:
+  other: "主題"
+
+readMore:
+  other: "繼續閱讀"
+
+toNewPosts:
+  other: "新文章"
+
+toOldPosts:
+  other: "舊文章"
+
+tag:
+  other: "標籤"
+
+Tags:
+  other: "標籤"
+
+Posts:
+  other: "文章"
+
+category:
+  other: "類別"
+
+Categories:
+  other: "類別"
+
+toAllTags:
+  other: "所有標籤"
+
+toAllCategories:
+  other: "所有類別"
+
+skipToContent:
+  other: "跳至內容"
+
+darkTheme:
+  other: "暗色主題"
+
+lightTheme:
+  other: "亮色主題"
