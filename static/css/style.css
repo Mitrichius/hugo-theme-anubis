@@ -473,7 +473,7 @@ ul.language-select > li {
         text-align: center;
     }
 
-    header nav {
+    header nav:not(:empty){
         background: var(--pagination-bg-color);
         margin-top: 1em;
         max-width: 100%;
