@@ -1,7 +1,7 @@
 <h1 class="site-title">
     <a href="{{ .Site.BaseURL | relLangURL }}">{{ .Site.Title }}</a>
 </h1>
-{{ if .Site.Menus }}
+{{ if .Site.Menus.main }}
     <nav>
         {{ $currentPage := . }}
         {{ range .Site.Menus.main }}
