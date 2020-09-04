@@ -442,6 +442,7 @@ ul.language-select > li {
     font-size: 16px;
     border: none;
     margin-right: 1em;
+    margin-bottom: 1em;
 }
 
 /* Media Queries */
