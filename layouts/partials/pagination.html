@@ -1,6 +1,6 @@
 {{ if or ( .Paginator.HasPrev ) ( .Paginator.HasNext ) }}
-    {{ $toNewPostsMessage := i18n "toNewPosts" | humanize }}
-    {{ $toOldPostsMessage := i18n "toOldPosts" | humanize }}    
+    {{ $toNewPostsMessage := i18n "toNewPosts" }}
+    {{ $toOldPostsMessage := i18n "toOldPosts" }}    
     <div class="pagination">
         <div class="left pagination-item {{ if not .Paginator.HasPrev }}disabled{{ end }}">
             {{ if .Paginator.HasPrev }}

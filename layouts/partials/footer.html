@@ -4,9 +4,15 @@
         {{ partial "languageSelect.html" . }}
     {{ end }}
 
-     
-
     <div class="common-footer-bottom">
+        {{ if .Site.Menus.footer }}
+            {{ $currentPage := . }}
+            <ul class="footer-menu">
+            {{ range .Site.Menus.footer }}
+            <li><a class="{{if or ($currentPage.IsMenuCurrent "footer" .) ($currentPage.HasMenuCurrent "footer" .) }} active{{end}}" href="{{ .URL | absLangURL }}" title="{{ .Title }}">{{ .Name }}</a></li>
+            {{ end }}
+            </ul>
+        {{ end }}
         <div class="copyright">
             <p>© {{ if isset .Site.Params "author"}}{{ .Site.Params.author }}, {{end}}{{ now.Year }}<br>
             {{ i18n "powered" | humanize }} <a target="_blank" rel="noopener noreferrer" href="https://gohugo.io/">Hugo</a>, {{ i18n "theme" }} <a target="_blank" rel="noopener noreferrer" href="https://github.com/mitrichius/hugo-theme-anubis">Anubis</a>.
@@ -15,5 +21,4 @@
 
         {{ partial "themeSwitcher.html" . }}   
     </div>
-
 </footer>

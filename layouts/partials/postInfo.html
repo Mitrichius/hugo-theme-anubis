@@ -11,7 +11,7 @@
         {{ if .Params.categories }}
             <ul class="post-categories">
                 {{ range .Params.categories }}
-                    <li><a href="{{ "categories/" | absLangURL }}{{ . }}">{{ . }}</a></li>
+                    <li><a href="{{ "categories/" | urlize | absLangURL }}">{{ . }}</a></li>
                 {{ end }}
             </ul>
             {{ end }}
