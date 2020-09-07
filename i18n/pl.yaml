@@ -36,3 +36,9 @@ toAllCategories:
 
 skipToContent:
   other: "przejdź do głównej zawartości"
+
+darkTheme:
+  other: "ciemny schemat"
+
+lightTheme:
+  other: "lekki schemat"

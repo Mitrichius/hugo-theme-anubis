@@ -343,7 +343,7 @@ article figcaption {
 }
 
 .read-more {
-    font-size: 0.85em;
+    margin: 1em 0;
 }
 
 .divider {
@@ -442,6 +442,7 @@ ul.language-select > li, ul.footer-menu > li {
     font-size: 16px;
     border: none;
     margin-right: 1em;
+    margin-bottom: 1em;
 }
 
 /* Media Queries */
@@ -473,7 +474,7 @@ ul.language-select > li, ul.footer-menu > li {
         text-align: center;
     }
 
-    header nav {
+    header nav:not(:empty){
         background: var(--pagination-bg-color);
         margin-top: 1em;
         max-width: 100%;

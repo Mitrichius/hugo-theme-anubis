@@ -3,6 +3,7 @@
     {{ if gt $languagesCount 1 }}
         {{ partial "languageSelect.html" . }}
     {{ end }}
+
     <div class="common-footer-bottom">
         {{ if .Site.Menus.footer }}
             {{ $currentPage := . }}
@@ -17,6 +18,7 @@
             {{ i18n "powered" | humanize }} <a target="_blank" rel="noopener noreferrer" href="https://gohugo.io/">Hugo</a>, {{ i18n "theme" }} <a target="_blank" rel="noopener noreferrer" href="https://github.com/mitrichius/hugo-theme-anubis">Anubis</a>.
             </p>  
         </div> 
+
+        {{ partial "themeSwitcher.html" . }}   
     </div>
-    {{ partial "themeSwitcher.html" . }}    
 </footer>

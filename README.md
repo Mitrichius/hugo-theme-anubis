@@ -1,4 +1,4 @@
-# Anubis Theme for Hugo
+# Anubis Theme for Hugo [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT) [![Donate](https://img.shields.io/badge/Donate-PayPal-blue.svg)](https://www.paypal.com/paypalme/mitrichius/1)
 
 Anubis is a simple minimalist theme for [Hugo blog engine](https://gohugo.io/).
 
@@ -20,6 +20,7 @@ Anubis is a simple minimalist theme for [Hugo blog engine](https://gohugo.io/).
 - Robots.txt 
 - Favorite posts
 - Pagination on post single page
+- Optional "Read more" link
 
 ## Installation
 
@@ -66,6 +67,7 @@ params:
   dateFormat: "2006-01-02"
   paginationSinglePost: true
   style: light-without-switcher
+  readMore: false
 
 markup:
   goldmark:
@@ -113,7 +115,7 @@ Enabled by `paginationSinglePost` param in `params` section of config.
 
 ## Contributing
 
-If you find a bug or have an idea for a feature, feel free to write an [issue](https://github.com/mitrichius/hugo-theme-anubis/issues).
+If you find a bug or have an idea for a feature, feel free to write an [issue](https://github.com/mitrichius/hugo-theme-anubis/issues) or make a PR.
 
 ## TODO
 See [issues](https://github.com/mitrichius/hugo-theme-anubis/issues).
@@ -121,5 +123,5 @@ See [issues](https://github.com/mitrichius/hugo-theme-anubis/issues).
 ## License
 MIT
 
-(c) Dmitry Kolosov
+© Dmitry Kolosov
 2020

@@ -36,3 +36,9 @@ toAllCategories:
 
 skipToContent:
   other: "перейти к основному контенту"
+
+darkTheme:
+  other: "тёмная тема"
+
+lightTheme:
+  other: "светлая тема"

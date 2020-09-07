@@ -36,3 +36,9 @@ toAllCategories:
 
 skipToContent:
   other: "Zum Hauptinhalt springen"
+
+darkTheme:
+  other: "Dunkles thema"
+
+lightTheme:
+  other: "Licht thema"

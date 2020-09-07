@@ -9,13 +9,11 @@ aliases:
 author: "Hugo Authors"
 menu:
   about:
-    identifier: about
     name: About
     title: About
     url: /about
     weight: 1
   subpage:
-    identifier: subpage
     parent: about
     name: Subpage
     title: Subpage
