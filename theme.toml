@@ -2,7 +2,20 @@ name = "Anubis"
 license = "MIT"
 description = "A minimal Hugo theme"
 homepage = "https://github.com/mitrichius/hugo-theme-anubis"
-tags = ["blog", "minimal", "simple", "clean"]
+tags = [
+    "blog", 
+    "responsive",
+    "personal",
+    "minimal", 
+    "clean",
+    "simple", 
+    "light",
+    "dark",
+    "google-analytics",
+    "mobile",
+    "fast",
+    "multilingual"
+]
 features = ["blog"]
 
 [author]
