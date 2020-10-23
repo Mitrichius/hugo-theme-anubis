@@ -1,4 +1,5 @@
 :root {
+   /* light.css */ 
     --font-color: #333;
     --bg-color: #fff;
 
@@ -11,7 +12,7 @@
 
     --pre-color: #333;
     --pre-bg-color: #f1f1f1;
-    
+
     --bq-color: #ccc;
     --hr-color: #ccc;
 
