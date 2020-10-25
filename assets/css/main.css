@@ -1,3 +1,24 @@
+{{ $light := resources.Get "css/light.css" }}
+{{ $dark := resources.Get "css/dark.css" }}
+
+{{ $light.Content }}
+
+{{ if eq site.Params.style "dark-without-switcher" }}
+:root {
+    {{ $dark.Content }}
+}
+{{ else if eq site.Params.style "auto-without-switcher" }}
+@media (prefers-color-scheme: dark) {
+    :root {
+        {{ $dark.Content }}
+    }
+}
+{{else }}
+[data-theme="dark"] {
+    {{ $dark.Content }}
+}
+{{ end }}
+
 /* Basic */
 html {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -123,7 +144,7 @@ th, td {
 
 /* Code */
 pre {
-    color: var(--pre-color)
+    color: var(--pre-color);
     background-color: var(--pre-bg-color);
     padding: 1em;
     max-width: 100%;

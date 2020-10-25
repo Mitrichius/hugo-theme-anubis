@@ -14,9 +14,9 @@
 <link rel="icon" type="image/x-icon" href="{{ "favicon.ico" | absURL }}">
 <link rel="apple-touch-icon-precomposed" href="{{ "favicon.png" | absURL }}">
 
-<link rel="stylesheet" href="{{ "css/light.css" | absURL }}?rnd={{ now.Unix }}" />
-{{ partial "cssColors.html" }}
-<link rel="stylesheet" href="{{ "css/style.css" | absURL }}?rnd={{ now.Unix }}" />
+{{ $cssTemplate := resources.Get "css/main.css" }}
+{{ $style := $cssTemplate | resources.ExecuteAsTemplate "css/style.css" . | resources.ToCSS  | resources.Fingerprint "sha256" }}
+<link rel="stylesheet" href="{{ $style.Permalink }}" integrity="{{ $style.Data.Integrity }}">
 
 {{ range .Site.Params.customCSS -}}
 <link rel="stylesheet" href="{{ . | absURL }}?rnd={{ now.Unix }}">
