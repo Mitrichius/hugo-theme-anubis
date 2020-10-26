@@ -15,7 +15,11 @@
 <link rel="apple-touch-icon-precomposed" href="{{ "favicon.png" | absURL }}">
 
 {{ $cssTemplate := resources.Get "css/main.css" }}
-{{ $style := $cssTemplate | resources.ExecuteAsTemplate "css/style.css" . | resources.ToCSS  | resources.Fingerprint "sha256" }}
+{{ $style := $cssTemplate | resources.ExecuteAsTemplate "css/style.css" . | resources.ToCSS }}
+{{ if eq (getenv "HUGO_ENV") "production" | or (eq .Site.Params.env "production")  }}
+  {{ $style = $style | resources.Minify }}
+{{ end }}
+{{ $style = $style | resources.Fingerprint "sha256" }}
 <link rel="stylesheet" href="{{ $style.Permalink }}" integrity="{{ $style.Data.Integrity }}">
 
 {{ range .Site.Params.customCSS -}}
