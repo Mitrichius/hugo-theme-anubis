@@ -503,12 +503,9 @@ ul.language-select > li, ul.footer-menu > li {
         padding: 0.5em 0;
     }
 
-    header nav a:first-of-type {
-        margin-left: 0;
-    }
-
     header nav a {
-        margin-left: 5%;
+        display: inline-block;
+        margin: 0 2.5%;
     }
 
     .post-navigation {
