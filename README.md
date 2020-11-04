@@ -61,9 +61,9 @@ params:
   images:
     - images/og-featured.png # relative path to "static" directory
   customCSS:
-    - css/my.css # relative path to "static" directory
+    - css/my.css # relative path to "assets" or "static" directory
   customJS:
-    - js/main.js # relative path to "static" directory
+    - js/main.js # relative path to "assets" or "static" directory
   dateFormat: "2006-01-02"
   paginationSinglePost: true
   style: light-without-switcher

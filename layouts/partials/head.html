@@ -14,20 +14,14 @@
 <link rel="icon" type="image/x-icon" href="{{ "favicon.ico" | absURL }}">
 <link rel="apple-touch-icon-precomposed" href="{{ "favicon.png" | absURL }}">
 
-{{ $cssTemplate := resources.Get "css/main.css" }}
-{{ $style := $cssTemplate | resources.ExecuteAsTemplate "css/style.css" . | resources.ToCSS }}
-{{ if eq (getenv "HUGO_ENV") "production" | or (eq .Site.Params.env "production")  }}
-  {{ $style = $style | resources.Minify }}
-{{ end }}
-{{ $style = $style | resources.Fingerprint "sha256" }}
-<link rel="stylesheet" href="{{ $style.Permalink }}" integrity="{{ $style.Data.Integrity }}">
+{{ partial "resource.html" (dict "context" . "type" "css" "filename" "css/main.css") }}
 
 {{ range .Site.Params.customCSS -}}
-<link rel="stylesheet" href="{{ . | absURL }}?rnd={{ now.Unix }}">
+  {{ partial "resource.html" (dict "context" $ "type" "css" "filename" . ) }}
 {{- end }}
 
 {{ range .Site.Params.customJS -}}
-<script src="{{ . | absURL }}?rnd={{ now.Unix }}" type="text/javascript" charset="utf-8"></script>
+  {{ partial "resource.html" (dict "context" $ "type" "js" "filename" . ) }}
 {{- end }}
 
 {{ template "_internal/opengraph.html" . }}

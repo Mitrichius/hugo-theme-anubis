@@ -1,0 +1,29 @@
+{{ $targetFilename := "file" }}
+{{ if eq .type "css" }}
+    {{ $targetFilename = "css/style.css"}}
+{{ else if eq .type "js" }}
+    {{ $targetFilename = "js/script.js"}}
+{{ end }}
+
+{{ $resource := resources.Get .filename }}
+
+{{ if $resource }}
+    {{ $resource := $resource | resources.ExecuteAsTemplate $targetFilename . }}
+    {{ if eq (getenv "HUGO_ENV") "production" | or (eq .Site.Params.env "production")  }}
+        {{ $resource = $resource | resources.Minify }}
+    {{ end }}
+    {{ $resource = $resource | resources.Fingerprint "sha256" }}
+
+    {{ if eq .type "css" }}
+        <link rel="stylesheet" href="{{ $resource.Permalink }}" integrity="{{ $resource.Data.Integrity }}">
+    {{ else if eq .type "js" }}
+        <script src="{{ $resource.Permalink }}" type="text/javascript" charset="utf-8" integrity="{{ $resource.Data.Integrity }}"></script>
+    {{ end }}
+<!-- For backward compatibility -->
+{{ else }}
+    {{ if eq .type "css" }}
+        <link rel="stylesheet" href="{{ .filename | absURL }}?rnd={{ now.Unix }}">
+    {{ else if eq .type "js" }}
+        <script src="{{ .filename | absURL }}?rnd={{ now.Unix }}" type="text/javascript" charset="utf-8"></script>
+    {{ end }}
+{{ end }}
