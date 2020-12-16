@@ -35,10 +35,10 @@ toAllCategories:
   other: "vers toutes les catégories"
 
 skipToContent:
-  other: "passer au contenu principal"
+  other: "aller au contenu"
 
 darkTheme:
   other: "thème sombre"
 
 lightTheme:
-  other: "thème léger"
+  other: "thème clair"
