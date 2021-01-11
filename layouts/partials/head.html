@@ -27,6 +27,13 @@
 {{ template "_internal/opengraph.html" . }}
 {{ template "_internal/twitter_cards.html" . }}
 
+{{ if isset .Site.Params.webmentions "login"  }}
+    <link rel="webmention" href="https://webmention.io/{{.Site.Params.webmentions.login}}/webmention" />
+    {{ if eq .Site.Params.webmentions.pingback true  }}
+        <link rel="pingback" href="https://webmention.io/{{.Site.Params.webmentions.login}}/xmlrpc" />
+    {{ end }}
+{{ end }}
+
 <!-- Article tags -->
 <!-- <meta property="article:published_time" content="">
 <meta property="article:modified_time" content="">
