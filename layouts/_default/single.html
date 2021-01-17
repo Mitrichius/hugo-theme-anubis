@@ -25,4 +25,8 @@
         {{ template "_internal/disqus.html" . }}
     {{ end }}
 
+    {{ if .Site.Params.UtterancesRepo }}
+        {{ partial "utterances.html" . }}
+    {{ end }}
+
 {{ end }}
