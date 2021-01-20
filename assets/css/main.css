@@ -462,6 +462,10 @@ ul.language-select > li, ul.footer-menu > li {
     margin-bottom: 1em;
 }
 
+.h-card {
+    display: none;
+}
+
 /* Media Queries */
 
 @media (max-width: 840px) {

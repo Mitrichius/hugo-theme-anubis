@@ -1,0 +1,13 @@
+<p class="h-card vcard">
+
+    <a href={{ .Site.BaseURL }} class="p-name u-url url fn" rel="me">{{ .Site.Params.author }}</a> 
+
+    {{ if .Site.Params.email }} 
+        /
+        <a class="p-email u-email email" rel="me" href="mailto:{{ .Site.Params.email }}">{{ .Site.Params.email }}</a>
+    {{ end }}
+
+    {{ if .Site.Params.avatar }} 
+        <img class="u-photo" src="{{ .Site.Params.avatar }}" />
+    {{ end }}
+</p> 

@@ -58,7 +58,9 @@ menu:
     weight: 0
 
 params:
-  author: ""
+  author: "John Doe"
+  email: mail@example.org # used for microformats
+  avatar: "/images/me.png" # used for microformats
   description: ""
   images:
     - images/og-featured.png # relative path to "static" directory
