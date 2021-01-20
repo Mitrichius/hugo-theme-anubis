@@ -319,6 +319,14 @@ article header h1 a {
     display: inline;
 }
 
+.post-hidden-url {
+    display: none;
+}
+
+.post-hidden-author {
+    display: none;
+}
+
 .post-date {
     white-space: nowrap;
 }

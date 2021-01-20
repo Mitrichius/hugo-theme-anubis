@@ -5,8 +5,12 @@
 
 <div class="post-info">
     {{ if .Params.date }}
-        <div class="post-date">{{ .Params.date.Format $dateFormat }}</div>
+        <div class="post-date dt-published">{{ .Params.date.Format $dateFormat }}</div>
     {{ end }}
+    
+    <a class="post-hidden-url u-url" href="{{ .Permalink }}">{{ .Permalink }}</a>
+    <div class="post-hidden-author p-author">{{ .Params.author | default .Site.Params.author }}</div>
+
     <div class="post-taxonomies">
         {{ if .Params.categories }}
             <ul class="post-categories">

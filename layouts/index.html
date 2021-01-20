@@ -3,10 +3,12 @@
         {{ .Content }}
     </div>
 
-    {{ $pages := where site.RegularPages "Type" "in" site.Params.mainSections }}
-    {{ range (.Paginate $pages).Pages }}
-        {{ partial "postSummary.html" . }}
-    {{ end }}
-    {{ partial "pagination.html" . }}
+    <div class="articles h-feed">
+        {{ $pages := where site.RegularPages "Type" "in" site.Params.mainSections }}
+        {{ range (.Paginate $pages).Pages }}
+            {{ partial "postSummary.html" . }}
+        {{ end }}
+        {{ partial "pagination.html" . }}
+    </div>
 
 {{ end }}
