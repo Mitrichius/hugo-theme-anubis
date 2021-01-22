@@ -11,7 +11,7 @@ toNewPosts:
   other: "Zu neueren Beiträgen"
 
 toOldPosts:
-  other: "Uu älteren Beiträgen"
+  other: "Zu älteren Beiträgen"
 
 tag:
   other: "Schlagwort"
@@ -38,7 +38,7 @@ skipToContent:
   other: "Zum Hauptinhalt springen"
 
 darkTheme:
-  other: "Dunkles thema"
+  other: "Dunkles Theme"
 
 lightTheme:
-  other: "Licht thema"
+  other: "Helles Theme"
