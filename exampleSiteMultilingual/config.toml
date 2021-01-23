@@ -19,6 +19,12 @@ googleAnalytics = ""
    style = "light-without-switcher"
    readMore = false
 
+   # utteranc.es support
+   utterancesRepo = ""  # mandatory
+   utterancesTheme = "" # optional
+   utterancesIssue = "" # optional
+   utterancesLabel = "" # optional
+
 [languages.en]
   languageName = "English"
 
