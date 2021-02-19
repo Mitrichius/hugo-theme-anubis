@@ -16,10 +16,6 @@
 
 {{ partial "resource.html" (dict "context" . "type" "css" "filename" "css/main.css") }}
 
-{{ range .Site.Params.customCSS -}}
-  {{ partial "resource.html" (dict "context" $ "type" "css" "filename" . ) }}
-{{- end }}
-
 {{ range .Site.Params.customJS -}}
   {{ partial "resource.html" (dict "context" $ "type" "js" "filename" . ) }}
 {{- end }}

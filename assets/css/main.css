@@ -530,3 +530,8 @@ ul.language-select > li, ul.footer-menu > li {
         max-width: 10em;
     }
 }
+
+{{ range site.Params.customCSS }}
+    {{ $custom := resources.Get . }}
+    {{ $custom.Content }}
+{{ end }}
