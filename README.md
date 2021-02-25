@@ -80,6 +80,7 @@ params:
   utterancesIssue: "" # optional
   utterancesLabel: "" # optional
   webmentions:
+    url: https://yourdomain.com/webemntions/receive
     login: hugo-theme-anubis
     pingback: true
 
@@ -129,6 +130,10 @@ To hide a post from the RSS feed, just add `disable_feed: true` to its front mat
 
 ### Pagination on post single page
 Enabled by `paginationSinglePost` param in `params` section of config.
+
+### Webmentions
+To provide webmention support you can **either** specify your webmention.io username with `login: webmentionusername` **or** specify a link to your custom webmention endpoint with `url: https://yourdomain.com/webemntions/receive`.
+If you use webmention.io you can also enable pingback with `pingback: true` 
 
 ## Contributing
 

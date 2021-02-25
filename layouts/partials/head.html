@@ -29,6 +29,9 @@
         <link rel="pingback" href="https://webmention.io/{{.Site.Params.webmentions.login}}/xmlrpc" />
     {{ end }}
 {{ end }}
+{{ if isset .Site.Params.webmentions "url"  }}
+    <link rel="webmention" href="{{.Site.Params.webmentions.url}}" />
+{{ end }}
 
 <!-- Article tags -->
 <!-- <meta property="article:published_time" content="">
