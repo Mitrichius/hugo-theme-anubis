@@ -28,6 +28,8 @@ Anubis is a simple minimalist theme for [Hugo blog engine](https://gohugo.io/).
 
 ## Installation
 
+You need to install an extended version of Hugo to run this theme.
+
 Inside the folder of your Hugo site run:
 
     $ git submodule add https://github.com/mitrichius/hugo-theme-anubis.git themes/anubis
