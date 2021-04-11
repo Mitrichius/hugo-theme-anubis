@@ -50,7 +50,7 @@ title: "Anubis"
 theme: "anubis"
 paginate: 10
 disqusShortname: yourdiscussshortname
-googleAnalytics: UA-123-45
+googleAnalytics: G-12345
 enableRobotsTXT: true
 
 menu:
