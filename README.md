@@ -49,8 +49,8 @@ baseUrl: ""
 title: "Anubis"
 theme: "anubis"
 paginate: 10
-disqusShortname: yourdiscussshortname
-googleAnalytics: G-12345
+disqusShortname: "yourdiscussshortname"
+googleAnalytics: "G-12345"
 enableRobotsTXT: true
 
 menu:
