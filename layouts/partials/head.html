@@ -40,11 +40,7 @@
 <meta property="article:publisher" content="https://www.facebook.com/XXX"> -->
 
 {{ if and (.Site.GoogleAnalytics) (or (eq (getenv "HUGO_ENV") "production") (eq .Site.Params.env "production")) }}
-    {{ if hasPrefix .Site.GoogleAnalytics "UA-" }}
-        {{ template "_internal/google_analytics_async.html" . }}
-    {{ else }}
-        {{ template "_internal/google_analytics.html" . }}
-    {{ end }}
+    {{ template "_internal/google_analytics.html" . }}
 {{ end }}
 
 {{ partial "head-extra.html" . }}
