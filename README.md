@@ -76,6 +76,7 @@ params:
   paginationSinglePost: true
   style: light-without-switcher
   readMore: false
+  disableSummary: false
   # utteranc.es support
   utterancesRepo: ""  # mandatory
   utterancesTheme: "" # optional
