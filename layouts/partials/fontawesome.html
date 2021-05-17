@@ -1,0 +1,15 @@
+<span class="inline-svg" >
+    
+{{ $dict := newScratch }}
+
+{{ if (eq .custom true) }} 
+    {{ $dict.Set "filename" (print "static/fa-icons/" .iconName ".svg") }}
+{{ else }}
+    {{ $dict.Set "filename" (print "themes/anubis/static/fa-icons/" .iconName ".svg") }}
+{{ end }}
+
+{{- $path:="<path" -}}
+{{- $fill:="<path fill=\"currentColor\"" -}}
+{{ replace (readFile ($dict.Get "filename")) $path $fill | safeHTML }}
+
+</span>

@@ -12,6 +12,7 @@ Anubis is a simple minimalist theme for [Hugo blog engine](https://gohugo.io/).
 - Archive
 - Open Graph and Twitter Cards support
 - Mobile support
+- Social icons
 - Google Analytics
 - Disqus
 - Utteranc.es
@@ -86,6 +87,12 @@ params:
     url: https://yourdomain.com/webemntions/receive
     login: hugo-theme-anubis
     pingback: true
+  social:
+  - id: github
+    name: gohugoio
+#  - id: hugo
+#    url: "https://gohugo.io/"
+#    icon: "hugo"
 
 markup:
   goldmark:
@@ -112,6 +119,51 @@ Options:
 - `light` - light theme by default, can be switched by user to dark theme and back. Theme settings are saved for user 
 - `dark` - dark theme by default, can be switched by user to light theme and back. Theme settings are saved for user 
 - `auto` - theme based on user system settings by default, can be switched by user to dark/light theme. Theme settings are saved for user 
+
+### Social icons
+#### Predefined icons
+To add icon from predefined list, add to `params.social` config:
+- id of social network
+- name for placeholder (usually it's your nickname or login)  
+
+Predefined list:
+ - email
+ - facebook
+ - github
+ - instagram
+ - linkedin
+ - patreon
+ - reddit
+ - snapchat
+ - soundcloud
+ - spotify
+ - telegram
+ - twitch
+ - twitter
+ - vk
+ - youtube
+
+Example:
+```
+  - id: github
+    name: gohugoio
+```
+Config like this generate github icon with "https://github.com/gohugoio" url.
+
+#### Custom icons
+To add custom icon, add to `params.social` config:
+- id of social network/site
+- full url to your network/site
+Also you need to create directory `static/fa-icons` and add svg icon of your network/site with name equals to `id` from config.
+
+Example:
+```
+  - id: google
+    url: "https://www.google.com/search?q=I'm+lucky"
+```
+Icon should be "static/fa-icons/google.svg"
+
+If you want font awesome icons, download "Font Awesome For Desktop" and open svg directory.
 
 ### Google Analytics
 Only works for production environment. You either build your site with variable like

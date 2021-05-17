@@ -1,0 +1,19 @@
+<ul class="social-icons">
+
+{{ range $.Site.Params.Social }}
+    {{ if and (isset $.Site.Data.social.social_icons .id) (isset . "name") }}
+        {{ $url := index $.Site.Data.social.social_icons .id }}
+        <li>
+            <a href="{{ printf $url .name }}" title="{{ humanize .id }}" rel="me">
+            {{ partial "fontawesome.html" (dict "iconName" .id "custom" false) }}
+            </a>
+        </li>
+    {{ else if (isset . "url") }}
+        <li>
+            <a href="{{ printf .url }}" title="{{ humanize .id }}" rel="me">
+                {{ partial "fontawesome.html" (dict "iconName" .id "custom" true) }}
+            </a>
+        </li>
+    {{ end }}
+{{ end }}
+</ul>

@@ -181,9 +181,9 @@ hr {
 
 /* Header */
 
-header {
-    display: flex;
-    justify-content: space-between;
+.common-header {
+    padding-bottom: 1.5em;
+    border-bottom: thin solid var(--hr-color);
 }
 
 header a {
@@ -203,24 +203,63 @@ header h2 {
     font-weight: normal;
 }
 
-header nav {
-    margin-top: 1em;
-    max-width: 100%;
-    text-align: right;
-}
-
-header nav a {
-    margin-left: 2em;
+.header-top {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    vertical-align: middle;
 }
 
 .site-title {
     white-space: nowrap;
 }
 
-.common-header {
-    padding-bottom: 1.5em;
-    border-bottom: thin solid var(--hr-color);
+header nav:not(:empty){
+    background: var(--nav-bg-color);
+    margin-top: 1em;
+    max-width: 100%;
+    text-align: center;
+    padding: 0.5em 0;
 }
+
+header nav a {
+    display: inline-block;
+    margin: 0 2.5%;
+}
+
+/* Social icons */
+.social-icons {
+    margin-top: 1em;
+    margin-bottom: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.social-icons li {
+    display: inline;
+}
+
+.social-icons li:not(:first-of-type) {
+    margin-left: 0.5em;
+}
+
+.social-icons a:hover,
+.social-icons a:focus,
+.social-icons a:active {
+    color: inherit;
+    border-bottom: none;
+    text-decoration: none;
+}
+
+.inline-svg {
+    display: inline-block;
+    height: 1.15rem;
+    width: 1.15rem;
+    top: 0.15rem;
+    position: relative;
+}
+
 
 /* Pages */
 main h1 {
@@ -238,7 +277,7 @@ main h1 {
 /* Articles */
 
 .post-navigation {
-    background: var(--pagination-bg-color);
+    background: var(--nav-bg-color);
     text-align: center;
     margin-top: 1em;
     max-width: 100%;
@@ -250,7 +289,7 @@ main h1 {
 }
 
 .post-navigation a {
-    color: var(--pagination-link-color);
+    color: var(--nav-link-color);
     margin-left: 2em;
 }
 
@@ -493,27 +532,6 @@ ul.language-select > li, ul.footer-menu > li {
     .pagination-item {
         padding: 0.5em 0.5em;
         font-size: 14px;
-    }
-
-    header {
-        display: block;
-    }
-
-    .site-header {
-        text-align: center;
-    }
-
-    header nav:not(:empty){
-        background: var(--pagination-bg-color);
-        margin-top: 1em;
-        max-width: 100%;
-        text-align: center;
-        padding: 0.5em 0;
-    }
-
-    header nav a {
-        display: inline-block;
-        margin: 0 2.5%;
     }
 
     .post-navigation {

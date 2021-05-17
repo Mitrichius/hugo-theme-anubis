@@ -8,41 +8,49 @@ disqusShortname = ""
 googleAnalytics = ""
 
 [author]
-  name = "Dmitry Kolosov"
+name = "Dmitry Kolosov"
 
 [params]
-   author = "Dmitry Kolosov"
-   description = "Anubis is a simple minimalist theme for Hugo blog engine."
-   dateFormat = "2006-01-02"
-   paginationSinglePost = true
-   style = "light-without-switcher"
-   readMore = false
+author = "Dmitry Kolosov"
+description = "Anubis is a simple minimalist theme for Hugo blog engine."
+dateFormat = "2006-01-02"
+paginationSinglePost = true
+style = "light-without-switcher"
+readMore = false
 
-   # utteranc.es support
-   utterancesRepo = ""  # mandatory
-   utterancesTheme = "" # optional
-   utterancesIssue = "" # optional
-   utterancesLabel = "" # optional
+# utteranc.es support
+utterancesRepo = ""  # mandatory
+utterancesTheme = "" # optional
+utterancesIssue = "" # optional
+utterancesLabel = "" # optional
+  
+  [[params.social]]
+  id = "github"
+  name = "gohugoio"
+
+  [[params.social]]
+  id = "telegram1"
+  url = "https://ya.ru"
 
 [menu]
 
-  [[menu.main]]
-    identifier = "about"
-    name = "About"
-    url = "/about/"
-    weight = 1
+[[menu.main]]
+identifier = "about"
+name = "About"
+url = "/about/"
+weight = 1
 
-  [[menu.main]]
-    identifier = "tags"
-    name = "Tags"
-    url = "/tags/"
-    weight = 2
+[[menu.main]]
+identifier = "tags"
+name = "Tags"
+url = "/tags/"
+weight = 2
 
-  [[menu.main]]
-    name = "Archive"
-    identifier = "archive"
-    url = "/posts/"
-    weight = 3
+[[menu.main]]
+name = "Archive"
+identifier = "archive"
+url = "/posts/"
+weight = 3
 
 [taxonomies]
 category = "categories"

@@ -1,6 +1,9 @@
-<h1 class="site-title">
-    <a href="{{ .Site.BaseURL | relLangURL }}">{{ .Site.Title }}</a>
-</h1>
+<div class="header-top">
+    <h1 class="site-title">
+        <a href="{{ .Site.BaseURL | relLangURL }}">{{ .Site.Title }}</a>
+    </h1>
+    {{ partial "social.html" . }}
+</div>
 {{ if .Site.Menus.main }}
     <nav>
         {{ $currentPage := . }}

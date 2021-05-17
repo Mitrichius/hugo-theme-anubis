@@ -1,0 +1,16 @@
+social_icons:
+  email: mailto:%s
+  facebook: https://www.facebook.com/%s
+  github: https://github.com/%s
+  instagram: https://www.instagram.com/%s
+  linkedin: https://www.linkedin.com/in/%s
+  patreon: https://www.patreon.com/%s
+  reddit: https://www.reddit.com/user/%s
+  snapchat: https://www.snapchat.com/s/%s
+  soundcloud: https://soundcloud.com/%s
+  spotify: https://open.spotify.com/user/%s
+  telegram: tg://resolve?domain=%s
+  twitch: https://www.twitch.tv/%s
+  twitter: https://twitter.com/%s
+  vk: https://vk.com/%s
+  youtube: https://www.youtube.com/c/%s
