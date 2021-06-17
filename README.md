@@ -67,12 +67,13 @@ params:
   email: mail@example.org # used for microformats
   avatar: "/images/me.png" # used for microformats
   description: ""
-  images:
-    - images/og-featured.png # relative path to "static" directory
-  customCSS:
-    - css/my.css # relative path to "assets" directory (don't use main.css filename)
-  customJS:
-    - js/main.js # relative path to "assets" directory
+  # Uncomment if you need this
+  # images:
+  #   - images/og-featured.png # relative path to "static" directory
+  # customCSS:
+  #   - css/my.css # relative path to "assets" directory (don't use main.css filename)
+  # customJS:
+  #   - js/main.js # relative path to "assets" directory
   dateFormat: "2006-01-02"
   paginationSinglePost: true
   style: light-without-switcher

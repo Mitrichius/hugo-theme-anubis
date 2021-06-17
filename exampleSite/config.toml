@@ -29,8 +29,8 @@ utterancesLabel = "" # optional
   name = "gohugoio"
 
   [[params.social]]
-  id = "telegram1"
-  url = "https://ya.ru"
+  id = "docs"
+  url = "https://gohugo.io/documentation/"
 
 [menu]
 
