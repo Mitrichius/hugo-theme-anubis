@@ -25,13 +25,9 @@ utterancesTheme = "" # optional
 utterancesIssue = "" # optional
 utterancesLabel = "" # optional
   
-  [[params.social]]
-  id = "github"
-  name = "gohugoio"
-
-  [[params.social]]
-  id = "docs"
-  url = "https://gohugo.io/documentation/"
+[[params.social]]
+id = "docs"
+url = "https://gohugo.io/documentation/"
 
 [languages.en]
 languageName = "English"
