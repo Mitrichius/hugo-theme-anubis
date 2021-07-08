@@ -321,11 +321,19 @@ article:not(:last-of-type) {
     padding-bottom: 2em;
 }
 
+article header {
+    margin-top: 1em;
+    line-height: 1.1em;
+    margin-bottom: 0.5em;
+}
+
+
 article header h1 {
     font-size: 1.35em;
     line-height: 1.1em;
     margin-bottom: 0.5em;
     font-weight: 600;
+    display: inline;
 }
 
 article header h1 a {
@@ -426,6 +434,32 @@ article figcaption {
 
 .post-summary > p {
     display: block;
+}
+
+.post-translations {
+    margin-left: 0.5em;
+    list-style: none;
+    padding: 0;
+    display: inline;
+    font-size: 14px;
+}
+
+.post-translations > li {
+    display: inline;
+}
+
+.post-translations > li:not(:last-child)::after {
+    content: "|";
+    display: inline-block;
+}
+
+.post-translations > li a {
+    color: var(--link-color);
+}
+
+.post-translations > li a:hover, 
+.post-translations > li a:focus {
+    color: var(--link-state-color);
 }
 
 /* Other pages */
