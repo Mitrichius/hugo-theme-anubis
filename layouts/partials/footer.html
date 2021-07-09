@@ -1,7 +1,7 @@
 <footer class="common-footer">
     {{ $languagesCount := $.Site.Home.AllTranslations }}
     {{ if gt $languagesCount 1 }}
-        {{ partial "languageSelect.html" . }}
+        {{ partial "language-switcher.html" . }}
     {{ end }}
 
     <div class="common-footer-bottom">
@@ -20,7 +20,7 @@
             </p>  
         </div> 
 
-        {{ partial "themeSwitcher.html" . }}   
+        {{ partial "theme-switcher.html" . }}   
     </div>
 
     {{ partial "h-card.html" . }}

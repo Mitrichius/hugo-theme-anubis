@@ -6,13 +6,13 @@
         {{ $ref := printf $url .name }}
         <li>
             <a {{ printf "href=%q" $ref | safeHTMLAttr }} title="{{ humanize .id }}" rel="me">
-            {{ partial "fontawesome.html" (dict "iconName" .id "custom" false) }}
+            {{ partial "font-awesome.html" (dict "iconName" .id "custom" false) }}
             </a>
         </li>
     {{ else if (isset . "url") }}
         <li>
             <a href="{{ printf .url }}" title="{{ humanize .id }}" rel="me">
-                {{ partial "fontawesome.html" (dict "iconName" .id "custom" true) }}
+                {{ partial "font-awesome.html" (dict "iconName" .id "custom" true) }}
             </a>
         </li>
     {{ end }}
