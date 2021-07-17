@@ -324,7 +324,7 @@ article:not(:last-of-type) {
 article header {
     margin-top: 1em;
     line-height: 1.1em;
-    margin-bottom: 0.5em;
+    margin-bottom: 1em;
 }
 
 
