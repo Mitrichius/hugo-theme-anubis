@@ -1,0 +1,44 @@
+powered:
+  other: "提供"
+
+theme:
+  other: "主題"
+
+readMore:
+  other: "继续阅读"
+
+toNewPosts:
+  other: "新文章"
+
+toOldPosts:
+  other: "旧文章"
+
+tag:
+  other: "标签"
+
+Tags:
+  other: "标签"
+
+Posts:
+  other: "文章"
+
+category:
+  other: "类别"
+
+Categories:
+  other: "类别"
+
+toAllTags:
+  other: "所有标签"
+
+toAllCategories:
+  other: "所有类别"
+
+skipToContent:
+  other: "跳至内容"
+
+darkTheme:
+  other: "暗色主题"
+
+lightTheme:
+  other: "亮色主题"
