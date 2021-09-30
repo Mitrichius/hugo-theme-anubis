@@ -9,7 +9,7 @@ social_icons:
   snapchat: https://www.snapchat.com/s/%s
   soundcloud: https://soundcloud.com/%s
   spotify: https://open.spotify.com/user/%s
-  telegram: tg://resolve?domain=%s
+  telegram: https://t.me/%s
   twitch: https://www.twitch.tv/%s
   twitter: https://twitter.com/%s
   vk: https://vk.com/%s
