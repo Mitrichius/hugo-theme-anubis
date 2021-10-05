@@ -167,9 +167,7 @@ Icon should be "static/fa-icons/google.svg"
 If you want font awesome icons, download "Font Awesome For Desktop" and open svg directory.
 
 ### Google Analytics
-Only works for production environment. You either build your site with variable like
-`HUGO_ENV=production hugo --minify`
-or just put `env: production` to `params` section of config.
+Only works for production environment.
 
 ### Multilingual mode 
 Check config/example usage in [exampleSiteMultilingual](https://github.com/Mitrichius/hugo-theme-anubis/tree/master/exampleSiteMultilingual) directory and documentation on [Hugo site](https://gohugo.io/content-management/multilingual/).
