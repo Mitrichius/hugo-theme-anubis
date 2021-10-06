@@ -9,7 +9,7 @@
 
 {{ if $resource }}
     {{ $resource := $resource | resources.ExecuteAsTemplate $targetFilename . }}
-    {{ if eq (getenv "HUGO_ENV") "production" | or (eq .Site.Params.env "production")  }}
+    {{ if hugo.IsProduction }}
         {{ $resource = $resource | resources.Minify }}
     {{ end }}
     {{ $resource = $resource | resources.Fingerprint "sha256" }}

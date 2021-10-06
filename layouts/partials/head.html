@@ -41,7 +41,7 @@
 <meta property="article:tag" content="">
 <meta property="article:publisher" content="https://www.facebook.com/XXX"> -->
 
-{{ if and (.Site.GoogleAnalytics) (or (eq (getenv "HUGO_ENV") "production") (eq .Site.Params.env "production")) }}
+{{ if and (.Site.GoogleAnalytics) (hugo.IsProduction) }}
     {{ template "_internal/google_analytics.html" . }}
 {{ end }}
 
