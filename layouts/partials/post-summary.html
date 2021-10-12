@@ -6,7 +6,11 @@
 
     {{ if not .Site.Params.disableSummary }}
         <div class="content post-summary p-summary">
-            {{ .Summary | safeHTML }}
+            {{ if isset .Params "description" }}
+            {{ .Description }}
+            {{ else }}
+            {{ .Summary }}&hellip;
+            {{ end }}
         </div>
     {{ end }}
     {{ if and (.Truncated) (.Site.Params.readMore) }}
