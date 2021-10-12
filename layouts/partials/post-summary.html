@@ -7,9 +7,9 @@
     {{ if not .Site.Params.disableSummary }}
         <div class="content post-summary p-summary">
             {{ if isset .Params "description" }}
-            {{ .Description }}
+            {{ .Description | safeHTML }}
             {{ else }}
-            {{ .Summary }}&hellip;
+            {{ .Summary | safeHTML }}&hellip;
             {{ end }}
         </div>
     {{ end }}
