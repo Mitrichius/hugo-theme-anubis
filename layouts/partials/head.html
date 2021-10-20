@@ -4,7 +4,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="referrer" content="no-referrer-when-downgrade">
 
-<title>{{ if and (.Title) (not .IsHome) }}{{ .Title }} - {{ end }}{{ .Site.Title }}</title>
+{{ partial "title.html" }}
 <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end -}}">
 
 {{ with .OutputFormats.Get "rss" -}}
