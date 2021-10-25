@@ -11,9 +11,7 @@
     {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
 {{ end -}}
 
-<link rel="icon" type="image/x-icon" href="{{ "favicon.ico" | absURL }}">
-<link rel="apple-touch-icon-precomposed" href="{{ "favicon.png" | absURL }}">
-
+{{ partial "favicons.html" . }}
 {{ partial "resource.html" (dict "context" . "type" "css" "filename" "css/main.css") }}
 
 {{ range .Site.Params.customJS -}}
