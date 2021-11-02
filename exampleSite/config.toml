@@ -15,7 +15,7 @@ author = "Dmitry Kolosov"
 description = "Anubis is a simple minimalist theme for Hugo blog engine."
 dateFormat = "2006-01-02"
 paginationSinglePost = true
-style = "light-without-switcher"
+style = "auto"
 readMore = false
 
 # utteranc.es support
