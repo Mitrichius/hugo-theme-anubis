@@ -121,7 +121,7 @@ Options:
 - `auto-without-switcher` - theme based on user system settings, without switcher, JS-free
 - `light` - light theme by default, can be switched by user to dark theme and back. Theme settings are saved for user 
 - `dark` - dark theme by default, can be switched by user to light theme and back. Theme settings are saved for user 
-- `auto` - theme based on user system settings by default, can be switched by user to dark/light theme. Theme settings are saved for user 
+- `auto` - theme based on user system settings by default, can be switched by user to dark/light theme. Theme settings are saved for user (by default in example sites)
 
 ### Social icons
 #### Predefined icons
