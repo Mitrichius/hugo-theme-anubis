@@ -143,8 +143,6 @@ th, td {
 
 /* Code */
 pre {
-    color: var(--pre-color);
-    background-color: var(--pre-bg-color);
     padding: 1em;
     max-width: 100%;
     overflow: auto;
@@ -153,6 +151,8 @@ pre {
 code,
 pre,
 kbd {
+    color: var(--pre-color);
+    background-color: var(--pre-bg-color);
     font-family: monospace;
     font-size: 0.90em;
     line-height: 154%;
