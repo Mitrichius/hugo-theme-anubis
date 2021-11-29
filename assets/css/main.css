@@ -298,6 +298,10 @@ main h1 {
     color: var(--link-state-color);
 }
 
+.post-short-list .post-title {
+    display: inline;
+}
+
 .post-title.favorite::after {
     content: "☆";
     display: inline-block;
