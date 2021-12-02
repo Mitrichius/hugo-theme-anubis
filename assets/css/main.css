@@ -158,6 +158,11 @@ kbd {
     line-height: 154%;
 }
 
+pre code, pre kbd {
+    color: inherit;
+    background-color: inherit;
+}
+
 /* Styles */
 
 blockquote {
