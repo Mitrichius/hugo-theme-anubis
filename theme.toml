@@ -1,7 +1,9 @@
 name = "Anubis"
 license = "MIT"
+licenselink = "https://github.com/Mitrichius/hugo-theme-anubis/blob/master/LICENSE"
 description = "A minimal Hugo theme"
 homepage = "https://github.com/mitrichius/hugo-theme-anubis"
+demosite = "https://hugo-theme-anubis.netlify.app/"
 tags = [
     "blog", 
     "responsive",
