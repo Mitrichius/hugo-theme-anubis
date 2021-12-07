@@ -80,6 +80,7 @@ h3 {
 a {
     color: var(--link-color);
     text-decoration: none;
+    border-bottom: 1px solid transparent;
 }
 
 a:hover,
