@@ -570,6 +570,7 @@ ul.language-select > li, ul.footer-menu > li {
     .container {
         max-width: 90%;
         margin: 0 auto;
+        word-wrap: break-word;
     }
 
     .pagination-item {
