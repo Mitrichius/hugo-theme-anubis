@@ -19,7 +19,7 @@ Anubis is a simple minimalist theme for [Hugo blog engine](https://gohugo.io/).
 - Disqus
 - Utteranc.es
 - RSS feeds
-* Hiding posts from the RSS feed
+- Hiding posts from the RSS feed
 - Translations (en, ru, fr, pl)
 - Custom CSS/JS
 - Multilingual mode 
@@ -153,10 +153,23 @@ Example:
 ```
 Config like this generate github icon with "https://github.com/gohugoio" url.
 
+#### Predefined icons with custom url
+To add prefedined icon with custom url, add to `params.social` config:
+- id of social network
+- full url to your network  
+
+Example:
+```
+  - id: github
+    url: "https://github.com/gohugoio/hugo"
+```
+Config like this generate github icon with "https://github.com/gohugoio/hugo" url.
+
 #### Custom icons
 To add custom icon, add to `params.social` config:
 - id of social network/site
-- full url to your network/site
+- full url to your network/site  
+
 Also you need to create directory `static/fa-icons` and add svg icon of your network/site with name equals to `id` from config.
 
 Example:

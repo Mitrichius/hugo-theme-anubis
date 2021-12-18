@@ -28,6 +28,10 @@ utterancesLabel = "" # optional
 id = "docs"
 url = "https://gohugo.io/documentation/"
 
+[[params.social]]
+id = "github"
+url = "https://github.com/mitrichius/hugo-theme-anubis"
+
 [menu]
 
 [[menu.main]]
