@@ -281,6 +281,16 @@ main h1 {
 
 /* Articles */
 
+.post-header {
+    margin-top: 1em;
+    line-height: 1.1em;
+    margin-bottom: 1em;
+}
+
+.post-header header {
+    display: inline;
+}
+
 .post-navigation {
     background: var(--nav-bg-color);
     text-align: center;
@@ -329,12 +339,6 @@ main h1 {
 article:not(:last-of-type) {
     border-bottom: thin solid var(--hr-color);
     padding-bottom: 2em;
-}
-
-article header {
-    margin-top: 1em;
-    line-height: 1.1em;
-    margin-bottom: 1em;
 }
 
 

@@ -1,8 +1,10 @@
 <article class="post-list h-feed">
-    <header class="post-header">
-        <h1 class="p-name post-title{{ if .Params.favorite }} favorite{{end}}{{ if .Params.draft }} draft{{end}}"><a class="u-url" href="{{ .RelPermalink }}">{{ trim .Title " " }}</a></h1>
+    <div class="post-header">
+        <header>
+            <h1 class="p-name post-title{{ if .Params.favorite }} favorite{{end}}{{ if .Params.draft }} draft{{end}}"><a class="u-url" href="{{ .RelPermalink }}">{{ trim .Title " " }}</a></h1>
+        </header>
         {{ partial "post-language-switcher.html" . }}
-    </header>
+    </div>
 
     {{ if not .Site.Params.disableSummary }}
         <div class="content post-summary p-summary">

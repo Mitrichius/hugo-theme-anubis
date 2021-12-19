@@ -8,10 +8,12 @@
         {{ $pages := where .Pages "Type" "in" site.Params.mainSections }}
         {{ range $pages }}
             <div class="post-short-list h-entry">
-                <header class="post-header"> 
-                    <h2 class="p-name post-title{{ if .Params.favorite }} favorite{{end}}{{ if .Params.draft }} draft{{end}}"><a class="u-url" href="{{ .RelPermalink }}">{{ trim .Title " " }}</a></h2>
-                    {{ partial "post-language-switcher.html" . }}
-                </header>
+                <div class="post-header">
+                    <header> 
+                        <h2 class="p-name post-title{{ if .Params.favorite }} favorite{{end}}{{ if .Params.draft }} draft{{end}}"><a class="u-url" href="{{ .RelPermalink }}">{{ trim .Title " " }}</a></h2>
+                        {{ partial "post-language-switcher.html" . }}
+                    </header>
+                </div>
                 {{ partial "post-info.html" . }}
             </div>
         {{ end }}
