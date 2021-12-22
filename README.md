@@ -17,6 +17,7 @@ Anubis is a simple minimalist theme for [Hugo blog engine](https://gohugo.io/).
 - Social icons
 - Google Analytics
 - Disqus
+- ISSO
 - Utteranc.es
 - RSS feeds
 - Hiding posts from the RSS feed
