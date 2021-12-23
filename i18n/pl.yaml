@@ -8,7 +8,7 @@ readMore:
   other: "czytaj dalej"
 
 toNewPosts:
-  other: "poprzedia strona"
+  other: "poprzednia strona"
 
 toOldPosts:
   other: "następna strona"
@@ -41,4 +41,4 @@ darkTheme:
   other: "ciemny schemat"
 
 lightTheme:
-  other: "lekki schemat"
+  other: "jasny schemat"
