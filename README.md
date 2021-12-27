@@ -20,6 +20,7 @@ Anubis is a simple minimalist theme for [Hugo blog engine](https://gohugo.io/).
 - Utteranc.es
 - RSS feeds
 - Hiding posts from the RSS feed
+- Hidden posts (available only by link)
 - Translations (en, ru, fr, pl)
 - Custom CSS/JS
 - Multilingual mode 
@@ -192,10 +193,13 @@ Based on environment.
 For production — allow all, for other — disallow all.
 
 ### Favorite posts
-To mark posts as favorite just add `favorite: true` in post's front matter. It adds a "★" icon nearby post's title. 
+Add `favorite: true` to post front matter. It adds a "★" icon nearby post's title. 
 
 ### Hiding posts from RSS
-To hide a post from the RSS feed, just add `disable_feed: true` to its front matter.
+Add `disable_feed: true` to post front matter.
+
+### Make post available only by link
+Add `hidden: true` to post front matter. Post also is not available in RSS feed.
 
 ### Pagination on post single page
 Enabled by `paginationSinglePost` param in `params` section of config.

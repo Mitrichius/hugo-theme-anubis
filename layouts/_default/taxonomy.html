@@ -3,7 +3,8 @@
     <div class="post-info">
         <a href="{{ (print .Data.Plural "/") | relLangURL }}">{{ i18n (printf "toAll%s" (.Data.Plural | humanize )) | humanize }}</a>
     </div>
-    {{ range .Paginator.Pages }}
+    {{ $pages := where .Pages "Params.hidden" "!=" true }}
+    {{ range (.Paginate $pages).Pages }}
         {{ partial "post-summary.html" . }}
     {{ end }}
     {{ partial "pagination.html" . }}
