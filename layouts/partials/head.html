@@ -7,6 +7,10 @@
 {{ partial "title.html" . }}
 <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end -}}">
 
+{{ if and (.IsPage) (eq .Params.hidden true)}}
+<meta name="robots" content="noindex" />
+{{ end }}
+
 {{ with .OutputFormats.Get "rss" -}}
     {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
 {{ end -}}
