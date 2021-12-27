@@ -4,15 +4,15 @@
     </div>
 
     <h1>{{ i18n .Title }}</h1>
-
     <ul class="terms">
-        {{ range $key, $value := .Data.Terms }}
-        <li>
-            <a href="{{ (print $.Data.Plural "/" (lower $key)) | absLangURL }}">
-            {{ $key }}
-            </a>
-            ({{ len $value }})
-        </li>
+        {{ range .Data.Terms }}
+            {{ $postsNum := len (where .Pages "Params.hidden" "!=" true) }}
+            {{ if gt $postsNum 0 }}
+                <li>
+                    <a href="{{ .Page.RelPermalink }}">{{ .Page.Title }}</a>
+                    ({{ $postsNum }})
+                </li>
+            {{ end}}
         {{ end }}
     </ul>
 
