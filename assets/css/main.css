@@ -372,7 +372,7 @@ article header h1 a {
 .post h6 a {
     opacity: 0;
     position: absolute;
-    left: -1.05rem;
+    left: -0.7em;
     color: var(--font-color);
 }
 
@@ -404,7 +404,6 @@ article header h1 a {
 .post h6:hover a:focus,
 .post h6:hover a:active {
     color: var(--link-state-color);
-    border-bottom: none;
 }
 
 .post-info {
