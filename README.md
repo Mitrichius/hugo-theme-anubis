@@ -17,6 +17,7 @@ Anubis is a simple minimalist theme for [Hugo blog engine](https://gohugo.io/).
 - Social icons
 - Google Analytics
 - Disqus
+- ISSO
 - Utteranc.es
 - RSS feeds
 - Hiding posts from the RSS feed
@@ -87,6 +88,19 @@ params:
   utterancesTheme: "" # optional
   utterancesIssue: "" # optional
   utterancesLabel: "" # optional
+  # isso support
+  isso:
+    enabled: true # mandatory
+    data: "https://comments.example.com/" # mandatory
+    jsLocation: "https://comments.example.com/js/embed.min.js" # mandatory
+    css: true # optional
+    lang: "de" # optional
+    replyToSelf: true # mandatory
+    requireAuthor: true # mandatory
+    requireEmail: true # mandatory
+    id: "thread-id" # optional
+    avatar: true # optional
+    avatar-bg: "#f0f0f0" # optional
   webmentions:
     url: https://yourdomain.com/webemntions/receive
     login: hugo-theme-anubis

@@ -601,3 +601,9 @@ ul.language-select > li, ul.footer-menu > li {
     {{ $custom := resources.Get . }}
     {{ $custom.Content }}
 {{ end }}
+
+{{ if site.Params.isso.enabled }}
+  #isso-thread .textarea {
+    color: #000;
+  }
+{{ end }}

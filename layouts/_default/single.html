@@ -33,4 +33,8 @@
         {{ partial "utterances.html" . }}
     {{ end }}
 
+    {{ if .Site.Params.isso.enabled }}
+        {{ partial "isso.html" . }}
+    {{ end }}
+
 {{ end }}

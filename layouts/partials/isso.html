@@ -1,0 +1,23 @@
+{{ $lang := .Site.Params.isso.lang | default "en" }}
+{{ $css := .Site.Params.isso.css | default "true" }}
+{{ $id := .Site.Params.isso.id | default "true" }}
+{{ $avatar := .Site.Params.isso.avatar | default "true" }}
+{{ $avatarbg := .Site.Params.isso.avatarbg | default "#f0f0f0" }}
+<article class="post">
+<script
+    data-isso="{{ .Site.Params.isso.data }}"
+    data-isso-id="{{ $id }}"
+    data-isso-css="{{ $css }}"
+    data-isso-lang="{{ $lang }}"
+    data-isso-reply-to-self="{{ .Site.Params.isso.replyToSelf }}"
+    data-isso-require-author="{{ .Site.Params.isso.requireAuthor }}"
+    data-isso-require-email="{{ .Site.Params.isso.requireEmail }}"
+    data-isso-avatar="{{ $avatar }}"
+    data-isso-avatar-bg="{{ $avatarbg }}"
+    src="{{ .Site.Params.isso.jsLocation }}">
+</script>
+<noscript>Please enable JavaScript to view the comments powered by <a href="https://posativ.org/isso/">Isso</a>.</noscript>
+<div>
+  <section id="isso-thread"></section>
+</div>
+</article>
