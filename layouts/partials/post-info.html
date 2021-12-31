@@ -15,15 +15,17 @@
     <div class="post-taxonomies">
         {{ if .Params.categories }}
             <ul class="post-categories">
-                {{ range .Params.categories }}
-                    <li><a href="{{ "categories/" | absLangURL }}{{ . | urlize }}">{{ . }}</a></li>
+                {{ range $cat_name := .Params.categories }}
+                    {{ $cat := ($.Site.GetPage (printf "/categories/%s" $cat_name)) }}
+                    <li><a href="{{ $cat.Permalink }}">#{{ $cat.Title | default $cat_name }}</a></li>
                 {{ end }}
             </ul>
             {{ end }}
             {{ if .Params.tags }}
                 <ul class="post-tags">
-                    {{ range .Params.tags }}
-                        <li><a href="{{ "tags/" | absLangURL }}{{ . | urlize }}">#{{ . }}</a></li>
+                    {{ range $tag_name := .Params.tags }}
+                        {{ $tag := ($.Site.GetPage (printf "/tags/%s" $tag_name)) }}
+                        <li><a href="{{ $tag.Permalink }}">#{{ $tag.Title | default $tag_name }}</a></li>
                     {{ end }}
                 </ul>
         {{ end }}
