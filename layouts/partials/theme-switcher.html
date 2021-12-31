@@ -5,7 +5,7 @@
 
 {{ if not (in (slice "light-without-switcher" "dark-without-switcher" "auto-without-switcher") $style) }}
     <button class="theme-switcher">
-        {{ i18n "darkTheme" | humanize }}
+        {{ i18n "darkTheme" }}
     </button>
 
     <script>
@@ -54,7 +54,7 @@
 
     function changeButtonText()
     {   
-        switchButton.textContent = currentTheme == 'dark' ?  {{ i18n "lightTheme" | humanize }} : {{ i18n "darkTheme" | humanize }}
+        switchButton.textContent = currentTheme == 'dark' ?  {{ i18n "lightTheme" }} : {{ i18n "darkTheme" }}
     }
 
     function switchTheme(e) {
