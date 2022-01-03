@@ -17,7 +17,7 @@
             <ul class="post-categories">
                 {{ range $cat_name := .Params.categories }}
                     {{ $cat := ($.Site.GetPage (printf "/categories/%s" $cat_name)) }}
-                    <li><a href="{{ $cat.Permalink }}">#{{ $cat.Title | default $cat_name }}</a></li>
+                    <li><a href="{{ $cat.Permalink }}">{{ $cat.Title | default $cat_name }}</a></li>
                 {{ end }}
             </ul>
             {{ end }}
