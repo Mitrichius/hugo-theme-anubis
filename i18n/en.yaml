@@ -1,11 +1,11 @@
 powered:
-  other: "powered by"
+  other: "Powered by"
 
 theme:
   other: "theme"
 
 readMore:
-  other: "read more"
+  other: "Read more"
 
 toNewPosts:
   other: "to new posts"
@@ -35,10 +35,10 @@ toAllCategories:
   other: "to all categories"
 
 skipToContent:
-  other: "skip to main content"
+  other: "Skip to main content"
 
 darkTheme:
-  other: "dark theme"
+  other: "Dark theme"
 
 lightTheme:
-  other: "light theme"
+  other: "Light theme"

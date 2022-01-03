@@ -1,11 +1,11 @@
 powered:
-  other: "zasilany przez"
+  other: "Zasilany przez"
 
 theme:
   other: "motyw"
 
 readMore:
-  other: "czytaj dalej"
+  other: "Czytaj dalej"
 
 toNewPosts:
   other: "poprzednia strona"
@@ -35,10 +35,10 @@ toAllCategories:
   other: "wszystkie kategorie"
 
 skipToContent:
-  other: "przejdź do głównej zawartości"
+  other: "Przejdź do głównej zawartości"
 
 darkTheme:
-  other: "ciemny schemat"
+  other: "Ciemny schemat"
 
 lightTheme:
-  other: "jasny schemat"
+  other: "Jasny schemat"
