@@ -13,7 +13,7 @@
     {{ end }}
     {{ if and (.Truncated) (.Site.Params.readMore) }}
         <div class="read-more">
-            <a class="u-url" href="{{ .RelPermalink }}">{{ i18n "readMore" | humanize }}</a>
+            <a class="u-url" href="{{ .RelPermalink }}">{{ i18n "readMore" }}</a>
         </div>
     {{ end }}
     
