@@ -372,8 +372,7 @@ article header h1 a {
 .post h6 a {
     opacity: 0;
     position: absolute;
-    left: -0.7em;
-    color: var(--font-color);
+    left: -1.2rem;
 }
 
 .post h1:hover a,
@@ -383,27 +382,58 @@ article header h1 a {
 .post h5:hover a,
 .post h6:hover a {
     opacity: 1;
+    border-bottom: none; 
 }
 
-.post h1:hover a:hover, 
-.post h1:hover a:focus,
-.post h1:hover a:active,
-.post h2:hover a:hover, 
-.post h2:hover a:focus,
-.post h2:hover a:active,
-.post h3:hover a:hover, 
-.post h3:hover a:focus,
-.post h3:hover a:active,
-.post h4:hover a:hover, 
-.post h4:hover a:focus,
-.post h4:hover a:active,
-.post h5:hover a:hover, 
-.post h5:hover a:focus,
-.post h5:hover a:active,
-.post h6:hover a:hover, 
-.post h6:hover a:focus,
-.post h6:hover a:active {
-    color: var(--link-state-color);
+.post h1 a:hover, 
+.post h1 a:focus,
+.post h1 a:active,
+.post h2 a:hover, 
+.post h2 a:focus,
+.post h2 a:active,
+.post h3 a:hover, 
+.post h3 a:focus,
+.post h3 a:active,
+.post h4 a:hover, 
+.post h4 a:focus,
+.post h4 a:active,
+.post h5 a:hover, 
+.post h5 a:focus,
+.post h5 a:active,
+.post h6 a:hover, 
+.post h6 a:focus,
+.post h6 a:active {
+    border-bottom: none; 
+}
+
+.post h1 svg,
+.post h2 svg,
+.post h3 svg,
+.post h4 svg,
+.post h5 svg,
+.post h6 svg {
+    stroke: var(--svg-color);
+}
+
+.post h1 svg:hover, 
+.post h1 svg:focus,
+.post h1 svg:active,
+.post h2 svg:hover, 
+.post h2 svg:focus,
+.post h2 svg:active,
+.post h3 svg:hover, 
+.post h3 svg:focus,
+.post h3 svg:active,
+.post h4 svg:hover, 
+.post h4 svg:focus,
+.post h4 svg:active,
+.post h5 svg:hover, 
+.post h5 svg:focus,
+.post h5 svg:active,
+.post h6 svg:hover, 
+.post h6 svg:focus,
+.post h6 svg:active {
+    stroke: var(--svg-state-color);
 }
 
 .post-info {
