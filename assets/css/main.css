@@ -640,6 +640,47 @@ ul.language-select > li, ul.footer-menu > li {
     display: none;
 }
 
+/* Copy code  */
+.highlight {
+    position: relative;
+}
+.highlight pre {
+    padding-right: 75px;
+}
+
+.highlight:hover .highlight-copy-btn {
+    display: inline-block;
+    border: 1px solid var(--bg-color);
+}
+
+.highlight-copy-btn {
+    display: none;
+    position: absolute;
+    top: 7px;
+    right: 7px;
+    border: 0;
+    border-radius: 4px;
+    padding: 1px;
+    font-size: 0.7em;
+    line-height: 1.8;
+    color: #fff;
+    background-color: #777;
+    min-width: 25px;
+    text-align: center;
+    border-radius: 5px;
+}
+.highlight-copy-btn:hover {
+    transition-duration: .1s;
+    background-color: #666;
+    border: 1px solid var(--bq-color) !important;
+}
+
+.highlight-copy-btn,
+.highlight-copy-btn svg {
+    vertical-align: middle;
+    margin: 8px;
+}
+
 /* Media Queries */
 
 @media (max-width: 840px) {

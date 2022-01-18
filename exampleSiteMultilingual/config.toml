@@ -18,6 +18,7 @@ dateFormat = "2006-01-02"
 paginationSinglePost = true
 style = "auto"
 readMore = false
+copyCodeButton = true
 
 # utteranc.es support
 utterancesRepo = ""  # mandatory

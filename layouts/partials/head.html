@@ -18,6 +18,10 @@
 {{ partial "favicons.html" . }}
 {{ partial "resource.html" (dict "context" . "type" "css" "filename" "css/main.css") }}
 
+{{ if .Site.Params.copyCodeButton | default true }}
+    {{ partial "resource.html" (dict "context" . "type" "js" "filename" "js/copy-code.js") }}
+{{ end }}
+
 {{ range .Site.Params.customJS -}}
   {{ partial "resource.html" (dict "context" $ "type" "js" "filename" . ) }}
 {{- end }}
