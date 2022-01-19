@@ -19,6 +19,7 @@ paginationSinglePost = true
 style = "auto"
 readMore = false
 copyCodeButton = true
+rssAsSocialIcon = true
 
 # utteranc.es support
 utterancesRepo = ""  # mandatory

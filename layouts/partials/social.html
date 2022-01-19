@@ -23,4 +23,14 @@
         </li>
     {{ end }}
 {{ end }}
+
+{{ if .Site.Params.rssAsSocialIcon }}
+    {{ $url := "/index.xml" | relLangURL }}
+    <li>
+        <a {{ printf "href=%q" $url | safeHTMLAttr }} title="RSS" rel="me">
+        {{ partial "font-awesome.html" (dict "iconName" "rss" "custom" false) }}
+        </a>
+    </li>
+{{ end }}
+
 </ul>

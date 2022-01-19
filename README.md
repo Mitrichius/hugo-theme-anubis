@@ -84,6 +84,7 @@ params:
   readMore: false
   disableSummary: false
   copyCodeButton: true # true by default
+  rssAsSocialIcon: true
   # utteranc.es support
   utterancesRepo: ""  # mandatory
   utterancesTheme: "" # optional
@@ -202,6 +203,10 @@ Only works for production environment.
 
 ### Multilingual mode 
 Check config/example usage in [exampleSiteMultilingual](https://github.com/Mitrichius/hugo-theme-anubis/tree/master/exampleSiteMultilingual) directory and documentation on [Hugo site](https://gohugo.io/content-management/multilingual/).
+
+### RSS 
+RSS is available by site url + /index.xml. Also available for specific language, section, taxonomy.  
+`rssAsSocialIcon` parameter enables rss sosial icon with link to site current language RSS.
 
 ### Robots.txt
 Based on environment.  
