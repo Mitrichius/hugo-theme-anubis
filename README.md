@@ -20,6 +20,7 @@ Anubis is a simple minimalist theme for [Hugo blog engine](https://gohugo.io/).
 - ISSO
 - Utteranc.es
 - RSS feeds
+- Deploy via Netlify (config included in example site)
 - Hiding posts from the RSS feed
 - Hidden posts (available only by link)
 - Translations (en, ru, fr, pl)
