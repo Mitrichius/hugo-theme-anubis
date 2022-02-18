@@ -556,6 +556,16 @@ article figcaption {
     color: var(--link-state-color);
 }
 
+.read-next-title {
+    margin-bottom:  0;
+}
+
+.read-next-posts {
+    margin-top:  5px;
+    list-style-type:"- ";
+    padding-inline-start: 20px;
+}
+
 /* Other pages */
 .terms {
     list-style-type: none;

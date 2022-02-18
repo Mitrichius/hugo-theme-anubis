@@ -21,6 +21,18 @@
         {{ partial "post-info.html" . }}
     </article>
 
+    {{ if gt .Site.Params.readNextPosts 0 }}
+        {{ $related := .Site.RegularPages.Related . | first .Site.Params.readNextPosts }}
+        {{ with $related }}
+            <h3 class="read-next-title">{{ i18n "readNext" }}</h3>
+            <ul class="read-next-posts">
+                {{ range . }}
+                <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+                {{ end }}
+            </ul>
+        {{ end }}
+    {{ end }}
+
     {{ if and (.Site.Params.paginationSinglePost) (ne .Type "page") }}
         {{ partial "post-pagination.html" . }}
     {{ end }}

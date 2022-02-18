@@ -42,3 +42,6 @@ darkTheme:
 
 lightTheme:
   other: "Light theme"
+
+readNext:
+  other: "Read next"

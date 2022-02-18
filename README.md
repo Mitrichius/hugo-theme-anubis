@@ -20,6 +20,7 @@ Anubis is a simple minimalist theme for [Hugo blog engine](https://gohugo.io/).
 - ISSO
 - Utteranc.es
 - RSS feeds
+- Related posts (Read Next section)
 - Deploy via Netlify (config included in example site)
 - Hiding posts from the RSS feed
 - Hidden posts (available only by link)
@@ -82,7 +83,8 @@ params:
   dateFormat: "2006-01-02"
   paginationSinglePost: true
   style: light-without-switcher
-  readMore: false
+  readMore: false # show read more button
+  readNextPosts: 5  # show 5 related posts, 0 by default
   disableSummary: false
   copyCodeButton: true # true by default
   rssAsSocialIcon: true
@@ -215,6 +217,9 @@ For production — allow all, for other — disallow all.
 
 ### Favorite posts
 Add `favorite: true` to post front matter. It adds a "★" icon nearby post's title. 
+
+### Related posts (Read Next section)
+Based on `readNextPosts` config parameter. Check [this article](https://gohugo.io/content-management/related/#configure-related-content) for configuration details.
 
 ### Hiding posts from RSS
 Add `disable_feed: true` to post front matter.
