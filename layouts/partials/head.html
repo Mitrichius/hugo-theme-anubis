@@ -16,6 +16,23 @@
 {{ end -}}
 
 {{ partial "favicons.html" . }}
+
+<style>
+  body {
+    visibility: hidden;
+    opacity: 0;
+  }
+</style>
+
+<noscript>
+  <style>
+    body {
+      visibility: visible;
+      opacity: 1;
+    }
+  </style>
+</noscript>
+
 {{ partial "resource.html" (dict "context" . "type" "css" "filename" "css/main.css") }}
 
 {{ if .Site.Params.copyCodeButton | default true }}
