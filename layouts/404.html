@@ -1,8 +1,8 @@
 {{ define "main"}}
 <main id="main">
     <div>
-        <h1 id="title"><a href="{{ "/" | relURL }}">Go Home</a></h1>
-        Sorry, This Page is not available.
+        <h1 id="title"><a href="{{ .Site.BaseURL | relLangURL }}">Go Home</a></h1>
+        Sorry, this Page is not available.
     </div>
 </main>
 {{ end }}
