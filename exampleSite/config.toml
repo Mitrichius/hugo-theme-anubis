@@ -21,6 +21,9 @@ readNextPosts = 2
 copyCodeButton = true
 rssAsSocialIcon = true
 
+# Graphcomment support
+graphcommentId = ""
+
 # utteranc.es support
 utterancesRepo = ""  # mandatory
 utterancesTheme = "" # optional

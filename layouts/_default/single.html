@@ -49,4 +49,8 @@
         {{ partial "isso.html" . }}
     {{ end }}
 
+    {{ if .Site.Params.graphcommentId }}
+        {{ partial "graphcomment.html" . }}
+    {{ end }}
+
 {{ end }}
