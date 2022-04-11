@@ -58,7 +58,7 @@ function detectCurrentScheme() {
     return 'light'
 }
 
-function changeButtonText(switchButton)
+function changeButtonText()
 {   
     if (switchButton) {
         switchButton.textContent = currentTheme == 'dark' ?  {{ i18n "lightTheme" }} : {{ i18n "darkTheme" }}
