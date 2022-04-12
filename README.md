@@ -233,6 +233,9 @@ Enabled by `paginationSinglePost` param in `params` section of config.
 To provide webmention support you can **either** specify your webmention.io username with `login: webmentionusername` **or** specify a link to your custom webmention endpoint with `url: https://yourdomain.com/webemntions/receive`.
 If you use webmention.io you can also enable pingback with `pingback: true` 
 
+### Disabling comments per-page basis
+Add `disableComments: true` to post front matter.
+
 ## Contributing
 
 If you find a bug or have an idea for a feature, feel free to write an [issue](https://github.com/mitrichius/hugo-theme-anubis/issues) or make a PR.

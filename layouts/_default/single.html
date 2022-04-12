@@ -37,20 +37,7 @@
         {{ partial "post-pagination.html" . }}
     {{ end }}
 
-    {{ if .Site.DisqusShortname }}
-        {{ partial "disqus.html" . }}
+    {{ if not .Params.disableComments }}
+        {{ partial "comments.html" . }}
     {{ end }}
-
-    {{ if .Site.Params.UtterancesRepo }}
-        {{ partial "utterances.html" . }}
-    {{ end }}
-
-    {{ if .Site.Params.isso.enabled }}
-        {{ partial "isso.html" . }}
-    {{ end }}
-
-    {{ if .Site.Params.graphcommentId }}
-        {{ partial "graphcomment.html" . }}
-    {{ end }}
-
 {{ end }}
