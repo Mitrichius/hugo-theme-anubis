@@ -100,6 +100,7 @@ params:
     id: "thread-id" # optional
     avatar: true # optional
     avatar-bg: "#f0f0f0" # optional
+    feed: false # optional
   webmentions:
     url: https://yourdomain.com/webemntions/receive
     login: hugo-theme-anubis
