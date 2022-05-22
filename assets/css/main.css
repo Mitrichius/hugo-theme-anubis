@@ -653,6 +653,7 @@ ul.language-select > li, ul.footer-menu > li {
 /* Copy code  */
 .highlight {
     position: relative;
+    overflow: auto;
 }
 .highlight pre {
     padding-right: 75px;
