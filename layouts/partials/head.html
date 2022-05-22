@@ -7,12 +7,41 @@
 {{ partial "title.html" . }}
 <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end -}}">
 
+{{ with .Keywords }}
+    <meta name="keywords" content="{{ range $i, $e := . }}{{ if $i }},{{ end }}{{ $e }}{{ end }}">
+{{ end }}
+
+{{ if and (.IsPage) (eq .Params.hidden true)}}
+<meta name="robots" content="noindex" />
+{{ end }}
+
 {{ with .OutputFormats.Get "rss" -}}
     {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
 {{ end -}}
 
 {{ partial "favicons.html" . }}
+
+<style>
+  body {
+    visibility: hidden;
+    opacity: 0;
+  }
+</style>
+
+<noscript>
+  <style>
+    body {
+      visibility: visible;
+      opacity: 1;
+    }
+  </style>
+</noscript>
+
 {{ partial "resource.html" (dict "context" . "type" "css" "filename" "css/main.css") }}
+
+{{ if .Site.Params.copyCodeButton | default true }}
+    {{ partial "resource.html" (dict "context" . "type" "js" "filename" "js/copy-code.js") }}
+{{ end }}
 
 {{ range .Site.Params.customJS -}}
   {{ partial "resource.html" (dict "context" $ "type" "js" "filename" . ) }}

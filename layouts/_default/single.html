@@ -2,7 +2,7 @@
     {{ if .Menus }}
         <nav class="post-navigation">
         {{ range .Menus }}
-            <a href="{{ .URL | absLangURL }}" title="{{ .Title }}">{{ .Name }}</a>
+            <a href="{{ .ConfiguredURL | absLangURL }}" title="{{ .Title }}">{{ .Name }}</a>
         {{ end }}
         </nav>
     {{ end }}
@@ -21,20 +21,23 @@
         {{ partial "post-info.html" . }}
     </article>
 
+    {{ if gt .Site.Params.readNextPosts 0 }}
+        {{ $related := .Site.RegularPages.Related . | first .Site.Params.readNextPosts }}
+        {{ with $related }}
+            <h3 class="read-next-title">{{ i18n "readNext" }}</h3>
+            <ul class="read-next-posts">
+                {{ range . }}
+                <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+                {{ end }}
+            </ul>
+        {{ end }}
+    {{ end }}
+
     {{ if and (.Site.Params.paginationSinglePost) (ne .Type "page") }}
         {{ partial "post-pagination.html" . }}
     {{ end }}
 
-    {{ if .Site.DisqusShortname }}
-        {{ partial "disqus.html" . }}
+    {{ if not .Params.disableComments }}
+        {{ partial "comments.html" . }}
     {{ end }}
-
-    {{ if .Site.Params.UtterancesRepo }}
-        {{ partial "utterances.html" . }}
-    {{ end }}
-
-    {{ if .Site.Params.isso.enabled }}
-        {{ partial "isso.html" . }}
-    {{ end }}
-
 {{ end }}

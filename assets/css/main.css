@@ -341,7 +341,6 @@ article:not(:last-of-type) {
     padding-bottom: 2em;
 }
 
-
 article header h1 {
     font-size: 1.35em;
     line-height: 1.1em;
@@ -354,6 +353,87 @@ article header h1 a {
     color: var(--font-color);
     border: none;
     text-decoration: none;
+}
+
+.post h1,
+.post h2,
+.post h3,
+.post h4,
+.post h5,
+.post h6 {
+    position: relative;
+}
+
+.post h1 a,
+.post h2 a,
+.post h3 a,
+.post h4 a,
+.post h5 a,
+.post h6 a {
+    opacity: 0;
+    position: absolute;
+    left: -1.2rem;
+}
+
+.post h1:hover a,
+.post h2:hover a,
+.post h3:hover a,
+.post h4:hover a,
+.post h5:hover a,
+.post h6:hover a {
+    opacity: 1;
+    border-bottom: none; 
+}
+
+.post h1 a:hover, 
+.post h1 a:focus,
+.post h1 a:active,
+.post h2 a:hover, 
+.post h2 a:focus,
+.post h2 a:active,
+.post h3 a:hover, 
+.post h3 a:focus,
+.post h3 a:active,
+.post h4 a:hover, 
+.post h4 a:focus,
+.post h4 a:active,
+.post h5 a:hover, 
+.post h5 a:focus,
+.post h5 a:active,
+.post h6 a:hover, 
+.post h6 a:focus,
+.post h6 a:active {
+    border-bottom: none; 
+}
+
+.post h1 svg,
+.post h2 svg,
+.post h3 svg,
+.post h4 svg,
+.post h5 svg,
+.post h6 svg {
+    stroke: var(--svg-color);
+}
+
+.post h1 svg:hover, 
+.post h1 svg:focus,
+.post h1 svg:active,
+.post h2 svg:hover, 
+.post h2 svg:focus,
+.post h2 svg:active,
+.post h3 svg:hover, 
+.post h3 svg:focus,
+.post h3 svg:active,
+.post h4 svg:hover, 
+.post h4 svg:focus,
+.post h4 svg:active,
+.post h5 svg:hover, 
+.post h5 svg:focus,
+.post h5 svg:active,
+.post h6 svg:hover, 
+.post h6 svg:focus,
+.post h6 svg:active {
+    stroke: var(--svg-state-color);
 }
 
 .post-info {
@@ -476,6 +556,16 @@ article figcaption {
     color: var(--link-state-color);
 }
 
+.read-next-title {
+    margin-bottom:  0;
+}
+
+.read-next-posts {
+    margin-top:  5px;
+    list-style-type:"- ";
+    padding-inline-start: 20px;
+}
+
 /* Other pages */
 .terms {
     list-style-type: none;
@@ -558,6 +648,47 @@ ul.language-select > li, ul.footer-menu > li {
 
 .h-card {
     display: none;
+}
+
+/* Copy code  */
+.highlight {
+    position: relative;
+}
+.highlight pre {
+    padding-right: 75px;
+}
+
+.highlight:hover .highlight-copy-btn {
+    display: inline-block;
+    border: 1px solid var(--bg-color);
+}
+
+.highlight-copy-btn {
+    display: none;
+    position: absolute;
+    top: 7px;
+    right: 7px;
+    border: 0;
+    border-radius: 4px;
+    padding: 1px;
+    font-size: 0.7em;
+    line-height: 1.8;
+    color: #fff;
+    background-color: #777;
+    min-width: 25px;
+    text-align: center;
+    border-radius: 5px;
+}
+.highlight-copy-btn:hover {
+    transition-duration: .1s;
+    background-color: #666;
+    border: 1px solid var(--bq-color) !important;
+}
+
+.highlight-copy-btn,
+.highlight-copy-btn svg {
+    vertical-align: middle;
+    margin: 8px;
 }
 
 /* Media Queries */

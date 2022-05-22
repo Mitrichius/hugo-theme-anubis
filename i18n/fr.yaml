@@ -1,11 +1,11 @@
 powered:
-  other: "propulsé par"
+  other: "Propulsé par"
 
 theme:
   other: "thème"
 
 readMore:
-  other: "lire la suite"
+  other: "Lire la suite"
 
 toNewPosts:
   other: "articles + récents"
@@ -35,10 +35,13 @@ toAllCategories:
   other: "vers toutes les catégories"
 
 skipToContent:
-  other: "aller au contenu"
+  other: "Aller au contenu"
 
 darkTheme:
-  other: "thème sombre"
+  other: "Thème sombre"
 
 lightTheme:
-  other: "thème clair"
+  other: "Thème clair"
+
+readNext:
+  other: "Lire la suite"

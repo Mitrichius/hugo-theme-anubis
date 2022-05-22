@@ -1,0 +1,15 @@
+{{ if .Site.DisqusShortname }}
+    {{ partial "disqus.html" . }}
+{{ end }}
+
+{{ if .Site.Params.UtterancesRepo }}
+    {{ partial "utterances.html" . }}
+{{ end }}
+
+{{ if .Site.Params.isso.enabled }}
+    {{ partial "isso.html" . }}
+{{ end }}
+
+{{ if .Site.Params.graphcommentId }}
+    {{ partial "graphcomment.html" . }}
+{{ end }}

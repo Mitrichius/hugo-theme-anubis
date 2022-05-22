@@ -1,11 +1,11 @@
 powered:
-  other: "движок"
+  other: "Движок"
 
 theme:
   other: "тема"
 
 readMore:
-  other: "читать дальше"
+  other: "Читать дальше"
 
 toNewPosts:
   other: "к новым записям"
@@ -35,10 +35,13 @@ toAllCategories:
   other: "ко списку всех категорий"
 
 skipToContent:
-  other: "перейти к основному контенту"
+  other: "Перейти к основному контенту"
 
 darkTheme:
-  other: "тёмная тема"
+  other: "Тёмная тема"
 
 lightTheme:
-  other: "светлая тема"
+  other: "Светлая тема"
+
+readNext:
+  other: "Читать далее"
