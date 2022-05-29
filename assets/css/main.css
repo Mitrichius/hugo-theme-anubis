@@ -738,4 +738,8 @@ ul.language-select > li, ul.footer-menu > li {
   #isso-thread .textarea {
     color: #000;
   }
+  #isso-thread .isso-feedlink {
+    position: relative;
+    z-index: 1;
+  }
 {{ end }}
