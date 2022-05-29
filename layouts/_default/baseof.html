@@ -3,7 +3,7 @@
 {{ if eq site.Params.style "dark-without-switcher" }}
     {{ $dataTheme = "dark" }}
 {{ end }}
-<html lang="{{ .Site.LanguageCode }}" data-theme="{{ $dataTheme }}">
+<html lang="{{ .Site.Params.locale | default .Site.LanguageCode }}" data-theme="{{ $dataTheme }}">
 <head>
     {{ block "head" . }}
         {{ partial "head.html" . }}

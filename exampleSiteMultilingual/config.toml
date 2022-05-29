@@ -21,6 +21,7 @@ readMore = false
 readNextPosts = 2
 copyCodeButton = true
 rssAsSocialIcon = true
+locale = "en-us"
 
 # Graphcomment support
 graphcommentId = ""
@@ -80,6 +81,9 @@ identifier = "archive"
 name = "Archiwum"
 url = "/posts/"
 weight = 3
+
+[[languages.pl.params]]
+locale = "pl-pl"
 
 [taxonomies]
 category = "categories"
