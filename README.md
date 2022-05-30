@@ -201,6 +201,10 @@ Icon should be "static/fa-icons/google.svg"
 
 If you want font awesome icons, download "Font Awesome For Desktop" and open svg directory.
 
+
+
+## [add hugo contact form](https://fabform.io/a/hugo-contact-form)
+
 ### Google Analytics
 Only works for production environment.
 
