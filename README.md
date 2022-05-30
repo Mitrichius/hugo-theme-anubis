@@ -237,6 +237,19 @@ If you use webmention.io you can also enable pingback with `pingback: true`
 ### Disabling comments per-page basis
 Add `disableComments: true` to post front matter.
 
+
+
+## [Add hugo contact form](https://fabform.io/a/hugo-contact-form)
+
+```
+<form action="https://fabform.io/f/{form-id}" method="post">
+ <label for="email">Your Email</label>
+ <input name="email" type="email">
+ <button type="submit">Submit</button> 
+</form>
+```
+
+
 ## Contributing
 
 If you find a bug or have an idea for a feature, feel free to write an [issue](https://github.com/mitrichius/hugo-theme-anubis/issues) or make a PR.
