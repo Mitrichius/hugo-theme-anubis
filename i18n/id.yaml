@@ -1,0 +1,47 @@
+powered:
+  other: "Dipersembahkan oleh"
+
+theme:
+  other: "tema"
+
+readMore:
+  other: "Selengkapnya.."
+
+toNewPosts:
+  other: "ke postingan baru"
+
+toOldPosts:
+  other: "ke postingan lama"
+
+tag:
+  other: "tag"
+
+Tags:
+  other: "Tags"
+
+Posts:
+  other: "Tulisan"
+
+category:
+  other: "kategori"
+
+Categories:
+  other: "Kategori"
+
+toAllTags:
+  other: "Lihat semua tags"
+
+toAllCategories:
+  other: "Lihat semua kategori"
+
+skipToContent:
+  other: "Lompat ke konten"
+
+darkTheme:
+  other: "Tema Gelap"
+
+lightTheme:
+  other: "Tema Terang"
+
+readNext:
+  other: "Baca Selanjutnya"
