@@ -51,7 +51,7 @@ menu,
 nav,
 section {
     display: block;
-}	
+}
 
 .container {
     max-width: 42em;
@@ -109,7 +109,7 @@ a.skip-main {
     z-index:-999;
 }
 
-a.skip-main:focus, 
+a.skip-main:focus,
 a.skip-main:active {
     left: auto;
     top: 0px;
@@ -308,7 +308,7 @@ main h1 {
     margin-left: 2em;
 }
 
-.post-navigation a:hover, 
+.post-navigation a:hover,
 .post-navigation a:focus,
 .post-navigation a:active {
     color: var(--link-state-color);
@@ -382,28 +382,28 @@ article header h1 a {
 .post h5:hover a,
 .post h6:hover a {
     opacity: 1;
-    border-bottom: none; 
+    border-bottom: none;
 }
 
-.post h1 a:hover, 
+.post h1 a:hover,
 .post h1 a:focus,
 .post h1 a:active,
-.post h2 a:hover, 
+.post h2 a:hover,
 .post h2 a:focus,
 .post h2 a:active,
-.post h3 a:hover, 
+.post h3 a:hover,
 .post h3 a:focus,
 .post h3 a:active,
-.post h4 a:hover, 
+.post h4 a:hover,
 .post h4 a:focus,
 .post h4 a:active,
-.post h5 a:hover, 
+.post h5 a:hover,
 .post h5 a:focus,
 .post h5 a:active,
-.post h6 a:hover, 
+.post h6 a:hover,
 .post h6 a:focus,
 .post h6 a:active {
-    border-bottom: none; 
+    border-bottom: none;
 }
 
 .post h1 svg,
@@ -415,22 +415,22 @@ article header h1 a {
     stroke: var(--svg-color);
 }
 
-.post h1 svg:hover, 
+.post h1 svg:hover,
 .post h1 svg:focus,
 .post h1 svg:active,
-.post h2 svg:hover, 
+.post h2 svg:hover,
 .post h2 svg:focus,
 .post h2 svg:active,
-.post h3 svg:hover, 
+.post h3 svg:hover,
 .post h3 svg:focus,
 .post h3 svg:active,
-.post h4 svg:hover, 
+.post h4 svg:hover,
 .post h4 svg:focus,
 .post h4 svg:active,
-.post h5 svg:hover, 
+.post h5 svg:hover,
 .post h5 svg:focus,
 .post h5 svg:active,
-.post h6 svg:hover, 
+.post h6 svg:hover,
 .post h6 svg:focus,
 .post h6 svg:active {
     stroke: var(--svg-state-color);
@@ -551,7 +551,7 @@ article figcaption {
     color: var(--link-color);
 }
 
-.post-translations > li a:hover, 
+.post-translations > li a:hover,
 .post-translations > li a:focus {
     color: var(--link-state-color);
 }
@@ -579,7 +579,7 @@ article figcaption {
     display: flex;
     justify-content: space-between;
     margin-top: 3em;
-    text-align: center;   
+    text-align: center;
 }
 
 .pagination-item {
@@ -591,7 +591,7 @@ article figcaption {
     color: var(--pagination-link-color);
 }
 
-.pagination-item a:hover, 
+.pagination-item a:hover,
 .pagination-item a:focus {
     color: var(--link-state-color);
 }
@@ -667,8 +667,8 @@ ul.language-select > li, ul.footer-menu > li {
 .highlight-copy-btn {
     display: none;
     position: absolute;
-    top: 7px;
-    right: 7px;
+    top: 18px;
+    right: 2px;
     border: 0;
     border-radius: 4px;
     padding: 1px;
@@ -684,6 +684,7 @@ ul.language-select > li, ul.footer-menu > li {
     transition-duration: .1s;
     background-color: #666;
     border: 1px solid var(--bq-color) !important;
+    cursor: pointer;
 }
 
 .highlight-copy-btn,
