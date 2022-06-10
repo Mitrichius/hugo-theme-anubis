@@ -13,4 +13,6 @@
     <nav></nav>
 {{ end }}
 
+{{ if .Site.Params.mathjax }}{{ partial "mathjax_support.html" . }}{{ end }}
+
 {{ partial "header-extra.html" . }}

@@ -508,6 +508,13 @@ article figcaption {
     margin-bottom: 2em;
 }
 
+code.has-jax {
+    -webkit-font-smoothing: antialiased;
+    background: inherit !important;
+    border: none !important;
+    font-size: 100%;
+}
+
 .read-more {
     margin: 1em 0;
 }
