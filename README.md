@@ -35,11 +35,25 @@ Anubis is a simple minimalist theme for [Hugo blog engine](https://gohugo.io/).
 
 You need to install an extended version of Hugo to run this theme.
 
+### As Hugo Module (easier and recommended)
+
+Initiate a `hugo` module system from your project's root directory
+```shell
+hugo mod init github.com/<your_user>/<your_project>
+```
+
+Add the following to your `config.toml` or `config.yaml`
+```toml
+theme =  ["github.com/Mitrichius/hugo-theme-anubis"]
+```
+
+### As Git Submodule
+
 Inside the folder of your Hugo site run:
 
     $ git submodule add https://github.com/mitrichius/hugo-theme-anubis.git themes/anubis
 
-For more information read the official [setup guide](//gohugo.io/overview/installing/) of Hugo.
+For more information read the official [setup guide](https://gohugo.io/overview/installing/) of Hugo.
 
 ## Getting started
 After installing the theme successfully it requires a just a few more steps to get your site running.
