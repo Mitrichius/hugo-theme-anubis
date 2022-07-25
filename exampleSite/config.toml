@@ -20,6 +20,7 @@ readMore = false
 readNextPosts = 2
 copyCodeButton = true
 rssAsSocialIcon = true
+mathjax = false
 
 # Graphcomment support
 graphcommentId = ""

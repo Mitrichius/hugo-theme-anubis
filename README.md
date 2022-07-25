@@ -100,6 +100,7 @@ params:
   disableSummary: false
   copyCodeButton: true # true by default
   rssAsSocialIcon: true
+  mathjax: false # https://www.mathjax.org/
   # utteranc.es support
   utterancesRepo: ""  # mandatory
   utterancesTheme: "" # optional
