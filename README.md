@@ -125,6 +125,7 @@ params:
     dnt: true # optional
     id: "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx" # mandatory
     datacache: false # optional
+    url: "https://abc.example.com/umami.js" # mandatory
   graphcommentId: ""
   webmentions:
     url: https://yourdomain.com/webemntions/receive
