@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', function() {
 })
 
 function detectCurrentScheme() {
-    if (localStorage.getItem(STORAGE_KEY)) {
+    if (localStorage !== null && localStorage.getItem(STORAGE_KEY)) {
         return localStorage.getItem(STORAGE_KEY)
     } 
     if (defaultTheme) {
@@ -67,11 +67,13 @@ function changeButtonText()
 
 function switchTheme(e) {
     if (currentTheme == 'dark') {
-        localStorage.setItem(STORAGE_KEY, 'light')
+        if (localStorage !== null)
+            localStorage.setItem(STORAGE_KEY, 'light')
         document.documentElement.setAttribute('data-theme', 'light')
         currentTheme = 'light'
     } else {
-        localStorage.setItem(STORAGE_KEY, 'dark')
+        if (localStorage !== null)
+            localStorage.setItem(STORAGE_KEY, 'dark')
         document.documentElement.setAttribute('data-theme', 'dark')
         currentTheme = 'dark'
     }
