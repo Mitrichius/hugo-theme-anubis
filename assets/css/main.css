@@ -494,6 +494,18 @@ article header h1 a {
     margin-right: 1em;
 }
 
+.post-authors {
+    display: inline;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.post-authors li {
+    display: inline;
+    margin-right: 1em;
+}
+
 article img {
     max-width: 100%;
     display: block;

@@ -88,6 +88,7 @@ locale = "pl-pl"
 [taxonomies]
 category = "categories"
 tag = "tags"
+author = "authors"
 
 [markup.goldmark.renderer]
 unsafe = true

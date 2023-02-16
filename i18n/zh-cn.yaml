@@ -16,6 +16,9 @@ toOldPosts:
 tag:
   other: "标签"
 
+author:
+  other: "作者"
+
 Tags:
   other: "标签"
 
@@ -30,6 +33,9 @@ Categories:
 
 toAllTags:
   other: "所有标签"
+
+toAllAuthors:
+  other: "所有作者"
 
 toAllCategories:
   other: "所有类别"

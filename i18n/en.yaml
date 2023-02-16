@@ -16,6 +16,9 @@ toOldPosts:
 tag:
   other: "tag"
 
+author:
+  other: "author"
+
 Tags:
   other: "Tags"
 
@@ -30,6 +33,9 @@ Categories:
 
 toAllTags:
   other: "to all tags"
+
+toAllAuthors:
+  other: "to all authors"
 
 toAllCategories:
   other: "to all categories"
