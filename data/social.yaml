@@ -4,6 +4,7 @@ social_icons:
   github: https://github.com/%s
   instagram: https://www.instagram.com/%s
   linkedin: https://www.linkedin.com/in/%s
+  mastodon: "%s"
   patreon: https://www.patreon.com/%s
   reddit: https://www.reddit.com/user/%s
   snapchat: https://www.snapchat.com/s/%s

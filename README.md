@@ -170,6 +170,7 @@ Predefined list:
  - github
  - instagram
  - linkedin
+ - mastodon (need full url)
  - patreon
  - reddit
  - snapchat
