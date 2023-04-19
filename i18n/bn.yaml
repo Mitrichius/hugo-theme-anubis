@@ -1,0 +1,47 @@
+powered:
+  other: "সৌজন্যে"
+
+theme:
+  other: "থিম"
+
+readMore:
+  other: "আরও"
+
+toNewPosts:
+  other: "নতুন প্রচ্ছদ"
+
+toOldPosts:
+  other: "পুরানো প্রচ্ছদ"
+
+tag:
+  other: "বিভাগ"
+
+Tags:
+  other: "বিভাগ"
+
+Posts:
+  other: "প্রচ্ছদ"
+
+category:
+  other: "শ্রেণী"
+
+Categories:
+  other: "শ্রেণী"
+
+toAllTags:
+  other: "বিভাগ সমূহ"
+
+toAllCategories:
+  other: "শ্রেণী সমূহ"
+
+skipToContent:
+  other: "প্রচ্ছদে প্রবেশ করুন"
+
+darkTheme:
+  other: "অন্ধকার থিম"
+
+lightTheme:
+  other: "আলোক থিম"
+
+readNext:
+  other: "পরের প্রচ্ছদ"
