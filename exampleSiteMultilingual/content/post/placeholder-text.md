@@ -7,6 +7,7 @@ tags = [
     "markdown",
     "text",
 ]
+authors = ["hugo"]
 +++
 
 Lorem est tota propiore conpellat pectoribus de
