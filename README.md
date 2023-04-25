@@ -10,7 +10,7 @@ Anubis is a simple minimalist theme for [Hugo blog engine](https://gohugo.io/).
 
 - Dark mode (automatic / by switcher)
 - Pagination
-- Tags/Categories support
+- Multiple taxonomies: tags, categories, authors
 - Archive
 - Open Graph and Twitter Cards support
 - Mobile support
