@@ -29,10 +29,13 @@ Categories:
   other: "Категории"
 
 toAllTags:
-  other: "ко списку всех тегов"
+  other: "к списку тегов"
+
+toAllAuthors:
+  other: "к списку авторов"
 
 toAllCategories:
-  other: "ко списку всех категорий"
+  other: "к списку категорий"
 
 skipToContent:
   other: "Перейти к основному контенту"
