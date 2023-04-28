@@ -72,4 +72,8 @@
     {{ template "_internal/google_analytics.html" . }}
 {{ end }}
 
+{{ if (.Site.Params.UmamiAnalytics.enabled ) }}
+    {{ partial "umami_analytics.html" . }}
+{{ end }}
+
 {{ partial "head-extra.html" . }}

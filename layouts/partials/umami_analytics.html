@@ -1,0 +1,3 @@
+{{ $dnt := .Site.Params.UmamiAnalytics.dnt | default "false" }}
+{{ $datacache := .Site.Params.UmamiAnalytics.datacache | default "false" }}
+<script async defer data-website-id="{{ .Site.Params.UmamiAnalytics.id }}" data-cache="{{ $datacache }}" data-do-not-track="{{ $dnt }}" src="{{ .Site.Params.UmamiAnalytics.url }}"></script>
