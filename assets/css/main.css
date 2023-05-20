@@ -662,7 +662,9 @@ ul.language-select > li, ul.footer-menu > li {
     padding: 0.5em 1em;
     font-size: 16px;
     border: none;
-    margin-bottom: 1em;
+    /* margin-bottom: 1em; the space looks wide*/
+    /* making the switcher straight with site title */
+    margin-top: 1.5em;
 }
 
 .h-card {
