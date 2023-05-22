@@ -1,13 +1,18 @@
-{{ $dateFormat := "2006-01-02" }}
-{{ if .Site.Params.dateFormat }}
-    {{ $dateFormat = .Site.Params.dateFormat }}
-{{ end }}
+{{- $pubdate := .PublishDate.Format "2 Jan 2006" -}}
+{{- $lastmod := .Lastmod.Format "2 Jan 2006" -}}
 
 <div class="post-info">
-    {{ if .Params.date }}
-        <div class="post-date dt-published"><a class="u-url" href="{{ .RelPermalink }}">{{ .Params.date.Format $dateFormat }}<a/></div>
-    {{ end }}
-
+    {{- if .Params.date }}
+            <div class="post-date dt-published"><a class="u-url" href="/arsip/">{{ i18n "publishDate" }} <time datetime="{{ .PublishDate }}" title="{{ .PublishDate }}">{{ $pubdate }}</time><a/>
+            </div>
+    {{- end -}}
+    {{- if .Lastmod }}
+            {{- if ne $lastmod $pubdate }}
+            <div>{{ i18n "lastModDate" }} <time datetime="{{ .Lastmod }}" title="{{ .Lastmod }}">{{ $lastmod }}</time>
+            </div>
+            {{- end }}
+    {{- end }}
+    
     <a class="post-hidden-url u-url" href="{{ .Permalink }}">{{ .Permalink }}</a>
     <a href="{{ .Site.BaseURL }}" class="p-name p-author post-hidden-author h-card" rel="me">{{ .Params.author | default .Site.Params.author }}</a>
 
