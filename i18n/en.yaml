@@ -51,3 +51,6 @@ lightTheme:
 
 readNext:
   other: "Read next"
+
+lastMod:
+  other: "Last modified:"
