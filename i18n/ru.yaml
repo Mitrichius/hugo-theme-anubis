@@ -48,3 +48,6 @@ lightTheme:
 
 readNext:
   other: "Читать далее"
+
+lastMod:
+  other: "Отредактировано:"
