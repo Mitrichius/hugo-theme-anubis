@@ -12,6 +12,7 @@ Anubis is a simple minimalist theme for [Hugo blog engine](https://gohugo.io/).
 - Pagination
 - Multiple taxonomies: tags, categories, authors
 - Archive
+- Table of Contents
 - Open Graph and Twitter Cards support
 - Mobile support
 - Social icons
@@ -99,6 +100,8 @@ params:
   readMore: false # show read more button
   readNextPosts: 5  # show 5 related posts, 0 by default
   disableSummary: false
+  toc: true # display Table of Contents
+  tocWordCount: 300 # ...when a post is longer than 300 words
   copyCodeButton: true # true by default
   rssAsSocialIcon: true
   mathjax: false # https://www.mathjax.org/
@@ -164,6 +167,15 @@ Options:
 - `light` - light theme by default, can be switched by user to dark theme and back. Theme settings are saved for user 
 - `dark` - dark theme by default, can be switched by user to light theme and back. Theme settings are saved for user 
 - `auto` - theme based on user system settings by default, can be switched by user to dark/light theme. Theme settings are saved for user (by default in example sites)
+
+### Table of Contents
+If `toc` param in `params` section of the config file is set to `true`,
+Table of Contents is generated for every post that is at least `tocWordCount`
+words long (`0` by default, also belongs to the `params` section of the config).
+
+This behavior can be overridden on per-post basis
+by setting `toc` to either `true` or `false` in the front matter of a post.
+
 
 ### Social icons
 #### Predefined icons
