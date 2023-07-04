@@ -3,7 +3,8 @@
     {{ $style = site.Params.style | lower }}
 {{ end }}
 
-{{ if not (in (slice "light-without-switcher" "dark-without-switcher" "auto-without-switcher") $style) }}
+{{ if not (in (slice "light-without-switcher" "dark-without-switcher") $style) }}
+{{ if ne "auto-without-switcher" $style }}
     <button class="theme-switcher">
         {{ i18n "darkTheme" }}
     </button>
@@ -85,3 +86,4 @@ function showContent() {
     document.body.style.opacity = 1;
 }
 </script>
+{{ end }}
