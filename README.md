@@ -11,6 +11,7 @@ Anubis is a simple minimalist theme for [Hugo blog engine](https://gohugo.io/).
 - Dark mode (automatic / by switcher)
 - Pagination
 - Multiple taxonomies: tags, categories, authors
+- Multiple sections: posts, notes, etc with customization
 - Archive
 - Table of Contents
 - Open Graph and Twitter Cards support
@@ -97,6 +98,8 @@ params:
   dateFormat: "2006-01-02"
   paginationSinglePost: true
   style: light-without-switcher
+  mainSections: [ "posts" ] # which sections should be on index/main page
+  sectionsWithFullContentOnListPage: [ "notes" ] # for which sections content should be displayed on list pages
   readMore: false # show read more button
   readNextPosts: 5  # show 5 related posts, 0 by default
   disableSummary: false

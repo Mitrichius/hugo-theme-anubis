@@ -5,7 +5,8 @@
 
     <div class="articles h-feed">
         <h1 class="post-title">{{ i18n .Title }}</h1>
-        {{ $pages := where (where .Pages "Type" "in" site.Params.mainSections) "Params.hidden" "!=" true}}
+        {{ $showFullContent := in .Site.Params.sectionsWithFullContentOnListPage .Section }}
+        {{ $pages := where .Pages "Params.hidden" "!=" true}}
         {{ range $pages }}
             <div class="post-short-list h-entry">
                 <div class="post-header">
@@ -14,6 +15,9 @@
                         {{ partial "post-language-switcher.html" . }}
                     </header>
                 </div>
+                {{ if $showFullContent }}
+                    {{ .Content }}
+                {{ end }}
                 {{ partial "post-info.html" . }}
             </div>
         {{ end }}
