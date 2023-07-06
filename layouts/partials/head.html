@@ -21,6 +21,12 @@
 
 {{ partial "favicons.html" . }}
 
+{{ $style := "light-without-switcher" }}
+{{ if and (isset site.Params "style") (ne site.Params.style "") }}
+    {{ $style = site.Params.style | lower }}
+{{ end }}
+
+{{ if not (in (slice "light-without-switcher" "dark-without-switcher") $style) }}
 <style>
   body {
     visibility: hidden;
@@ -36,6 +42,7 @@
     }
   </style>
 </noscript>
+{{end}}
 
 {{ partial "resource.html" (dict "context" . "type" "css" "filename" "css/main.css") }}
 

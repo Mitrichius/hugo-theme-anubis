@@ -1,22 +1,32 @@
 {{ $light := resources.Get "css/light.css" }}
 {{ $dark := resources.Get "css/dark.css" }}
 
-{{ $light.Content }}
+{{ $style := "light-without-switcher" }}
+{{ if and (isset site.Params "style") (ne site.Params.style "") }}
+    {{ $style = site.Params.style | lower }}
+{{ end }}
 
-{{ if eq site.Params.style "dark-without-switcher" }}
+{{ if eq $style "dark-without-switcher" }}
 :root {
     {{ $dark.Content }}
 }
-{{ else if eq site.Params.style "auto-without-switcher" }}
+
+{{ else }}
+
+{{ $light.Content }}
+
+{{ if eq $style "auto-without-switcher" }}
 @media (prefers-color-scheme: dark) {
     :root {
         {{ $dark.Content }}
     }
 }
-{{else }}
+{{ else if ne $style "light-without-switcher" }}
 [data-theme="dark"] {
     {{ $dark.Content }}
 }
+{{ end }}
+
 {{ end }}
 
 /* Basic */
