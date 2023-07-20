@@ -289,6 +289,13 @@ main h1 {
     margin-top: 1em;
 }
 
+.post-short-list img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+    margin: 0 auto .5em;
+}
+
 /* Articles */
 
 .post-header {
