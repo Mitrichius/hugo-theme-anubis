@@ -7,7 +7,13 @@
         <h1 class="post-title">{{ i18n .Title }}</h1>
         {{ $showFullContent := in .Site.Params.sectionsWithFullContentOnListPage .Section }}
         {{ $pages := where .Pages "Params.hidden" "!=" true}}
-        {{ range $pages }}
+
+        {{ $pagesRange := $pages}}
+        {{ if $showFullContent }}
+            {{ $pagesRange = (.Paginate $pages).Pages }}
+        {{ end}}
+
+        {{ range $pagesRange }}
             <div class="post-short-list h-entry">
                 <div class="post-header">
                     <header>
@@ -21,6 +27,9 @@
                 {{ partial "post-info.html" . }}
             </div>
         {{ end }}
+        {{ if $showFullContent }}
+            {{ partial "pagination.html" . }}
+        {{ end}}
     </div>
 
 {{ end }}
