@@ -212,7 +212,7 @@ Example:
 Config like this generate github icon with "https://github.com/gohugoio" url.
 
 #### Predefined icons with custom url
-To add prefedined icon with custom url, add to `params.social` config:
+To add predefined icon with custom url, add to `params.social` config:
 - id of social network
 - full url to your network  
 
@@ -247,7 +247,7 @@ Check config/example usage in [exampleSiteMultilingual](https://github.com/Mitri
 
 ### RSS 
 RSS is available by site url + /index.xml. Also available for specific language, section, taxonomy.  
-`rssAsSocialIcon` parameter enables rss sosial icon with link to site current language RSS.
+`rssAsSocialIcon` parameter enables rss social icon with link to site current language RSS.
 
 ### Robots.txt
 Based on environment.  

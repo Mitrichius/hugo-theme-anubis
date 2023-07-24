@@ -3,7 +3,7 @@ publish = "exampleSiteMultilingual/public"
 command = "cd exampleSiteMultilingual && hugo --themesDir=../.. --baseURL $URL"
 
 [build.environment]
-HUGO_VERSION = "0.92.0"
+HUGO_VERSION = "0.115.4"
 HUGO_THEME = "repo"
 
 [context.deploy-preview]
