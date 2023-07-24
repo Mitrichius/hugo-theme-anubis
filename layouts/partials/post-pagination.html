@@ -1,13 +1,15 @@
 {{ if or ( .PrevInSection ) ( .NextInSection ) }}
+    {{ $toNewPostMessage := i18n "toNewPost" }}
+    {{ $toOldPostMessage := i18n "toOldPost" }}
     <div class="pagination post-pagination">
         <div class="left pagination-item {{ if not .NextInSection }}disabled{{ end }}">
             {{ if .NextInSection }}
-                <a href="{{ .NextInSection.RelPermalink }}">{{ .NextInSection.Title }}</a>
+                <a href="{{ .NextInSection.RelPermalink }}">{{ .NextInSection.Title | default $toNewPostMessage }}</a>
             {{ end }}
         </div>
         <div class="right pagination-item {{ if not .PrevInSection }}disabled{{ end }}">
             {{ if .PrevInSection }}
-                <a href="{{ .PrevInSection.RelPermalink }}">{{ .PrevInSection.Title }}</a>
+                <a href="{{ .PrevInSection.RelPermalink }}">{{ .PrevInSection.Title | default $toOldPostMessage }}</a>
             {{ end }}
         </div>
     </div>
