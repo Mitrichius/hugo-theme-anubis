@@ -51,3 +51,9 @@ readNext:
 
 lastMod:
   other: "Отредактировано:"
+
+toNewPost:
+  other: "к новой записи"
+
+toOldPost:
+  other: "к старой записи"
