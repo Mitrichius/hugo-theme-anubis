@@ -83,7 +83,7 @@ name = "Archiwum"
 url = "/posts/"
 weight = 3
 
-[[languages.pl.params]]
+[languages.pl.params]
 locale = "pl-pl"
 
 [taxonomies]
