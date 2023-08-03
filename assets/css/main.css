@@ -296,6 +296,13 @@ main h1 {
     margin: 0 auto .5em;
 }
 
+.post-short-list video {
+    max-width: 100%;
+    display: block;
+    height: auto;
+    margin: 0 auto .5em;
+}
+
 /* Articles */
 
 .post-header {
