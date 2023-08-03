@@ -57,3 +57,6 @@ toNewPost:
 
 toOldPost:
   other: "к старой записи"
+
+videoIsNotSupported:
+  other: "Ваш браузер не поддерживает видео"
