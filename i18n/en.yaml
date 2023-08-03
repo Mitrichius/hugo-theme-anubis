@@ -60,3 +60,6 @@ toNewPost:
 
 toOldPost:
   other: "to old post"
+
+videoIsNotSupported:
+  other: "Your browser does not support video"

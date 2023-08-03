@@ -275,6 +275,10 @@ If you use webmention.io you can also enable pingback with `pingback: true`
 ### Disabling comments per-page basis
 Add `disableComments: true` to post front matter.
 
+## Custom shortcodes
+### Video (for local videofiles)
+Example: `{{< video src="/media/movie.mp4" type="video/mp4" preload="auto" caption="Some caption" alt="Some alt" >}}`
+
 ## Contributing
 
 If you find a bug or have an idea for a feature, feel free to write an [issue](https://github.com/mitrichius/hugo-theme-anubis/issues) or make a PR.
