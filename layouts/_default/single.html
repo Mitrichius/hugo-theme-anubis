@@ -2,7 +2,7 @@
     {{ if .Menus }}
         <nav class="post-navigation">
         {{ range .Menus }}
-            <a href="{{ .ConfiguredURL | absLangURL }}" title="{{ .Title }}">{{ .Name }}</a>
+            <a href="{{ .ConfiguredURL | absLangURL }}" title="{{ .Title }}">{{ .Name | markdownify }}</a>
         {{ end }}
         </nav>
     {{ end }}
@@ -10,7 +10,7 @@
     <article class="post h-entry">
         <div class="post-header">
             <header>
-                <h1 class="p-name post-title{{ if .Params.favorite }} favorite{{end}}{{ if .Params.draft }} draft{{end}}">{{ trim .Title  " " }}</h1>
+                <h1 class="p-name post-title{{ if .Params.favorite }} favorite{{end}}{{ if .Params.draft }} draft{{end}}">{{ trim .Title  " " | markdownify }}</h1>
 
                 {{ partial "post-language-switcher.html" . }}
             </header>

@@ -3,13 +3,13 @@
         {{ .Content }}
     </div>
 
-    <h1>{{ i18n .Title }}</h1>
+    <h1>{{ i18n .Title | markdownify }}</h1>
     <ul class="terms">
         {{ range .Data.Terms }}
             {{ $postsNum := len (where .Pages "Params.hidden" "!=" true) }}
             {{ if gt $postsNum 0 }}
                 <li>
-                    <a href="{{ .Page.RelPermalink }}">{{ .Page.Title }}</a>
+                    <a href="{{ .Page.RelPermalink }}">{{ .Page.Title | markdownify }}</a>
                     ({{ $postsNum }})
                 </li>
             {{ end}}

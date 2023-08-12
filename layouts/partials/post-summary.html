@@ -1,7 +1,7 @@
 <article class="post-list h-feed">
     <div class="post-header">
         <header>
-            <h1 class="p-name post-title{{ if .Params.favorite }} favorite{{end}}{{ if .Params.draft }} draft{{end}}"><a class="u-url" href="{{ .RelPermalink }}">{{ trim .Title " " }}</a></h1>
+            <h1 class="p-name post-title{{ if .Params.favorite }} favorite{{end}}{{ if .Params.draft }} draft{{end}}"><a class="u-url" href="{{ .RelPermalink }}">{{ trim .Title " " | markdownify }}</a></h1>
         </header>
         {{ partial "post-language-switcher.html" . }}
     </div>

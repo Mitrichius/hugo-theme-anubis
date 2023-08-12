@@ -4,12 +4,12 @@
     <div class="pagination post-pagination">
         <div class="left pagination-item {{ if not .NextInSection }}disabled{{ end }}">
             {{ if .NextInSection }}
-                <a href="{{ .NextInSection.RelPermalink }}">{{ .NextInSection.Title | default $toNewPostMessage }}</a>
+                <a href="{{ .NextInSection.RelPermalink }}">{{ .NextInSection.Title | default $toNewPostMessage | markdownify }}</a>
             {{ end }}
         </div>
         <div class="right pagination-item {{ if not .PrevInSection }}disabled{{ end }}">
             {{ if .PrevInSection }}
-                <a href="{{ .PrevInSection.RelPermalink }}">{{ .PrevInSection.Title | default $toOldPostMessage }}</a>
+                <a href="{{ .PrevInSection.RelPermalink }}">{{ .PrevInSection.Title | default $toOldPostMessage | markdownify }}</a>
             {{ end }}
         </div>
     </div>
