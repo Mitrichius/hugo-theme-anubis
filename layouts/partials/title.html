@@ -1,1 +1,1 @@
-<title>{{ if and (.Title) (not .IsHome) }}{{ .Title }} - {{ end }}{{ .Site.Title }}</title>
+<title>{{ if and (.Title) (not .IsHome) }}{{ .Title | markdownify }} - {{ end }}{{ .Site.Title | markdownify }}</title>

@@ -4,7 +4,7 @@
     </div>
 
     <div class="articles h-feed">
-        <h1 class="post-title">{{ i18n .Title }}</h1>
+        <h1 class="post-title">{{ i18n .Title | markdownify }}</h1>
         {{ $showFullContent := in .Site.Params.sectionsWithFullContentOnListPage .Section }}
         {{ $pages := where .Pages "Params.hidden" "!=" true}}
 
@@ -17,7 +17,7 @@
             <div class="post-short-list h-entry">
                 <div class="post-header">
                     <header>
-                        <h2 class="p-name post-title{{ if .Params.favorite }} favorite{{end}}{{ if .Params.draft }} draft{{end}}"><a class="u-url" href="{{ .RelPermalink }}">{{ trim .Title " " }}</a></h2>
+                        <h2 class="p-name post-title{{ if .Params.favorite }} favorite{{end}}{{ if .Params.draft }} draft{{end}}"><a class="u-url" href="{{ .RelPermalink }}">{{ trim .Title " " | markdownify }}</a></h2>
                         {{ partial "post-language-switcher.html" . }}
                     </header>
                 </div>
