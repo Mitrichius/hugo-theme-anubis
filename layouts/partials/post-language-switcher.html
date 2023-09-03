@@ -2,7 +2,7 @@
     {{ $pageLang := .Page.Lang}}
     <span>
         <ul class="post-translations">
-            {{ range .AllTranslations }}
+            {{ range (sort .AllTranslations ".Lang" "asc" ) }}
                 {{ if eq .Lang $pageLang }}
                     <li>
                         {{ upper .Lang }}
