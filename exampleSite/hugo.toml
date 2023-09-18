@@ -31,6 +31,13 @@ utterancesTheme = "" # optional
 utterancesIssue = "" # optional
 utterancesLabel = "" # optional
 
+# Giscus support
+GiscusRepo = ""  # mandatory
+GiscusRepoId = ""  # mandatory
+GiscusCategory = "Announcements" # mandatory
+GiscusCategoryId = ""  # mandatory
+GiscusLazyLoad = false  # optional
+
 [[params.social]]
 id = "docs"
 url = "https://gohugo.io/documentation/"
