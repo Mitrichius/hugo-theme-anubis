@@ -13,3 +13,7 @@
 {{ if .Site.Params.graphcommentId }}
     {{ partial "graphcomment.html" . }}
 {{ end }}
+
+{{ if .Site.Params.GiscusRepo}}
+    {{ partial "giscus.html" . }}
+{{ end}}
