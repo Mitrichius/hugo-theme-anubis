@@ -54,9 +54,6 @@
   {{ partial "resource.html" (dict "context" $ "type" "js" "filename" . ) }}
 {{- end }}
 
-{{ template "_internal/opengraph.html" . }}
-{{ template "_internal/twitter_cards.html" . }}
-
 {{ if isset .Site.Params "webmentions" }}
     {{ if isset .Site.Params.webmentions "login"  }}
         <link rel="webmention" href="https://webmention.io/{{.Site.Params.webmentions.login}}/webmention" />
