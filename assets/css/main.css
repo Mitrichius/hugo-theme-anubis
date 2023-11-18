@@ -236,6 +236,7 @@ header nav:not(:empty){
     max-width: 100%;
     text-align: center;
     padding: 0.5em 0;
+    border-radius: var(--nav-border-radius);
 }
 
 header nav a {

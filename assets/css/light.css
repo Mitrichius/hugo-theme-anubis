@@ -1,7 +1,7 @@
 :root {
    /* light.css */ 
     --font-color: #333;
-    --bg-color: #fff;
+    --bg-color: #f5f5f5;
 
     --link-color:#1d60a3;
     --link-state-color:#a31d1d;
@@ -10,8 +10,9 @@
     --thead-bg-color: lightgrey;
     --table-border-color: lightgrey;
 
-    --nav-bg-color: #fafafa;
+    --nav-bg-color: #f1f1f1;
     --nav-link-color: #696969;
+    --nav-border-radius: 10px;
 
     --pre-color: #333;
     --pre-bg-color: #f1f1f1;
