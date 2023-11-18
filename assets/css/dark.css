@@ -1,6 +1,9 @@
 /* dark.css */ 
---font-color: #eee;
---bg-color: #212121;
+--font-color: #dadadb;
+--bg-color: #1d1e20;
+  
+--card-color: #2e2e33;
+--card-border-color: #333333;
 
 --link-color:#599ada;
 --link-state-color:#ff5858;
@@ -9,7 +12,7 @@
 --thead-bg-color: #343a40;
 --table-border-color: lightgrey;
 
---nav-bg-color: #242424;
+--nav-bg-color: #2e2e33;
 --nav-link-color: #b6b6b6;
 
 --pre-color: #f8f8f2;
