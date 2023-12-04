@@ -19,7 +19,7 @@ Anubis is a simple minimalist theme for [Hugo blog engine](https://gohugo.io/).
 - Social icons
 - Google Analytics
 - Umami Analytics
-- Comment systems: Disqus, ISSO, Utteranc.es, GraphComment
+- Comment systems: Disqus, ISSO, Utteranc.es, GraphComment, Giscus
 - RSS feeds
 - Related posts (Read Next section)
 - Deploy via Netlify (config included in example site)
@@ -134,6 +134,12 @@ params:
     datacache: false # optional
     url: "https://abc.example.com/umami.js" # mandatory
   graphcommentId: ""
+  # giscus support
+  GiscusRepo: "" # mandatory
+  GiscusRepoId: "" # mandatory
+  GiscusCategory: "Announcements" # mandatory
+  GiscusCategoryId: "" # mandatory
+  GiscusLazyLoad: false # optional
   webmentions:
     url: https://yourdomain.com/webemntions/receive
     login: hugo-theme-anubis
