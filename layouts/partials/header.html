@@ -1,7 +1,13 @@
 <div class="header-top">
-    {{ partial "site-title.html" . }}
-    {{ partial "social.html" . }}
+    <div class="header-top-left">
+        {{ partial "site-title.html" . }}
+        {{ partial "social.html" . }}
+    </div>
+    <div class="header-top-right">
+        {{ partial "theme-switcher.html" . }}  
+    </div>
 </div>
+
 {{ if .Site.Menus.main }}
     <nav>
         {{ $currentPage := . }}

@@ -37,11 +37,5 @@ toAllCategories:
 skipToContent:
   other: "Przejdź do głównej zawartości"
 
-darkTheme:
-  other: "Ciemny schemat"
-
-lightTheme:
-  other: "Jasny schemat"
-
 readNext:
   other: "Czytaj dalej"
