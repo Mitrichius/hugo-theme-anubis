@@ -152,11 +152,13 @@ th, td {
     border: 1px double var(--table-border-color);
 }
 
+
 /* Code */
 pre {
-    padding: 1em;
     max-width: 100%;
     overflow: auto;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 code,
