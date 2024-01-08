@@ -84,7 +84,7 @@ url = "/posts/"
 weight = 3
 
 [languages.pl.params]
-locale = "pl-pl"
+languageCode = "pl-pl"
 
 [taxonomies]
 category = "categories"
