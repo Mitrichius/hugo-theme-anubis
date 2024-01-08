@@ -43,11 +43,5 @@ toAllCategories:
 skipToContent:
   other: "跳至内容"
 
-darkTheme:
-  other: "暗色主题"
-
-lightTheme:
-  other: "亮色主题"
-
 readNext:
   other: "继续阅读"

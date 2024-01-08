@@ -37,11 +37,5 @@ toAllCategories:
 skipToContent:
   other: "প্রচ্ছদে প্রবেশ করুন"
 
-darkTheme:
-  other: "অন্ধকার থিম"
-
-lightTheme:
-  other: "আলোক থিম"
-
 readNext:
   other: "পরের প্রচ্ছদ"

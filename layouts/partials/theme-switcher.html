@@ -5,9 +5,9 @@
 
 {{ if not (in (slice "light-without-switcher" "dark-without-switcher") $style) }}
 {{ if ne "auto-without-switcher" $style }}
-    <button class="theme-switcher">
-        {{ i18n "darkTheme" }}
-    </button>
+    <div class="theme-switcher">
+        {{ partial "font-awesome.html" (dict "iconName" "halfcircle" "custom" false) }}
+    </div>
 {{ end }}
 
 <script>
@@ -21,7 +21,6 @@ let autoDefinedScheme = window.matchMedia('(prefers-color-scheme: dark)')
 const autoChangeScheme = e => {
     currentTheme = e.matches ? 'dark' : 'light'
     document.documentElement.setAttribute('data-theme', currentTheme)
-    changeButtonText()
 }
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -36,7 +35,6 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     if (switchButton) {
-        changeButtonText()
         switchButton.addEventListener('click', switchTheme, false)
     }
   
@@ -59,13 +57,6 @@ function detectCurrentScheme() {
     return 'light'
 }
 
-function changeButtonText()
-{   
-    if (switchButton) {
-        switchButton.textContent = currentTheme == 'dark' ?  {{ i18n "lightTheme" }} : {{ i18n "darkTheme" }}
-    }
-}
-
 function switchTheme(e) {
     if (currentTheme == 'dark') {
         if (localStorage !== null)
@@ -78,7 +69,6 @@ function switchTheme(e) {
         document.documentElement.setAttribute('data-theme', 'dark')
         currentTheme = 'dark'
     }
-    changeButtonText()
 }
 
 function showContent() {

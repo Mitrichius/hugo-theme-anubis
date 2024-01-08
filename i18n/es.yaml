@@ -37,11 +37,5 @@ toAllCategories:
 skipToContent:
   other: "Saltar al contenido principal"
 
-darkTheme:
-  other: "Dark theme"
-
-lightTheme:
-  other: "Light theme"
-
 readNext:
   other: "Leer el siguiente"

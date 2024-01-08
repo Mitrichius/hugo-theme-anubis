@@ -37,11 +37,5 @@ toAllCategories:
 skipToContent:
   other: "Lompat ke konten"
 
-darkTheme:
-  other: "Tema Gelap"
-
-lightTheme:
-  other: "Tema Terang"
-
 readNext:
   other: "Baca Selanjutnya"
