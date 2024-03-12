@@ -1,4 +1,4 @@
-# Anubis Theme for Hugo [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT) [![Netlify Status](https://api.netlify.com/api/v1/badges/7d9ea909-ad7e-4e47-b7c9-eefb7522d8c6/deploy-status)](https://app.netlify.com/sites/hugo-theme-anubis/deploys) [![Donate](https://img.shields.io/badge/Donate-PayPal-blue.svg)](https://www.paypal.com/paypalme/mitrichius/1)
+# Anubis Theme for Hugo [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
 ## ⚠️ Theme is no longer maintained
 Thank you all.  
@@ -7,7 +7,7 @@ More info: https://mitrich.me/en/posts/anubis-closed/
 ---
 
 Anubis is a simple minimalist theme for [Hugo blog engine](https://gohugo.io/).  
-[Demo](https://hugo-theme-anubis.netlify.app/)
+[Demo](https://anubis.mitrich.me)
 
 ![Anubis Screenshot](https://raw.githubusercontent.com/mitrichius/hugo-theme-anubis/master/images/screenshot.png)
 
