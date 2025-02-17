@@ -2,7 +2,7 @@
 
 ## ⚠️ Theme is no longer maintained
 Thank you all.  
-More info: https://mitrich.me/en/posts/anubis-closed/  
+More info: https://mitrich.me/posts/anubis-closed/  
 
 ---
 
